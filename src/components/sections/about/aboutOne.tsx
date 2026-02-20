@@ -30,7 +30,7 @@ const AboutOne = () => {
               <div className="about-content">
                 <SectionTitle>
                   <SectionTitle.SubTitle>About Us</SectionTitle.SubTitle>
-                  <SectionTitle.Title> Welcome To Solaren Solar Power Energy System</SectionTitle.Title>
+                  <SectionTitle.Title> Welcome To Pixel Advant</SectionTitle.Title>
                 </SectionTitle>
                 <p className="mt-3 mt-md-0 wow slideUp" data-delay=".5">
                   Solar companies can offer solar panels, inverters, batteries, and other related services to help individuals businesses transition to energy sources businesses transition to energy sources and sustainable energy alternative.

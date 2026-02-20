@@ -18,6 +18,9 @@ import HomeThreeSingle from "@/pages/home-three-single";
 import HomeTwo from "@/pages/home-two";
 import HomeTwoSingle from "@/pages/home-two-single";
 import Pricing from "@/pages/pricing";
+import ProductOne from "@/pages/product-one";
+import ProductThree from "@/pages/product-three";
+import ProductTwo from "@/pages/product-two";
 import Project from "@/pages/project";
 import ProjectCarousel from "@/pages/project-carousel";
 import ProjectDetails from "@/pages/project-details";
@@ -85,6 +88,18 @@ export const router = createBrowserRouter([
             {
                 path:'/pricing',
                 element:<Pricing/>
+            },
+            {
+                path:'/products/Click 100',
+                element:<ProductOne/>
+            },
+            {
+                path:'/products/Advantage plus',
+                element:<ProductTwo/>
+            },
+            {
+                path:'/products/prices',
+                element:<ProductThree/>
             },
             {
                 path:'/faq',
