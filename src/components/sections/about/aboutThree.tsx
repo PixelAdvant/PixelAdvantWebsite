@@ -17,7 +17,7 @@ const AboutThree = () => {
                                 <div className="circle-shape">
                                     <img src="/img/about/circle.png" alt="shape-img" />
                                 </div>
-                                <img src="/img/about/05.png" alt="about-img" />
+                                <img src="/img/about/gcc-about-innovation.png" alt="about-img" />
                                 <AboutVideoPopup/>
                             </div>
                         </div>

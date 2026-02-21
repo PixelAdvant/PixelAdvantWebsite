@@ -25,37 +25,81 @@ export type MenuItemDataType = {
 
 export const menuData: MenuItemDataType[] = [
   {
+    title: 'Home',
+    link: '/',
+  },
+  {
     title: 'About',
     link: '/about',
-  },
-  {
-    title: 'Solutions',
-    link: '/service',
-  },
-  {
-    title: 'Models',
-    link: '/project',
-  },
-  {
-    title: 'Products',
-    link: '/products/Click 100',
     submenu: [
       {
-        title: 'Click 100',
-        link: '/products/Click 100',
+        title: 'About Us',
+        link: '/about',
       },
       {
-        title: 'Advantage plus',
-        link: '/products/Advantage plus',
+        title: 'Leadership Team',
+        link: '/team',
       },
       {
-        title: 'Prices',
-        link: '/products/prices',
+        title: 'Careers',
+        link: '/careers',
       },
     ],
   },
   {
-    title: 'Blog',
-    link: '/news',
+    title: 'Solutions',
+    link: '/service',
+    submenu: [
+      {
+        title: 'Consulting & Advisory',
+        link: '/service-details',
+      },
+      {
+        title: 'Smart Talent Acquisition',
+        link: '/service-details',
+      },
+      {
+        title: 'AI Led Talent Supply',
+        link: '/service-details',
+      },
+      {
+        title: 'Talent Management',
+        link: '/service-details',
+      },
+      {
+        title: 'Managed Services',
+        link: '/service-details',
+      },
+      {
+        title: 'Workspace Solutions',
+        link: '/service-details',
+      },
+    ],
+  },
+  {
+    title: 'Models',
+    link: '/project',
+    submenu: [
+      {
+        title: 'Captive Model',
+        link: '/project-details',
+      },
+      {
+        title: 'Shared Services Model',
+        link: '/project-details',
+      },
+      {
+        title: 'Build Operate Transfer',
+        link: '/project-details',
+      },
+    ],
+  },
+  {
+    title: 'Insights',
+    link: '/blog',
+  },
+  {
+    title: 'Contact',
+    link: '/contact',
   },
 ];

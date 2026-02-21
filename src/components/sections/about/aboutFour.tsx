@@ -9,7 +9,7 @@ const AboutFour = () => {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="about-image-2 wow slideUp" data-delay=".4">
-                                <img src="/img/about/06.png" alt="about-img" />
+                                <img src="/img/about/company-values.png" alt="about-img" />
                             </div>
                         </div>
                         <div className="col-lg-6 mt-4 mt-lg-0">

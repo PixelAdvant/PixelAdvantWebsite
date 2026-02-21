@@ -3,35 +3,35 @@ import { BlogPostDataType } from "./blogPostsThreeData";
 export const blogPostsOneData: BlogPostDataType[] = [
     {
         id: 1,
-        image: "/img/news/01.jpg",
+        image: "/img/news/article-gcc-trends.jpg",
         date: { day: '17', month: 'Feb', year: '2025' },
-        title: "Harnessing the Sun The Future of The Solar Power.",
-        description: "Nulla ut turpis a nisi vulputate varius non ut lectus. Ut vulputate tempus tincidunt. Duis mi tellus,",
+        title: "2025 Global Capability Center Trends and Insights",
+        description: "Explore the latest trends in GCC establishment and management, including AI integration and talent optimization strategies.",
         link: "/news-details",
-        author: 'Admin',
-        category: 'IT Services',
+        author: 'PixelAdvant',
+        category: 'GCC Insights',
         delay: ".3"
     },
     {
         id: 2,
-        image: "/img/news/03.jpg",
+        image: "/img/news/article-talent-market.jpg",
         date: { day: '17', month: 'May', year: '2025' },
-        title: "How to Choose the Right Solar Panels for Your Home.",
-        description: "Nulla ut turpis a nisi vulputate varius non ut lectus. Ut vulputate tempus tincidunt. Duis mi tellus,",
+        title: "Navigating the Talent Market: AI-Led Recruitment Success",
+        description: "Discover how AI-driven talent acquisition is transforming recruitment strategies and improving placement accuracy.",
         link: "/news-details",
-        author: 'Admin',
-        category: 'IT Services',
+        author: 'PixelAdvant',
+        category: 'Talent Solutions',
         delay: ".5"
     },
     {
         id: 3,
-        image: "/img/news/02.jpg",
+        image: "/img/news/article-recruitment-ai.jpg",
         date: { day: '17', month: 'July', year: '2025' },
-        title: "DIY Solar Can You Really Install Solar Panels Yourself.",
-        description: "Nulla ut turpis a nisi vulputate varius non ut lectus. Ut vulputate tempus tincidunt. Duis mi tellus,",
+        title: "Mastering Smart Talent Acquisition with Advanced AI",
+        description: "Learn how to leverage AI-powered tools for intelligent talent identification, assessment, and acquisition.",
         link: "/news-details",
-        author: 'Admin',
-        category: 'IT Services',
+        author: 'PixelAdvant',
+        category: 'Technology',
         delay: ".7"
     }
 ];

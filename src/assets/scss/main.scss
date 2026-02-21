@@ -8,87 +8,78 @@ Version: 1.0.0
 
 /*CSS Table Of Content Ends Here*/
 
-//>> Bootstrap <<//
-@import "bootstrap/dist/css/bootstrap.min.css";
-
-//>> Basic Start <<//
-
 //>> Mixins <<//
-@import "_mixins";
+@use "_mixins" as *;
 //>> Variables <<//	
-@import "_variables";
+@use "_variables" as *;
 //>> Buttons <<//
-@import "_buttons";
+@use "_buttons" as *;
 //>> Typography <<//
-@import "_typography";
-//>> Basic End <<//	
-
-@import "_customDropdown";
-
-//>> Template Section Style Start <<//
+@use "_typography" as *;
+//>> Custom Dropdown <<//	
+@use "_customDropdown" as *;
 
 //>> About <<//
-@import "_about";
+@use "_about" as *;
 
 //>> Animation <<//
-@import "_animation";
+@use "_animation" as *;
 
 //>> Brand <<//
-@import "_brand";
+@use "_brand" as *;
 
 //>> Contact <<//
-@import "_contact";
+@use "_contact" as *;
 
 //>> Cta <<//
-@import "_cta";
+@use "_cta" as *;
 
 //>> Faq <<//
-@import "_faq";
+@use "_faq" as *;
 
 //>> Feature <<//
-@import "_feature";
+@use "_feature" as *;
 
 //>> Footer <<//
-@import "_footer";
+@use "_footer" as *;
 
 //>> Header <<//
-@import "_header";
+@use "_header" as *;
 
 //>> Helping <<//
-@import "_helping";
+@use "_helping" as *;
 
 //>> Hero <<//
-@import "_hero";
+@use "_hero" as *;
 
 //>> Marquee <<//
-@import "_marquee";
+@use "_marquee" as *;
 
 //>> MeanMenu <<//
-@import "_meanmenu";
+@use "_meanmenu" as *;
 
 //>> News <<//
-@import "_news";
+@use "_news" as *;
 
 //>> Pricing <<//
-@import "_pricing";
+@use "_pricing" as *;
 
 //>> Preloader <<//
-@import "_preloader";
+@use "_preloader" as *;
 
 //>> Project <<//
-@import "_project";
+@use "_project" as *;
 
 //>> Section <<//
-@import "_section";
+@use "_section" as *;
 
 //>> Service <<//
-@import "_service";
+@use "_service" as *;
 
 //>> Team <<//
-@import "_team";
+@use "_team" as *;
 
 //>> Testimonial <<//
-@import "_testimonial";
-
-//>> Template Section Style End <<//
-
+@use "_testimonial" as *;
+//>> Bootstrap <<//
+@import "bootstrap/dist/css/bootstrap.min.css";

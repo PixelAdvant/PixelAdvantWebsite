@@ -5,28 +5,28 @@ import { useInView } from "react-intersection-observer";
 const achievementData = [
     {
         id: 1,
-        icon: '/img/achievement-icon/01.svg',
+        icon: '/img/achievement-icon/icon-expertise.svg',
         count: 6561,
         description: 'Satisfied Clients',
         delay: '.3',
     },
     {
         id: 2,
-        icon: '/img/achievement-icon/02.svg',
+        icon: '/img/achievement-icon/icon-global.svg',
         count: 600,
         description: 'Finished Projects',
         delay: '.5',
     },
     {
         id: 3,
-        icon: '/img/achievement-icon/03.svg',
+        icon: '/img/achievement-icon/icon-innovation.svg',
         count: 250,
         description: 'Skilled Experts',
         delay: '.7',
     },
     {
         id: 4,
-        icon: '/img/achievement-icon/04.svg',
+        icon: '/img/achievement-icon/icon-support.svg',
         count: 590,
         description: 'Media Posts',
         delay: '.9',

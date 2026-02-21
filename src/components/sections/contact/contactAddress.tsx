@@ -13,9 +13,10 @@ const ContactAddress = () => {
                         </svg>
                     </div>
                     <div className="content">
-                        <p>Call Us 7/24</p>
+                        <p>Call Us 24/7</p>
                         <h3>
-                            <Link to="tel:+2085550112">+208-555-0112</Link>
+                            <Link to="tel:+918904957029">+91 8904957029</Link><br/>
+                            <Link to="tel:+19738656682">+1 973 865 6682</Link>
                         </h3>
                     </div>
                 </div>
@@ -28,9 +29,10 @@ const ContactAddress = () => {
                         </svg>
                     </div>
                     <div className="content">
-                        <p>Make a Quote</p>
+                        <p>Email Us</p>
                         <h3>
-                            <Link to="mailto:infotech@gmail.com">Solar@gmail.com</Link>
+                            <Link to="mailto:info@pixeladvant.com">info@pixeladvant.com</Link><br/>
+                            <Link to="mailto:sales@pixeladvant.com">sales@pixeladvant.com</Link>
                         </h3>
                     </div>
                 </div>
@@ -42,9 +44,9 @@ const ContactAddress = () => {
                         </svg>
                     </div>
                     <div className="content">
-                        <p>Location</p>
+                        <p>Headquarters</p>
                         <h3>
-                            4517 Washington ave.
+                            India & United States
                         </h3>
                     </div>
                 </div>

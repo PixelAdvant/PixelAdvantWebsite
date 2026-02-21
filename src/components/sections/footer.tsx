@@ -4,50 +4,50 @@ import { Link } from "react-router-dom";
 const contactInfo = [
     {
         icon: <SuCallMessage />,
-        label: "Call Us 7/24",
-        value: "+208-555-0112",
-        link: "tel:+2085550112",
+        label: "Call Us 24/7",
+        value: "+91 8904957029",
+        link: "tel:+918904957029",
     },
     {
         icon: <SuEmail />,
-        label: "Make a Quote",
-        value: "Solar@gmail.com",
-        link: "mailto:infotech@gmail.com",
+        label: "Email Us",
+        value: "info@pixeladvant.com",
+        link: "mailto:info@pixeladvant.com",
     },
     {
         icon: <SuLocation />,
-        label: "Location",
-        value: "4517 Washington ave.",
+        label: "Headquarters",
+        value: "India & United States",
     },
 ];
 
 const quickLinks = [
-    { text: "Solar About", link: "/about" },
-    { text: "Our Services", link: "/service" },
-    { text: "Our Blogs", link: "/news" },
-    { text: "FAQ’S", link: "/faq" },
+    { text: "About Us", link: "/about" },
+    { text: "Solutions", link: "/service" },
+    { text: "Models", link: "/project" },
+    { text: "Insights", link: "/blog" },
     { text: "Contact Us", link: "/contact" },
 ];
 
 const services = [
-    { text: "Consultancy", link: "/service-details" },
-    { text: "Solar System", link: "/service-details" },
-    { text: "Solar Panel", link: "/service-details" },
-    { text: "Style Guide", link: "/service-details" },
-    { text: "License", link: "/service-details" },
+    { text: "Consulting & Advisory", link: "/service-details" },
+    { text: "Smart Talent Acquisition", link: "/service-details" },
+    { text: "Talent Management", link: "/service-details" },
+    { text: "Managed Services", link: "/service-details" },
+    { text: "Workspace Solutions", link: "/service-details" },
 ];
 
 const recentPosts = [
     {
         image: "/img/news/pp1.jpg",
         date: "20 Feb, 2025",
-        title: "2021 Batterman Award honors Brad Burkhart",
+        title: "Global Capability Centers - Future of Work",
         link: "/news-details",
     },
     {
         image: "/img/news/pp2.jpg",
         date: "15 Dec, 2025",
-        title: "2021 Batterman Award honors Brad Burkhart",
+        title: "AI-Led Talent Acquisition Excellence",
         link: "/news-details",
     },
 ];
@@ -96,8 +96,7 @@ const Footer = () => {
                                 </div>
                                 <div className="footer-content">
                                     <p>
-                                        Phasellus ultricies aliquam volutpat ullamcorper laoreet
-                                        neque, a lacinia curabitur lacinia mollis
+                                        PixelAdvant is your trusted partner in Global Capability Centers. With 400+ years of collective expertise, we provide innovative solutions for consulting, talent acquisition, and managed services.
                                     </p>
                                     <div className="social-icon d-flex align-items-center">
                                         <Link to="#">
@@ -197,8 +196,8 @@ const Footer = () => {
                 <div className="container">
                     <div className="footer-wrapper d-flex align-items-center justify-content-between">
                         <p className="wow slideLeft color-2" data-delay=".3">
-                            © All Copyright 2025 by <Link to="index">Solar</Link> {" "}
-                             • Distributed by <Link to="https://themewagon.com" target="_blank">ThemeWagon</Link>
+                            © All Copyright 2025 by <Link to="index">PixelAdvant</Link> {" "}
+                             • A brand of <Link to="https://pixeladvant.com" target="_blank">Maticube Innovation LLP</Link>
                         </p>
                         <ul className="footer-menu wow slideRight" data-delay=".5">
                             <li>

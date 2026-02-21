@@ -5,26 +5,26 @@ import { useInView } from 'react-intersection-observer';
 const achievements = [
     {
         count: 6561,
-        description: "Team members",
-        icon: "/img/achievement-icon/01.svg",
+        description: "Global Experts",
+        icon: "/img/achievement-icon/icon-expertise.svg",
         delay: ".3"
     },
     {
         count: 600,
-        description: "Completed Projects",
-        icon: "/img/achievement-icon/02.svg",
+        description: "Successful Placements",
+        icon: "/img/achievement-icon/icon-global.svg",
         delay: ".5"
     },
     {
         count: 250,
-        description: "Winning award",
-        icon: "/img/achievement-icon/03.svg",
+        description: "Innovation Solutions",
+        icon: "/img/achievement-icon/icon-innovation.svg",
         delay: ".7"
     },
     {
         count: 590,
-        description: "Clients Review",
-        icon: "/img/achievement-icon/04.svg",
+        description: "Client Support",
+        icon: "/img/achievement-icon/icon-support.svg",
         delay: ".9"
     }
 ];
@@ -43,7 +43,7 @@ const AchievementOne = () => {
                             Talk to US
                         </SectionTitle.SubTitle>
                         <SectionTitle.Title className='text-white'>
-                            Powering the Future <br />with the Renew
+                            Powering Global Success <br />Through Expert Talent
                         </SectionTitle.Title>
                     </SectionTitle>
                     <div className="counter-area" >

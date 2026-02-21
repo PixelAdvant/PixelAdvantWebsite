@@ -1,4 +1,7 @@
-//>>>>> Header Top Start <<<<<//
+@use "_variables" as *;
+@use "_mixins" as *;
+
+//>>>>> Header Top Start <<<<<//<//
 .header-top-section {
 	background-color: $header-color;
 	padding: 10px 0;
