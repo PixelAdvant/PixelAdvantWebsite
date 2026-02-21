@@ -38,7 +38,21 @@ export const menuData: MenuItemDataType[] = [
   },
   {
     title: 'Products',
-    link: '/pricing',
+    link: '/products/Click 100',
+    submenu: [
+      {
+        title: 'Click 100',
+        link: '/products/Click 100',
+      },
+      {
+        title: 'Advantage plus',
+        link: '/products/Advantage plus',
+      },
+      {
+        title: 'Prices',
+        link: '/products/prices',
+      },
+    ],
   },
   {
     title: 'Blog',
