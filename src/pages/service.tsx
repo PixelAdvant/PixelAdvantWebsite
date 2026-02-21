@@ -9,9 +9,9 @@ const Service = () => {
             <section className="service-section fix section-padding">
                 <div className="container">
                     <div className="section-title text-center">
-                        <span className="wow slideUp">Services We Offer</span>
+                        <span className="wow slideUp">Comprehensive Solutions</span>
                         <h2 className="wow slideUp" data-delay=".3">
-                            Provide Comprehensive Ecological<br /> Service
+                            Our Solutions &<br /> Services
                         </h2>
                     </div>
                     <div className="service-wrapper mb-0">

@@ -3,37 +3,37 @@ import { BlogPostDataType } from "./blogPostsThreeData";
 export const blogStandardData:BlogPostDataType[] = [
     {
         id:1,
-        image: '/img/news/post-1.jpg',
+        image: '/img/news/article-gcc-trends.jpg',
         date: { day: '17', month: 'Feb', year:'2025' },
-        author: 'Admin',
-        category: 'IT Services',
-        title: '5 energy innovations revolution',
+        author: 'PixelAdvant',
+        category: 'Industry Trends',
+        title: 'Top GCC Trends Reshaping Global Talent',
         description:
-            'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur..',
+            'Discover the emerging trends in Global Capability Centers and how they\'re transforming the talent acquisition landscape. From AI-driven hiring to hybrid work models, explore what\'s next.',
         link: '/news-details',
         delay:'0.2s'
     },
     {
         id:2,
-        image: '/img/news/post-2.jpg',
+        image: '/img/news/article-talent-market.jpg',
         date: { day: '19', month: 'Feb', year:'2025' },
-        author: 'Admin',
-        category: 'IT Services',
-        title: 'How Solar Energy is the Solution',
+        author: 'PixelAdvant',
+        category: 'Market Insights',
+        title: 'Understanding the Global Talent Market',
         description:
-            'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur..',
+            'Gain deep insights into global talent markets and employment trends. Learn how macro-economic factors, technology adoption, and skill trends are shaping recruitment strategies.',
         link: '/news-details',
         delay:'0.2s'
     },
     {
         id:3,
-        image: '/img/news/post-3.jpg',
+        image: '/img/news/article-recruitment-ai.jpg',
         date: { day: '28', month: 'Feb', year:'2025' },
-        author: 'Admin',
-        category: 'IT Services',
-        title: 'Professionals and relevant experience!',
+        author: 'PixelAdvant',
+        category: 'AI & Technology',
+        title: 'AI-Powered Recruitment: Finding Top Talent',
         description:
-            'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur..',
+            'Explore how artificial intelligence is revolutionizing recruitment by identifying top talent faster and more accurately. Discover tools and techniques that leading organizations are using.',
         link: '/news-details',
         delay:'0.2s'
     },

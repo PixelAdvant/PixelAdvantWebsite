@@ -1,34 +1,34 @@
 export const testimonialFourData = [
     {
         id: 1,
-        quote: 'when an unknown printer took away galley of type aawer awtnd there are scrambled it to make a type many but also the leap into',
+        quote: 'PixelAdvant transformed our GCC setup process. Their expertise and data-driven approach helped us establish a world-class innovation center efficiently.',
         image: '/img/testimonial/05.jpg',
-        name: 'Shikhon Haque',
-        role: 'Web Designer',
+        name: 'Alex Johnson',
+        role: 'Chief Operations Officer',
         stars: 5
     },
     {
         id: 2,
-        quote: 'when an unknown printer took away galley of type aawer awtnd there are scrambled it to make a type many but also the leap into',
+        quote: 'The AI-led talent acquisition platform provided us with exactly what we needed. Their market insights and compensation analysis were invaluable.',
         image: '/img/testimonial/06.jpg',
-        name: 'Esther Howard',
-        role: 'President of Sales',
+        name: 'Sarah Chen',
+        role: 'HR Director',
         stars: 5
     },
     {
         id: 3,
-        quote: 'when an unknown printer took away galley of type aawer awtnd there are scrambled it to make a type many but also the leap into',
+        quote: 'Outstanding consulting and advisory services. The team understood our business needs and provided customized solutions that exceeded our expectations.',
         image: '/img/testimonial/07.jpg',
-        name: 'Brooklyn Simmons',
-        role: 'Nursing',
+        name: 'Michael Brown',
+        role: 'Managing Director',
         stars: 5
     },
     {
         id: 4,
-        quote: 'when an unknown printer took away galley of type aawer awtnd there are scrambled it to make a type many but also the leap into',
+        quote: 'Their managed services team has been instrumental in scaling our GCC operations. Professional, responsive, and results-oriented throughout the journey.',
         image: '/img/testimonial/06.jpg',
-        name: 'Esther Howard',
-        role: 'President of Sales',
+        name: 'Lisa Anderson',
+        role: 'VP Strategy',
         stars: 5
     },
 ];

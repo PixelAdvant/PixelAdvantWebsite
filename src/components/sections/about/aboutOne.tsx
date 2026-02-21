@@ -19,9 +19,9 @@ const AboutOne = () => {
                   </div>
                 </div>
                 <AboutRoundedTextVideoPopup/>
-                <div className="about-image-1 bg-cover wow slideLeft" data-delay=".3" style={{ backgroundImage: 'url("/img/about/01.jpg")' }}>
+                <div className="about-image-1 bg-cover wow slideLeft" data-delay=".3" style={{ backgroundImage: 'url("/img/about/gcc-expertise.jpg")' }}>
                   <div className="about-image-2 wow slideUp" data-delay=".5">
-                    <img src="/img/about/02.jpg" alt="about-img" />
+                    <img src="/img/about/leadership-team.jpg" alt="about-img" />
                   </div>
                 </div>
               </div>
@@ -30,10 +30,10 @@ const AboutOne = () => {
               <div className="about-content">
                 <SectionTitle>
                   <SectionTitle.SubTitle>About Us</SectionTitle.SubTitle>
-                  <SectionTitle.Title> Welcome To Pixel Advant</SectionTitle.Title>
+                  <SectionTitle.Title> An Integral, Trusted Partner in GCC</SectionTitle.Title>
                 </SectionTitle>
                 <p className="mt-3 mt-md-0 wow slideUp" data-delay=".5">
-                  Solar companies can offer solar panels, inverters, batteries, and other related services to help individuals businesses transition to energy sources businesses transition to energy sources and sustainable energy alternative.
+                  Our leaders have a collective experience of 400 years in cross-functional domain areas. Across every critical touchpoint in the GCC journey, we provide innovative solutions and services that positively impact outcomes for all stakeholders.
                 </p>
                 <div className="about-icon-items">
                   <div className="icon-items wow slideUp" data-delay=".7">
@@ -41,9 +41,9 @@ const AboutOne = () => {
                       <img src="/img/about/icon-2.svg" alt="icon-img" />
                     </div>
                     <div className="content">
-                      <h4>Reliability and Performance</h4>
+                      <h4>Expert Solutions</h4>
                       <p>
-                        Lorem ipsum dolor sit amet cut co sect. Proin viverra
+                        Flexible and scalable solutions customized to suit your organization's complex GCC challenges
                       </p>
                     </div>
                   </div>
@@ -52,9 +52,9 @@ const AboutOne = () => {
                       <img src="/img/about/icon-3.svg" alt="icon-img" />
                     </div>
                     <div className="content">
-                      <h4>BrightSun Support</h4>
+                      <h4>End-to-End Support</h4>
                       <p>
-                        Lorem ipsum dolor sit amet cut co sect. Proin viverra
+                        Complete support from legal compliance to workspace design, talent acquisition, and operations
                       </p>
                     </div>
                   </div>
@@ -62,15 +62,15 @@ const AboutOne = () => {
                 <div className="about-author">
                   <div className="about-button wow slideUp" data-delay=".5">
                     <Link to="/about" className="theme-btn">
-                      Explore More
+                      Learn More
                       <i className="fa-solid fa-arrow-right-long" />
                     </Link>
                   </div>
                   <div className="author-image wow slideUp" data-delay=".7">
                     <img src="/img/about/author.png" alt="author-img" />
                     <div className="content">
-                      <h6>Ronald Richards</h6>
-                      <p>Co, Founder</p>
+                      <h6>Leadership Team</h6>
+                      <p>400+ Years Combined Expertise</p>
                     </div>
                   </div>
                 </div>

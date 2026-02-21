@@ -15,19 +15,19 @@ interface SlideType {
 const slidesData: SlideType[] = [
   {
     id: 1,
-    image: '/img/hero/hero-12.jpg',
-    title: 'WELCOME TO THE SOLAR SOLEN',
-    heading: 'Powering the Future <br /> with Our Renewable <br /> Energy Suntide',
-    description: 'Transmds is the world’s driving worldwide coordinations provider we uphold industry and exchange the worldwide trade of merchandi',
+    image: '/img/hero/gcc-hero-main.jpg',
+    title: 'EMPOWERING GLOBAL INNOVATION CENTERS',
+    heading: 'Putting the Right<br /> Solutions and Methods<br /> in Place',
+    description: 'Unlock the full potential of your Global Capability Center with our comprehensive consulting, talent acquisition, and managed services solutions.',
     link: '/',
   },
   {
     id: 2,
-    image: '/img/hero/hero-7.jpg',
-    title: 'WELCOME TO THE SOLAR SOLEN',
-    heading: 'Powering the Future <br /> with Our Renewable <br /> Energy Suntide',
-    description: 'Transmds is the world’s driving worldwide coordinations provider we uphold industry and exchange the worldwide trade of merchandi',
-    link: '/',
+    image: '/img/hero/talent-acquisition-hero.jpg',
+    title: 'TRANSFORM YOUR WORKFORCE',
+    heading: 'AI-Led Smart Talent<br /> Acquisition & Supply<br /> Process',
+    description: 'Leverage our advanced AI solutions for efficient and targeted talent acquisition with real-time insights and data-driven decision making.',
+    link: '/service',
   },
 ];
 

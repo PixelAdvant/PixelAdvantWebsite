@@ -39,7 +39,7 @@ const ServiceDetails = () => {
                             <div className="col-12 col-lg-8 order-1 order-md-2">
                                 <div className="service-details-items">
                                     <div className="details-image">
-                                        <img src="/img/service/details-1.jpg" alt="img" />
+                                        <img src="/img/service/consulting-service.jpg" alt="img" />
                                     </div>
                                     <div className="details-content">
                                         <h3>Markel Office Space Cleaning</h3>
