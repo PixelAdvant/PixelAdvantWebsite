@@ -1,13 +1,16 @@
-import BlogCommentFrom from "@/components/sections/blogs/blogCommentFrom"
+import BlogCommentForm from "@/components/sections/blogs/blogCommentForm"
 import BlogComments from "@/components/sections/blogs/blogComments"
 import BlogSidebar from "@/components/sections/blogs/blogSIdebar"
+import BlogInteractions from "@/components/sections/blogs/blogInteractions"
 import PageTitle from "@/components/sections/pageTitle"
 import { Link } from "react-router-dom"
 
 const BlogDetails = () => {
+    const blogTitle = "Establishing Your Global Capability Centre in India"
+    const blogUrl = window.location.href
     return (
         <>
-            <PageTitle currentPage="Blog Details" title="Blog Details" />
+            <PageTitle currentPage="Blog Details" title="Blog Post" />
             <section className="news-standard fix section-padding">
                 <div className="container">
                     <div className="news-details-area">
@@ -15,55 +18,55 @@ const BlogDetails = () => {
                             <div className="col-12 col-lg-8">
                                 <div className="blog-post-details">
                                     <div className="single-blog-post">
-                                        <div className="post-featured-thumb bg-cover" style={{ backgroundImage: 'url("/img/news/post-4.jpg")' }} />
+                                        <div className="post-featured-thumb bg-cover" style={{ backgroundImage: 'url("/img/blogs/post-4.jpg")' }} />
                                         <div className="post-content">
                                             <ul className="post-list d-flex align-items-center">
                                                 <li>
                                                     <i className="fa-regular fa-user" />
-                                                    By Admin
+                                                    By PixelAdvant
                                                 </li>
                                                 <li>
                                                     <i className="fa-solid fa-calendar-days" />
-                                                    18 Dec, 2025
+                                                    22 Feb, 2025
                                                 </li>
                                                 <li>
                                                     <i className="fa-solid fa-tag" />
-                                                    IT Services
+                                                    GCC Setup
                                                 </li>
                                             </ul>
-                                            <h3>5 energy innovations revolution</h3>
+                                            <h3>Establishing Your Global Capability Centre in India</h3>
                                             <p className="mb-3">
-                                                Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.
+                                                Setting up a Global Capability Centre (GCC) in India has become a strategic imperative for multinational corporations looking to optimize costs while maintaining quality. PixelAdvant specializes in helping organizations navigate this complex journey, from initial planning through full operational deployment. Our comprehensive approach ensures your GCC is positioned for sustainable growth and success in the competitive Indian market.
                                             </p>
                                             <p className="mb-3">
-                                                The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In hac habitasse the is platea augue thelorem turpoi dictumst. In lacus libero faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed the is sodales augue consequat.
+                                                The Indian talent pool offers unparalleled opportunities for organizations seeking to build high-performing teams. With a deep understanding of local regulations, cultural nuances, and best practices, PixelAdvant ensures your GCC setup is seamless and aligned with your organizational goals. Our experienced team has successfully facilitated numerous GCC establishments across various industries including IT, finance, HR, and customer support.
                                             </p>
                                             <p>
-                                                Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum lorem, at tempus nibh mattis in. Sed a massa eget lacus consequat auctor.
+                                                One of the critical success factors for GCC operations is building the right team from day one. This requires careful selection of local talent, clear communication of organizational expectations, and robust training programs. PixelAdvant provides end-to-end recruitment and talent management services, ensuring your GCC gets access to the best available talent in India.
                                             </p>
                                             <div className="hilight-text mt-4 mb-4">
-                                                <p>Pellentesque sollicitudin congue dolor non aliquam. Morbi volutpat, nisi vel
-                                                    ultricies urnacondimentum, sapien neque
-                                                    lobortis tortor, quis efficitur mi ipsum eu metus. Praesent eleifend orci sit
-                                                    amet
-                                                    est vehicula.</p>
+                                                <p>Key Benefits of Establishing GCC in India:
+                                                    <br />• 30-40% cost savings compared to onshore operations
+                                                    <br />• Access to 5+ million IT professionals annually
+                                                    <br />• Strong English proficiency across talent pool
+                                                    <br />• Proven business infrastructure and regulatory framework</p>
                                                 <svg width={36} height={36} viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M0 20.3698H7.71428L2.57139 30.5546H10.2857L15.4286 20.3698V5.09247H0V20.3698Z" fill="#77B80F" />
                                                     <path d="M20.5703 5.09247V20.3698H28.2846L23.1417 30.5546H30.856L35.9989 20.3698V5.09247H20.5703Z" fill="#77B80F" />
                                                 </svg>
                                             </div>
                                             <p className="mt-4 mb-5">
-                                                Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros.
+                                                PixelAdvant's proven methodology for GCC setup includes: comprehensive market research, site selection support, regulatory compliance guidance, talent acquisition and recruitment, team training and development, operational framework establishment, and continuous optimization. We believe that a well-established GCC is not just about reducing costs—it's about creating a sustainable competitive advantage for your organization. By leveraging India's abundant talent, favorable business environment, and our deep expertise, your GCC can become a center of excellence that drives innovation and growth across your global operations.
                                             </p>
                                             <div className="row g-4">
                                                 <div className="col-lg-6">
                                                     <div className="details-image">
-                                                        <img src="/img/news/post-5.jpg" alt="img" />
+                                                        <img src="/img/blogs/post-5.jpg" alt="img" />
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-6">
                                                     <div className="details-image">
-                                                        <img src="/img/news/post-6.jpg" alt="img" />
+                                                        <img src="/img/blogs/post-6.jpg" alt="img" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -75,22 +78,16 @@ const BlogDetails = () => {
                                     <div className="row tag-share-wrap mt-4 mb-5">
                                         <div className="col-lg-8 col-12">
                                             <div className="tagcloud">
-                                                <Link to="/news-details">News</Link>
-                                                <Link to="/news-details">business</Link>
-                                                <Link to="/news-details">marketing</Link>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4 col-12 mt-3 mt-lg-0 text-lg-end">
-                                            <div className="social-share">
-                                                <span className="me-3">Share:</span>
-                                                <Link to="#"><i className="fab fa-facebook-f" /></Link>
-                                                <Link to="#"><i className="fa-brands fa-x-twitter" /></Link>
-                                                <Link to="#"><i className="fab fa-linkedin-in" /></Link>
+                                                <Link to="/blog">Technology</Link>
+                                                <Link to="/blog">Innovation</Link>
+                                                <Link to="/blog">Energy</Link>
                                             </div>
                                         </div>
                                     </div>
+                                    
+                                    <BlogInteractions blogTitle={blogTitle} blogUrl={blogUrl} />
                                     <BlogComments/>
-                                    <BlogCommentFrom/>
+                                    <BlogCommentForm blogTitle={blogTitle} />
                                 </div>
                             </div>
                             <div className="col-12 col-lg-4">

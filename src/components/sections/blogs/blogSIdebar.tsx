@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import BlogSubscription from "./blogSubscription";
 
 const categories = [
     { name: 'Database Security', count: 8 },
@@ -10,17 +11,17 @@ const categories = [
 
 const recentPosts = [
     {
-        imgSrc: '/img/news/pp3.jpg',
+        imgSrc: '/img/blogs/pp3.jpg',
         date: '18 Dec, 2025',
         title: 'Colgate-Palmolive Renews with Morz in Malaysia Soon',
     },
     {
-        imgSrc: '/img/news/pp4.jpg',
+        imgSrc: '/img/blogs/pp4.jpg',
         date: '18 Dec, 2025',
         title: 'Bill Gates Launches Clean Energy Investment Fund',
     },
     {
-        imgSrc: '/img/news/pp5.jpg',
+        imgSrc: '/img/blogs/pp5.jpg',
         date: '18 Dec, 2025',
         title: 'Metal Roofing: The Best for Solar Panels',
     },
@@ -109,6 +110,8 @@ const BlogSidebar = () => {
                     </div>
                 </div>
             </div>
+
+            <BlogSubscription/>
         </div>
     );
 };

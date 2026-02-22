@@ -31,7 +31,7 @@ const slidesData: SlideType[] = [
   },
 ];
 
-const HeroOne = () => {
+const HeroOne = ({ onDemoClick }: { onDemoClick?: () => void }) => {
   return (
     <section className="hero-section hero-1">
       <div className="array-button">
@@ -55,7 +55,7 @@ const HeroOne = () => {
       >
         {slidesData.map((slide) => (
           <SwiperSlide key={slide.id}>
-            {(({ isActive }) => <Card slide={slide} isActive={isActive} />)}
+            {(({ isActive }) => <Card slide={slide} isActive={isActive} onDemoClick={onDemoClick} />)}
           </SwiperSlide>
         ))}
       </Swiper>
@@ -66,7 +66,7 @@ const HeroOne = () => {
 
 export default HeroOne
 
-const Card = ({ slide, isActive }: { slide: SlideType; isActive: boolean }) => {
+const Card = ({ slide, isActive, onDemoClick }: { slide: SlideType; isActive: boolean; onDemoClick?: () => void }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -121,6 +121,9 @@ const Card = ({ slide, isActive }: { slide: SlideType; isActive: boolean }) => {
                 <Link to={slide.link} className="theme-btn theme-color-2">
                   <span>Learn More <i className="fas fa-chevron-right" /></span>
                 </Link>
+                <button className="theme-btn" onClick={onDemoClick} style={{ marginLeft: '10px' }}>
+                  <span>Request Demo <i className="fas fa-calendar-check" /></span>
+                </button>
               </motion.div>
             </div>
           </div>

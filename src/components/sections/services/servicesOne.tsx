@@ -5,7 +5,7 @@ import ServiceCard from "./serviceCard"
 import SectionTitle from "@/components/ui/sectionTitle"
 import { Link } from "react-router-dom"
 
-const ServicesOne = () => {
+const ServicesOne = ({ onDemoClick }: { onDemoClick?: () => void }) => {
   return (
     <section id="services" className="service-section fix section-padding bg-cover" style={{ backgroundImage: 'url("/img/service/service-bg.jpg")' }}>
       <div className="container">
@@ -13,7 +13,7 @@ const ServicesOne = () => {
           <SectionTitle>
             <SectionTitle.SubTitle>Services We Offer</SectionTitle.SubTitle>
             <SectionTitle.Title>
-              Provide Comprehensive Ecological<br /> Service
+              Comprehensive GCC<br /> Solutions & Services
             </SectionTitle.Title>
           </SectionTitle>
           <div className="array-button">
@@ -60,10 +60,13 @@ const ServicesOne = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="service-text wow slideUp" data-delay=".4">
+          <div className="service-text wow slideUp" data-delay=".4" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
             <h6>
-              Solar Power System.  <Link to="/service">View Services </Link>
+              Explore Our Solutions.  <Link to="/service">View All Services </Link>
             </h6>
+            <button className="theme-btn" onClick={onDemoClick} style={{ whiteSpace: 'nowrap' }}>
+              Request Demo <i className="fa-solid fa-arrow-right-long" />
+            </button>
           </div>
         </div>
       </div >

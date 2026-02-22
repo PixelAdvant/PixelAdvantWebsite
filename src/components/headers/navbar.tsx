@@ -1,17 +1,11 @@
 import { menuData, MenuItemDataType } from "@/db/menuData";
 import { Fragment, useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { menuDataSingleHomePage } from "@/db/menuDataSingleHomePage";
+import { Link } from "react-router-dom";
 
 function Navbar() {
-    const pathName = useLocation().pathname
     const [data, setData] = useState<MenuItemDataType[]>([])
     useEffect(() => {
-        if (pathName === '/home-one-single' || pathName === '/home-two-single' || pathName === '/home-three-single' || pathName === '/home-four-single') {
-            setData(menuDataSingleHomePage)
-        } else {
-            setData(menuData)
-        }
+        setData(menuData)
     })
     return (
         <ul>

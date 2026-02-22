@@ -1,4 +1,5 @@
 import BlogCard from "@/components/sections/blogs/blogCard"
+import BlogSubscription from "@/components/sections/blogs/blogSubscription"
 import PageTitle from "@/components/sections/pageTitle"
 import Pagination from "@/components/ui/pagination"
 import { blogPostsThreeData } from "@/db/blogPostsThreeData"
@@ -6,10 +7,18 @@ import { blogPostsThreeData } from "@/db/blogPostsThreeData"
 const Blog = () => {
     return (
         <>
-            <PageTitle currentPage="Blog Grid" title="Blog Grid" />
+            <PageTitle currentPage="Blogs" title="Blog Listings" />
             <section className="news-section-4 fix section-padding">
                 <div className="container">
-                    <div className="row g-4">
+                    {/* Blog Subscription Section */}
+                    <div className="row mb-5">
+                        <div className="col-lg-8 col-12 mx-auto">
+                            <BlogSubscription/>
+                        </div>
+                    </div>
+
+                    {/* Blog Grid Section */}
+                    <div className="row g-4 mt-0">
                         {
                             blogPostsThreeData.map((news) => {
                                 return (

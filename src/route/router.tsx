@@ -1,6 +1,3 @@
-import LayoutFour from "@/layout/layoutFour";
-import LayoutThree from "@/layout/layoutThree";
-import LayoutTwo from "@/layout/layoutTwo";
 import RootLayout from "@/layout/root";
 import Error from "@/pages/404";
 import About from "@/pages/about";
@@ -8,16 +5,10 @@ import Blog from "@/pages/blog";
 import BlogDetails from "@/pages/blog-details";
 import BlogStandard from "@/pages/blog-standard";
 import Contact from "@/pages/contact";
-import Faq from "@/pages/faq";
+import Dashboard from "@/pages/dashboard";
+import DashboardLogin from "@/pages/dashboard-login";
 import Home from "@/pages/home";
-import HomeFour from "@/pages/home-four";
-import HomeFourSingle from "@/pages/home-four-single";
-import HomeOneSingle from "@/pages/home-one-single";
-import HomeThree from "@/pages/home-three";
-import HomeThreeSingle from "@/pages/home-three-single";
-import HomeTwo from "@/pages/home-two";
-import HomeTwoSingle from "@/pages/home-two-single";
-import Pricing from "@/pages/pricing";
+import Jobs from "@/pages/jobs";
 import ProductOne from "@/pages/product-one";
 import ProductThree from "@/pages/product-three";
 import ProductTwo from "@/pages/product-two";
@@ -34,16 +25,20 @@ import { createBrowserRouter } from "react-router-dom";
 
 export const router = createBrowserRouter([
     {
+        path: "/dashboard-login",
+        element: <DashboardLogin />
+    },
+    {
+        path: "/dashboard",
+        element: <Dashboard />
+    },
+    {
         path: "/",
         element: <RootLayout />,
         children: [
             {
                 path: "/",
                 element: <Home />
-            },
-            {
-                path: "/home-one-single",
-                element: <HomeOneSingle />
             },
             {
                 path:'/about',
@@ -86,10 +81,6 @@ export const router = createBrowserRouter([
                 element:<TeamDetails/>
             },
             {
-                path:'/pricing',
-                element:<Pricing/>
-            },
-            {
                 path:'/products/Click 100',
                 element:<ProductOne/>
             },
@@ -102,15 +93,15 @@ export const router = createBrowserRouter([
                 element:<ProductThree/>
             },
             {
-                path:'/faq',
-                element:<Faq/>
-            },
-            {
                 path:'/404',
                 element:<Error/>
             },
             {
                 path:'/news',
+                element:<Blog/>
+            },
+            {
+                path:'/blog',
                 element:<Blog/>
             },
             {
@@ -122,55 +113,25 @@ export const router = createBrowserRouter([
                 element:<BlogDetails/>
             },
             {
+                path:'/blog-details',
+                element:<BlogDetails/>
+            },
+            {
                 path:'/contact',
                 element:<Contact/>
+            },
+            {
+                path:'/jobs',
+                element:<Jobs/>
+            },
+            {
+                path:'/careers',
+                element:<Jobs/>
             },
         ]
     },
     {
         path:'*',
         element:<Error/>
-    },
-    {
-        path: "/",
-        element: <LayoutTwo />,
-        children: [
-            {
-                path: "/home-two",
-                element: <HomeTwo />
-            },
-            {
-                path: "/home-two-single",
-                element: <HomeTwoSingle />
-            },
-        ]
-    },
-    {
-        path: "/",
-        element: <LayoutThree />,
-        children: [
-            {
-                path: "/home-three",
-                element: <HomeThree />
-            },
-            {
-                path: "/home-three-single",
-                element: <HomeThreeSingle />
-            },
-        ]
-    },
-    {
-        path: "/",
-        element: <LayoutFour />,
-        children: [
-            {
-                path: "/home-four",
-                element: <HomeFour />
-            },
-            {
-                path: "/home-four-single",
-                element: <HomeFourSingle />
-            },
-        ]
     },
 ])

@@ -4,7 +4,7 @@ export const blogPostsFourData: BlogPostDataType[] = [
     {
         id: 1,
         date: { day: '19', month: 'Feb', year:'2025' },
-        image: '/img/news/case-study-implementation.jpg',
+        image: '/img/blogs/case-study-implementation.jpg',
         author: 'PixelAdvant',
         category: 'Case Studies',
         title: 'Successful GCC Implementation: A Case Study',
@@ -15,7 +15,7 @@ export const blogPostsFourData: BlogPostDataType[] = [
     {
         id: 2,
         date: { day: '20', month: 'Mar', year:'2025' },
-        image: '/img/news/case-study-expansion.jpg',
+        image: '/img/blogs/case-study-expansion.jpg',
         author: 'PixelAdvant',
         category: 'Case Studies',
         title: 'Scaling Talent Acquisition: Expansion Success',
@@ -26,7 +26,7 @@ export const blogPostsFourData: BlogPostDataType[] = [
     {
         id: 3,
         date: { day: '28', month: 'Feb', year:'2025' },
-        image: '/img/news/case-study-transformation.jpg',
+        image: '/img/blogs/case-study-transformation.jpg',
         author: 'PixelAdvant',
         category: 'Case Studies',
         title: 'Digital Transformation in Talent Management',

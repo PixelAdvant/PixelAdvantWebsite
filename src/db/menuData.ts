@@ -42,7 +42,7 @@ export const menuData: MenuItemDataType[] = [
       },
       {
         title: 'Careers',
-        link: '/careers',
+        link: '/jobs',
       },
     ],
   },
@@ -95,8 +95,12 @@ export const menuData: MenuItemDataType[] = [
     ],
   },
   {
-    title: 'Insights',
+    title: 'Blogs',
     link: '/blog',
+  },
+  {
+    title: 'Jobs',
+    link: '/jobs',
   },
   {
     title: 'Contact',
