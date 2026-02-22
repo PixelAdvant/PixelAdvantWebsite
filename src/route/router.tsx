@@ -21,9 +21,9 @@ import ServiceDetails from "@/pages/service-details";
 import Team from "@/pages/team";
 import TeamCarousel from "@/pages/team-carousel";
 import TeamDetails from "@/pages/team-details";
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
     {
         path: "/dashboard-login",
         element: <DashboardLogin />
