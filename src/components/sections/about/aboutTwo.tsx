@@ -23,7 +23,7 @@ const AboutTwo = () => {
                                 </div>
                                 <div className="about-image-1 bg-cover wow slideLeft" data-delay=".3" style={{ backgroundImage: 'url("/img/about/gcc-operations.png")' }}>
                                     <div className="about-image-2 wow slideUp" data-delay=".5">
-                                        <img src="/img/about/business-handshake.jpg" alt="about-img" />
+                                        <img src="/img/about/image1.avif" alt="about-img" />
                                     </div>
                                 </div>
                             </div>

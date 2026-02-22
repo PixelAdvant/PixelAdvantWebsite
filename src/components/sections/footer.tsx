@@ -99,17 +99,17 @@ const Footer = () => {
                                         PixelAdvant is your trusted partner in Global Capability Centers. With 400+ years of collective expertise, we provide innovative solutions for consulting, talent acquisition, and managed services.
                                     </p>
                                     <div className="social-icon d-flex align-items-center">
-                                        <Link to="#">
+                                        <Link to="https://www.facebook.com/pixeladvant" target="_blank">
                                             <i className="fab fa-facebook-f" />
                                         </Link>
                                         <Link to="#">
                                             <i className="fa-brands fa-x-twitter" />
                                         </Link>
-                                        <Link to="#">
+                                        <Link to="https://www.linkedin.com/company/pixel-advant/" target="_blank">
                                             <i className="fa-brands fa-linkedin-in" />
                                         </Link>
-                                        <Link to="#">
-                                            <i className="fa-brands fa-youtube" />
+                                        <Link to="https://www.instagram.com/pixeladvant/" target="_blank">
+                                            <i className="fa-brands fa-instagram" />
                                         </Link>
                                     </div>
                                 </div>

@@ -15,7 +15,7 @@ interface SlideType {
 const slidesData: SlideType[] = [
   {
     id: 1,
-    image: '/img/hero/gcc-hero-main.jpg',
+    image: '/img/hero/image1.jpg',
     title: 'EMPOWERING GLOBAL INNOVATION CENTERS',
     heading: 'Putting the Right<br /> Solutions and Methods<br /> in Place',
     description: 'Unlock the full potential of your Global Capability Center with our comprehensive consulting, talent acquisition, and managed services solutions.',
@@ -23,7 +23,7 @@ const slidesData: SlideType[] = [
   },
   {
     id: 2,
-    image: '/img/hero/talent-acquisition-hero.jpg',
+    image: '/img/hero/image2.webp',
     title: 'TRANSFORM YOUR WORKFORCE',
     heading: 'AI-Led Smart Talent<br /> Acquisition & Supply<br /> Process',
     description: 'Leverage our advanced AI solutions for efficient and targeted talent acquisition with real-time insights and data-driven decision making.',
@@ -72,10 +72,10 @@ const Card = ({ slide, isActive }: { slide: SlideType; isActive: boolean }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: isActive ? 1 : 0 }}
     >
-      <div className="hero-image bg-cover" style={{ backgroundImage: `url(${slide.image})` }} />
+      <div className="hero-image bg-cover" />
       <div className="container">
-        <div className="row g-4">
-          <div className="col-lg-8">
+        <div className="row g-4 align-items-center">
+          <div className="col-xl-7 col-lg-7">
             <div className="hero-content">
               <motion.h6
                 initial={{ x: '100%', opacity: 0 }}
@@ -123,6 +123,52 @@ const Card = ({ slide, isActive }: { slide: SlideType; isActive: boolean }) => {
                 </Link>
               </motion.div>
             </div>
+          </div>
+          <div className="col-xl-5 col-lg-5">
+            <motion.div
+              className="hero-visual"
+              initial={{ x: 60, opacity: 0 }}
+              animate={{ x: isActive ? 0 : 60, opacity: isActive ? 1 : 0 }}
+              transition={{
+                duration: 0.6,
+                delay: 0.4,
+                ease: "linear",
+              }}
+            >
+              <div className="hero-visual-main">
+                <img src={slide.image} alt={slide.title} />
+              </div>
+
+              <motion.div
+                className="hero-float-card card-one"
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: isActive ? 0 : 20, opacity: isActive ? 1 : 0 }}
+                transition={{
+                  duration: 0.45,
+                  delay: 0.9,
+                  ease: "linear",
+                }}
+              >
+                <span className="label">Specialists</span>
+                <h5>350+</h5>
+                <p>Global talent network</p>
+              </motion.div>
+
+              <motion.div
+                className="hero-float-card card-two"
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: isActive ? 0 : 20, opacity: isActive ? 1 : 0 }}
+                transition={{
+                  duration: 0.45,
+                  delay: 1.1,
+                  ease: "linear",
+                }}
+              >
+                <span className="label">AI Match Score</span>
+                <h5>94%</h5>
+                <p>Shortlist accuracy rate</p>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
       </div>
