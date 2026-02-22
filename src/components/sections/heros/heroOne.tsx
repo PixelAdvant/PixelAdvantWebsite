@@ -15,7 +15,7 @@ interface SlideType {
 const slidesData: SlideType[] = [
   {
     id: 1,
-    image: '/img/hero/gcc-hero-main.jpg',
+    image: '/img/hero/image1.jpg',
     title: 'EMPOWERING GLOBAL INNOVATION CENTERS',
     heading: 'Putting the Right<br /> Solutions and Methods<br /> in Place',
     description: 'Unlock the full potential of your Global Capability Center with our comprehensive consulting, talent acquisition, and managed services solutions.',
@@ -23,7 +23,7 @@ const slidesData: SlideType[] = [
   },
   {
     id: 2,
-    image: '/img/hero/talent-acquisition-hero.jpg',
+    image: '/img/hero/image2.webp',
     title: 'TRANSFORM YOUR WORKFORCE',
     heading: 'AI-Led Smart Talent<br /> Acquisition & Supply<br /> Process',
     description: 'Leverage our advanced AI solutions for efficient and targeted talent acquisition with real-time insights and data-driven decision making.',
