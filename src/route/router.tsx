@@ -21,9 +21,13 @@ import ServiceDetails from "@/pages/service-details";
 import Team from "@/pages/team";
 import TeamCarousel from "@/pages/team-carousel";
 import TeamDetails from "@/pages/team-details";
-import { createHashRouter } from "react-router-dom";
+import { createBrowserRouter, createHashRouter } from "react-router-dom";
 
-export const router = createHashRouter([
+// Detect if running on GitHub Pages
+const isGitHubPages = window.location.hostname.includes('github.io');
+const createRouter = isGitHubPages ? createHashRouter : createBrowserRouter;
+
+export const router = createRouter([
     {
         path: "/dashboard-login",
         element: <DashboardLogin />

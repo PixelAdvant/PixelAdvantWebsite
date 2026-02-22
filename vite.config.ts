@@ -4,7 +4,7 @@ import { defineConfig } from "vite"
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === "production"
+  base: process.env.NODE_ENV === "production" && process.env.GITHUB_PAGES === "true"
     ? "/PixelAdvantWebsite/"
     : "/",
   resolve: {
