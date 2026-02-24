@@ -19,7 +19,7 @@ const slidesData: SlideType[] = [
     title: 'EMPOWERING GLOBAL INNOVATION CENTERS',
     heading: 'Putting the Right<br /> Solutions and Methods<br /> in Place',
     description: 'Unlock the full potential of your Global Capability Center with our comprehensive consulting, talent acquisition, and managed services solutions.',
-    link: '/',
+    link: '/about',
   },
   {
     id: 2,
@@ -35,8 +35,8 @@ const HeroOne = ({ onDemoClick }: { onDemoClick?: () => void }) => {
   return (
     <section className="hero-section hero-1">
       <div className="array-button">
-        <button className="array-prev"><i className="fa fa-arrow-left" /></button>
-        <button className="array-next"><i className="fa fa-arrow-right" /></button>
+        <button type="button" className="array-prev hero-one-prev"><i className="fa fa-arrow-left" /></button>
+        <button type="button" className="array-next hero-one-next"><i className="fa fa-arrow-right" /></button>
       </div>
       <Swiper
         loop={true}
@@ -48,8 +48,8 @@ const HeroOne = ({ onDemoClick }: { onDemoClick?: () => void }) => {
           disableOnInteraction: false,
         }}
         navigation={{
-          nextEl: ".array-prev",
-          prevEl: ".array-next",
+          nextEl: ".hero-one-next",
+          prevEl: ".hero-one-prev",
         }}
         modules={[Navigation, EffectFade, Autoplay]}
       >
@@ -121,9 +121,15 @@ const Card = ({ slide, isActive, onDemoClick }: { slide: SlideType; isActive: bo
                 <Link to={slide.link} className="theme-btn theme-color-2">
                   <span>Learn More <i className="fas fa-chevron-right" /></span>
                 </Link>
-                <button className="theme-btn" onClick={onDemoClick} style={{ marginLeft: '10px' }}>
-                  <span>Request Demo <i className="fas fa-calendar-check" /></span>
-                </button>
+                {onDemoClick ? (
+                  <button type="button" className="theme-btn" onClick={onDemoClick} style={{ marginLeft: '10px' }}>
+                    <span>Request Demo <i className="fas fa-calendar-check" /></span>
+                  </button>
+                ) : (
+                  <Link to="/contact" className="theme-btn" style={{ marginLeft: '10px' }}>
+                    <span>Request Demo <i className="fas fa-calendar-check" /></span>
+                  </Link>
+                )}
               </motion.div>
             </div>
           </div>

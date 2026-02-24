@@ -10,35 +10,35 @@ export interface ProjectDataType {
 export const projectsOneData: ProjectDataType[] = [
     {
         id: 1,
-        image: "/img/project/model-captive.jpg",
+        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80",
         category: "GCC Models",
         title: "Captive Model",
         link: "/project-details"
     },
     {
         id: 2,
-        image: "/img/project/model-shared-services.jpg",
+        image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80",
         category: "GCC Models",
         title: "Shared Services Model",
         link: "/project-details"
     },
     {
         id: 3,
-        image: "/img/project/model-bot.jpg",
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80",
         category: "GCC Models",
         title: "Build Operate Transfer Model",
         link: "/project-details"
     },
     {
         id: 4,
-        image: "/img/project/managed-teams.jpg",
+        image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1400&q=80",
         category: "Solutions",
         title: "Managed Teams",
         link: "/project-details"
     },
     {
         id: 5,
-        image: "/img/project/workspace-solution.jpg",
+        image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=80",
         category: "Solutions",
         title: "Workspace Solutions",
         link: "/project-details"

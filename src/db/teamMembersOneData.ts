@@ -17,7 +17,7 @@ export const teamMembersOneData: TeamMemberDataType[] = [
         role: "Scrum Master",
         name: "Cameron Williamson",
         description: "Integer at sapien nec sapien sollicitudin ultrices in ut nisl.",
-        image: "/img/team/hover-1.png",
+        image: "https://randomuser.me/api/portraits/men/41.jpg",
         socialLinks: [
             {
                 icon: 'fab fa-facebook-f',
@@ -39,7 +39,7 @@ export const teamMembersOneData: TeamMemberDataType[] = [
         role: "Engineering",
         name: "Leslie Alexander",
         description: "Integer at sapien nec sapien sollicitudin ultrices in ut nisl.",
-        image: "/img/team/hover-1.png",
+        image: "https://randomuser.me/api/portraits/women/52.jpg",
         socialLinks: [
             {
                 icon: 'fab fa-facebook-f',
@@ -61,7 +61,7 @@ export const teamMembersOneData: TeamMemberDataType[] = [
         role: "UI/UX Designer",
         name: "Ronald Richards",
         description: "Integer at sapien nec sapien sollicitudin ultrices in ut nisl.",
-        image: "/img/team/hover-1.png",
+        image: "https://randomuser.me/api/portraits/men/58.jpg",
         socialLinks: [
             {
                 icon: 'fab fa-facebook-f',
@@ -83,7 +83,7 @@ export const teamMembersOneData: TeamMemberDataType[] = [
         role: "Web Designer",
         name: "Darrell Steward",
         description: "Integer at sapien nec sapien sollicitudin ultrices in ut nisl.",
-        image: "/img/team/hover-1.png",
+        image: "https://randomuser.me/api/portraits/women/63.jpg",
         socialLinks: [
             {
                 icon: 'fab fa-facebook-f',
