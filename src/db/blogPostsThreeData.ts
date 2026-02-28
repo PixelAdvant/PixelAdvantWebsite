@@ -19,7 +19,7 @@ export const blogPostsThreeData:BlogPostDataType[] = [
     {
         id:1,
         date: { day: '22', month: 'Feb', year:'2025' },
-        image: '/img/blogs/article-gcc-consulting.jpg',
+        image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
         author: 'PixelAdvant',
         category: 'GCC Setup',
         title: 'Establishing Your Global Capability Centre in India',
@@ -30,7 +30,7 @@ export const blogPostsThreeData:BlogPostDataType[] = [
     {
         id:2,
         date: { day: '18', month: 'Feb', year:'2025' },
-        image: '/img/blogs/article-talent-strategy.jpg',
+        image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80',
         author: 'PixelAdvant',
         category: 'Recruitment',
         title: 'Top Talent Acquisition Strategies for GCC India',
@@ -41,7 +41,7 @@ export const blogPostsThreeData:BlogPostDataType[] = [
     {
         id:3,
         date: { day: '15', month: 'Feb', year:'2025' },
-        image: '/img/blogs/article-gcc-best-practices.jpg',
+        image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80',
         author: 'PixelAdvant',
         category: 'Best Practices',
         title: 'GCC Success Stories: Lessons from Industry Leaders',
@@ -52,7 +52,7 @@ export const blogPostsThreeData:BlogPostDataType[] = [
     {
         id:4,
         date: { day: '12', month: 'Feb', year:'2025' },
-        image: '/img/news/article-talent-acquisition-strategy.jpg',
+        image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
         author: 'PixelAdvant',
         category: 'AI & Recruitment',
         title: 'AI-Powered Recruitment: Transforming Global Hiring',
@@ -63,7 +63,7 @@ export const blogPostsThreeData:BlogPostDataType[] = [
     {
         id:5,
         date: { day: '10', month: 'Feb', year:'2025' },
-        image: '/img/news/article-talent-retention.jpg',
+        image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80',
         author: 'PixelAdvant',
         category: 'Talent Management',
         title: 'Retaining Top Talent: Building High-Performance Teams in India',
@@ -74,7 +74,7 @@ export const blogPostsThreeData:BlogPostDataType[] = [
     {
         id:6,
         date: { day: '08', month: 'Feb', year:'2025' },
-        image: '/img/news/article-managed-services.jpg',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80',
         author: 'PixelAdvant',
         category: 'Managed Services',
         title: 'Managed Recruitment Services: Outsourcing for Scale',

@@ -11,7 +11,7 @@ const ProjectDetails = () => {
                             <div className="col-lg-12">
                                 <div className="project-details-items">
                                     <div className="details-image">
-                                        <img src="/img/project/details.jpg" alt="img" />
+                                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80" alt="img" />
                                     </div>
                                     <div className="row g-4 justify-content-between">
                                         <div className="col-lg-7">
@@ -103,19 +103,19 @@ const ProjectDetails = () => {
                                     <div className="row g-4 pt-5">
                                         <div className="col-lg-6 col-md-6">
                                             <div className="thumb">
-                                                <img src="/img/project/details-2.jpg" alt="img" />
+                                                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80" alt="img" />
                                             </div>
                                         </div>
                                         <div className="col-lg-6 col-md-6">
                                             <div className="thumb">
-                                                <img src="/img/project/details-3.jpg" alt="img" />
+                                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" alt="img" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="preview-area">
                                     <div className="preview-item">
-                                        <img src="/img/project/p-1.png" alt="img" />
+                                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=500&q=80" alt="img" />
                                         <div className="content">
                                             <h3>Preview</h3>
                                             <p>Analytic Solutions</p>
@@ -126,7 +126,7 @@ const ProjectDetails = () => {
                                             <h3>Next</h3>
                                             <p>Software Development</p>
                                         </div>
-                                        <img src="/img/project/p-2.png" alt="img" />
+                                        <img src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=500&q=80" alt="img" />
                                     </div>
                                 </div>
                             </div>

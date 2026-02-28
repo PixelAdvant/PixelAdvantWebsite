@@ -5,7 +5,7 @@ export const teamMembersThreeData:TeamMemberDataType[] = [
         id: 1,
         name: 'Marvin McKinney',
         role: 'Web Designer',
-        image: '/img/team/04.jpg',
+        image: 'https://randomuser.me/api/portraits/men/32.jpg',
         socialLinks: [
             {
                 icon: 'fab fa-facebook-f',
@@ -27,7 +27,7 @@ export const teamMembersThreeData:TeamMemberDataType[] = [
         id: 2,
         name: 'Marvin McKinney',
         role: 'Web Designer',
-        image: '/img/team/05.jpg',
+        image: 'https://randomuser.me/api/portraits/women/44.jpg',
         socialLinks: [
             {
                 icon: 'fab fa-facebook-f',
@@ -49,7 +49,7 @@ export const teamMembersThreeData:TeamMemberDataType[] = [
         id: 3,
         name: 'Marvin McKinney',
         role: 'Web Designer',
-        image: '/img/team/06.jpg',
+        image: 'https://randomuser.me/api/portraits/men/67.jpg',
         socialLinks: [
             {
                 icon: 'fab fa-facebook-f',
@@ -71,7 +71,7 @@ export const teamMembersThreeData:TeamMemberDataType[] = [
         id: 4,
         name: 'Marvin McKinney',
         role: 'Web Designer',
-        image: '/img/team/07.jpg',
+        image: 'https://randomuser.me/api/portraits/women/68.jpg',
         socialLinks: [
             {
                 icon: 'fab fa-facebook-f',
@@ -93,7 +93,7 @@ export const teamMembersThreeData:TeamMemberDataType[] = [
         id: 5,
         name: 'Marvin McKinney',
         role: 'Web Designer',
-        image: '/img/team/05.jpg',
+        image: 'https://randomuser.me/api/portraits/men/75.jpg',
         socialLinks: [
             {
                 icon: 'fab fa-facebook-f',
