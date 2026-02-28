@@ -66,81 +66,127 @@ const BlogCommentForm = ({ blogTitle = 'Blog Post' }: BlogCommentFormProps) => {
     }
 
     return (
-        <div className="comment-form-wrap pt-5">
-            <h3>Leave a Comment</h3>
+        <div style={{ paddingTop: '40px', marginTop: '8px' }}>
+            <h4 style={{
+                fontSize: '18px',
+                fontWeight: '800',
+                color: '#111827',
+                letterSpacing: '-0.01em',
+                marginBottom: '24px',
+                paddingBottom: '16px',
+                borderBottom: '1px solid #f3f4f6'
+            }}>
+                Leave a Comment
+            </h4>
             <form onSubmit={handleSubmit}>
                 <div className="row g-4">
                     <div className="col-lg-6">
-                        <div className="form-clt">
-                            <input
-                                type="text"
-                                name="name"
-                                placeholder="Your Name"
-                                value={formData.name}
-                                onChange={handleChange}
-                                required
-                            />
-                        </div>
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Your Name"
+                            value={formData.name}
+                            onChange={handleChange}
+                            required
+                            style={{
+                                width: '100%',
+                                padding: '11px 16px',
+                                border: '1.5px solid #e5e7eb',
+                                borderRadius: '8px',
+                                fontSize: '14px',
+                                color: '#111827',
+                                outline: 'none',
+                                boxSizing: 'border-box'
+                            }}
+                        />
                     </div>
                     <div className="col-lg-6">
-                        <div className="form-clt">
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="Your Email"
-                                value={formData.email}
-                                onChange={handleChange}
-                                required
-                            />
-                        </div>
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Your Email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            required
+                            style={{
+                                width: '100%',
+                                padding: '11px 16px',
+                                border: '1.5px solid #e5e7eb',
+                                borderRadius: '8px',
+                                fontSize: '14px',
+                                color: '#111827',
+                                outline: 'none',
+                                boxSizing: 'border-box'
+                            }}
+                        />
                     </div>
                     <div className="col-lg-12">
-                        <div className="form-clt">
-                            <textarea
-                                name="message"
-                                placeholder="Write your comment..."
-                                value={formData.message}
-                                onChange={handleChange}
-                                required
-                                rows={6}
-                            />
-                        </div>
+                        <textarea
+                            name="message"
+                            placeholder="Write your comment..."
+                            value={formData.message}
+                            onChange={handleChange}
+                            required
+                            rows={5}
+                            style={{
+                                width: '100%',
+                                padding: '11px 16px',
+                                border: '1.5px solid #e5e7eb',
+                                borderRadius: '8px',
+                                fontSize: '14px',
+                                color: '#111827',
+                                outline: 'none',
+                                boxSizing: 'border-box',
+                                fontFamily: 'inherit',
+                                resize: 'vertical'
+                            }}
+                        />
                     </div>
                     <div className="col-lg-6">
-                        <button 
-                            type="submit" 
-                            className="theme-btn"
+                        <button
+                            type="submit"
                             disabled={loading}
-                            style={{ opacity: loading ? 0.6 : 1, cursor: loading ? 'not-allowed' : 'pointer' }}
+                            style={{
+                                padding: '12px 28px',
+                                backgroundColor: loading ? '#93c5fd' : '#2563eb',
+                                color: 'white',
+                                border: 'none',
+                                borderRadius: '8px',
+                                fontSize: '14px',
+                                fontWeight: '600',
+                                cursor: loading ? 'not-allowed' : 'pointer',
+                                transition: 'background 0.2s'
+                            }}
                         >
-                            {loading ? 'Posting...' : 'Post Comment'} <i className="fa-solid fa-arrow-right-long" />
+                            {loading ? 'Posting…' : 'Post Comment'}
                         </button>
                     </div>
                 </div>
 
                 {status === 'success' && (
                     <div style={{
-                        marginTop: '15px',
-                        padding: '12px',
-                        backgroundColor: '#d4edda',
-                        color: '#155724',
-                        borderRadius: '4px',
-                        fontSize: '14px'
+                        marginTop: '16px',
+                        padding: '12px 16px',
+                        backgroundColor: '#f0fdf4',
+                        border: '1px solid #bbf7d0',
+                        borderRadius: '8px',
+                        fontSize: '14px',
+                        color: '#166534'
                     }}>
-                        ✓ Comment posted successfully! Thank you for your feedback.
+                        <i className="fa-solid fa-check me-2" /> Comment posted! It will appear after moderation.
                     </div>
                 )}
-
                 {status === 'error' && (
                     <div style={{
-                        marginTop: '15px',
-                        padding: '12px',
-                        backgroundColor: '#f8d7da',
-                        color: '#721c24',
-                        borderRadius: '4px',
-                        fontSize: '14px'
+                        marginTop: '16px',
+                        padding: '12px 16px',
+                        backgroundColor: '#fef2f2',
+                        border: '1px solid #fecaca',
+                        borderRadius: '8px',
+                        fontSize: '14px',
+                        color: '#991b1b'
                     }}>
-                        ✗ {errorMessage}
+                        <i className="fa-solid fa-circle-exclamation me-2" /> {errorMessage}
                     </div>
                 )}
             </form>

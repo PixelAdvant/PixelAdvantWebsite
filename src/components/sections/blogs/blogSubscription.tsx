@@ -53,133 +53,120 @@ const BlogSubscription = () => {
 
     return (
         <div style={{
-            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-            borderRadius: '10px',
-            overflow: 'hidden',
-            boxShadow: '0 10px 40px rgba(0,0,0,0.1)'
+            backgroundColor: '#f8faff',
+            border: '1px solid #dbeafe',
+            borderRadius: '14px',
+            padding: '40px 36px',
+            textAlign: 'center'
         }}>
             <div style={{
-                padding: '40px 30px',
-                color: 'white',
-                textAlign: 'center'
+                width: '48px',
+                height: '48px',
+                backgroundColor: '#eff6ff',
+                borderRadius: '50%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                margin: '0 auto 16px',
+                color: '#2563eb',
+                fontSize: '20px'
             }}>
-                {/* Icon */}
+                <i className="fa-solid fa-bell" />
+            </div>
+
+            <h3 style={{
+                fontSize: '20px',
+                fontWeight: '800',
+                color: '#111827',
+                marginBottom: '8px',
+                letterSpacing: '-0.02em'
+            }}>
+                Stay in the loop
+            </h3>
+            <p style={{
+                fontSize: '14px',
+                color: '#6b7280',
+                lineHeight: '1.65',
+                marginBottom: '24px'
+            }}>
+                Get exclusive insights on GCC setup, recruitment strategies, and industry trends — delivered to your inbox.
+            </p>
+
+            <form onSubmit={handleSubscribe} style={{ maxWidth: '420px', margin: '0 auto' }}>
                 <div style={{
-                    fontSize: '40px',
-                    marginBottom: '15px',
-                    opacity: 0.9
+                    display: 'flex',
+                    gap: '8px',
+                    marginBottom: '12px'
                 }}>
-                    <i className="fa-solid fa-bell" />
+                    <input
+                        type="email"
+                        placeholder="Enter your email address"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                        style={{
+                            flex: 1,
+                            padding: '11px 16px',
+                            border: '1.5px solid #d1d5db',
+                            borderRadius: '8px',
+                            fontSize: '14px',
+                            outline: 'none',
+                            backgroundColor: '#fff',
+                            color: '#111827'
+                        }}
+                    />
+                    <button
+                        type="submit"
+                        disabled={loading}
+                        style={{
+                            padding: '11px 22px',
+                            backgroundColor: '#2563eb',
+                            color: 'white',
+                            border: 'none',
+                            borderRadius: '8px',
+                            fontSize: '14px',
+                            fontWeight: '600',
+                            cursor: loading ? 'not-allowed' : 'pointer',
+                            opacity: loading ? 0.7 : 1,
+                            whiteSpace: 'nowrap',
+                            transition: 'background 0.2s'
+                        }}
+                    >
+                        {loading ? 'Subscribing…' : 'Subscribe'}
+                    </button>
                 </div>
 
-                {/* Title */}
-                <h3 style={{
-                    fontSize: '22px',
-                    fontWeight: '700',
-                    marginBottom: '10px',
-                    letterSpacing: '-0.5px'
-                }}>
-                    Subscribe to Our Blog
-                </h3>
-
-                {/* Subtitle */}
-                <p style={{
-                    fontSize: '14px',
-                    opacity: 0.9,
-                    marginBottom: '25px',
-                    lineHeight: '1.6'
-                }}>
-                    Get exclusive insights on GCC setup, recruitment strategies, and industry trends delivered to your inbox.
-                </p>
-
-                {/* Subscription Form */}
-                <form onSubmit={handleSubscribe} style={{ maxWidth: '400px', margin: '0 auto' }}>
+                {status === 'success' && (
                     <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: '1fr auto',
-                        gap: '8px',
-                        marginBottom: '15px'
+                        padding: '10px 14px',
+                        backgroundColor: '#f0fdf4',
+                        border: '1px solid #bbf7d0',
+                        borderRadius: '6px',
+                        fontSize: '13px',
+                        color: '#166534',
+                        textAlign: 'left'
                     }}>
-                        <input
-                            type="email"
-                            placeholder="Enter your email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            required
-                            style={{
-                                padding: '12px 16px',
-                                border: 'none',
-                                borderRadius: '6px',
-                                fontSize: '14px',
-                                boxSizing: 'border-box',
-                                outline: 'none'
-                            }}
-                        />
-                        <button
-                            type="submit"
-                            disabled={loading}
-                            style={{
-                                padding: '12px 24px',
-                                backgroundColor: '#ff6b35',
-                                color: 'white',
-                                border: 'none',
-                                borderRadius: '6px',
-                                fontSize: '14px',
-                                fontWeight: '600',
-                                cursor: loading ? 'not-allowed' : 'pointer',
-                                transition: 'all 0.3s ease',
-                                opacity: loading ? 0.7 : 1,
-                                whiteSpace: 'nowrap'
-                            }}
-                        >
-                            {loading ? (
-                                <><i className="fa-solid fa-spinner fa-spin me-2" />Subscribing</>
-                            ) : (
-                                <><i className="fa-solid fa-paper-plane me-2" />Subscribe</>
-                            )}
-                        </button>
+                        <i className="fa-solid fa-check me-2" /> Subscribed! Check your inbox for confirmation.
                     </div>
-
-                    {/* Messages */}
-                    {status === 'success' && (
-                        <div style={{
-                            padding: '12px 16px',
-                            backgroundColor: 'rgba(255, 255, 255, 0.2)',
-                            borderLeft: '4px solid #4ade80',
-                            borderRadius: '4px',
-                            fontSize: '13px',
-                            color: '#ffffff',
-                            textAlign: 'left'
-                        }}>
-                            <i className="fa-solid fa-check me-2" />✓ Successfully subscribed! Check your email for confirmation.
-                        </div>
-                    )}
-
-                    {status === 'error' && (
-                        <div style={{
-                            padding: '12px 16px',
-                            backgroundColor: 'rgba(255, 255, 255, 0.2)',
-                            borderLeft: '4px solid #ef4444',
-                            borderRadius: '4px',
-                            fontSize: '13px',
-                            color: '#ffffff',
-                            textAlign: 'left'
-                        }}>
-                            <i className="fa-solid fa-exclamation me-2" />✗ {errorMessage}
-                        </div>
-                    )}
-
-                    {/* Footer note */}
-                    <p style={{
-                        fontSize: '12px',
-                        opacity: 0.7,
-                        marginTop: '12px',
-                        marginBottom: '0'
+                )}
+                {status === 'error' && (
+                    <div style={{
+                        padding: '10px 14px',
+                        backgroundColor: '#fef2f2',
+                        border: '1px solid #fecaca',
+                        borderRadius: '6px',
+                        fontSize: '13px',
+                        color: '#991b1b',
+                        textAlign: 'left'
                     }}>
-                        <i className="fa-solid fa-shield me-1" /> We respect your privacy. Unsubscribe anytime.
-                    </p>
-                </form>
-            </div>
+                        <i className="fa-solid fa-circle-exclamation me-2" /> {errorMessage}
+                    </div>
+                )}
+
+                <p style={{ fontSize: '12px', color: '#9ca3af', marginTop: '10px', marginBottom: 0 }}>
+                    <i className="fa-solid fa-lock me-1" /> No spam. Unsubscribe anytime.
+                </p>
+            </form>
         </div>
     )
 }

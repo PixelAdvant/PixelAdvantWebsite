@@ -1,12 +1,13 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 import BlogSubscription from "./blogSubscription";
 
 const categories = [
-    { name: 'Database Security', count: 8 },
-    { name: 'IT Consultancy', count: 11 },
-    { name: 'App Development', count: 12, active: true },
-    { name: 'UI/UX Design', count: 18 },
-    { name: 'Cyber Security', count: 7 },
+    { name: 'GCC Setup', count: 8 },
+    { name: 'Recruitment', count: 11 },
+    { name: 'Talent Management', count: 12, active: true },
+    { name: 'AI & Hiring', count: 7 },
+    { name: 'Managed Services', count: 5 },
 ];
 
 const recentPosts = [
@@ -28,90 +29,173 @@ const recentPosts = [
 ];
 
 const tags = [
-    'Uncategorized',
-    'Construction',
-    'Projects',
-    'Expansion',
-    'Design',
-    'Corporat',
-    'Branding',
+    'GCC India',
+    'Talent Acquisition',
+    'AI Recruitment',
+    'Managed Teams',
+    'BOT Model',
+    'HR Strategy',
+    'Global Hiring',
 ];
+
+const sidebarBlock: React.CSSProperties = {
+    marginBottom: '32px',
+    paddingBottom: '32px',
+    borderBottom: '1px solid #f3f4f6'
+}
+const sidebarHeading: React.CSSProperties = {
+    fontSize: '13px',
+    fontWeight: '700',
+    color: '#111827',
+    textTransform: 'uppercase',
+    letterSpacing: '0.08em',
+    marginBottom: '16px'
+}
 
 const BlogSidebar = () => {
     return (
-        <div className="main-sidebar">
-            <div className="single-sidebar-widget">
-                <div className="wid-title">
-                    <h3>Search</h3>
-                </div>
-                <div className="search-widget">
-                    <form action="#">
-                        <input type="text" placeholder="Search here" />
-                        <button type="submit">
-                            <i className="fa-solid fa-magnifying-glass" />
-                        </button>
-                    </form>
+        <div style={{ position: 'sticky', top: '100px' }}>
+
+            {/* Search */}
+            <div style={sidebarBlock}>
+                <p style={sidebarHeading}>Search</p>
+                <div style={{ position: 'relative' }}>
+                    <input
+                        type="text"
+                        placeholder="Search articles…"
+                        style={{
+                            width: '100%',
+                            padding: '10px 40px 10px 14px',
+                            border: '1.5px solid #e5e7eb',
+                            borderRadius: '8px',
+                            fontSize: '14px',
+                            color: '#374151',
+                            outline: 'none',
+                            boxSizing: 'border-box'
+                        }}
+                    />
+                    <i className="fa-solid fa-magnifying-glass" style={{
+                        position: 'absolute',
+                        right: '14px',
+                        top: '50%',
+                        transform: 'translateY(-50%)',
+                        color: '#9ca3af',
+                        fontSize: '14px'
+                    }} />
                 </div>
             </div>
 
-            <div className="single-sidebar-widget">
-                <div className="wid-title">
-                    <h3>Categories</h3>
-                </div>
-                <div className="news-widget-categories">
-                    <ul>
-                        {categories.map((category, index) => (
-                            <li key={index} className={category.active ? 'active' : ''}>
-                                <Link to="/news-details">{category.name}</Link>
-                                <span>({category.count})</span>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+            {/* Categories */}
+            <div style={sidebarBlock}>
+                <p style={sidebarHeading}>Categories</p>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                    {categories.map((cat, i) => (
+                        <li key={i} style={{
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                            alignItems: 'center',
+                            padding: '8px 0',
+                            borderBottom: i < categories.length - 1 ? '1px solid #f3f4f6' : 'none'
+                        }}>
+                            <Link to="/blog" style={{
+                                fontSize: '14px',
+                                color: cat.active ? '#2563eb' : '#374151',
+                                fontWeight: cat.active ? '600' : '400',
+                                textDecoration: 'none'
+                            }}>
+                                {cat.name}
+                            </Link>
+                            <span style={{
+                                fontSize: '12px',
+                                color: '#9ca3af',
+                                backgroundColor: '#f9fafb',
+                                padding: '2px 8px',
+                                borderRadius: '10px'
+                            }}>
+                                {cat.count}
+                            </span>
+                        </li>
+                    ))}
+                </ul>
             </div>
 
-            <div className="single-sidebar-widget">
-                <div className="wid-title">
-                    <h3>Recent Post</h3>
-                </div>
-                <div className="recent-post-area">
-                    {recentPosts.map((post, index) => (
-                        <div className="recent-items" key={index}>
-                            <div className="recent-thumb">
-                                <img src={post.imgSrc} alt="img" />
+            {/* Recent Posts */}
+            <div style={sidebarBlock}>
+                <p style={sidebarHeading}>Recent Posts</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                    {recentPosts.map((post, i) => (
+                        <Link to="/blog-details" key={i} style={{
+                            display: 'flex',
+                            gap: '12px',
+                            textDecoration: 'none',
+                            alignItems: 'flex-start'
+                        }}>
+                            <img
+                                src={post.imgSrc}
+                                alt={post.title}
+                                style={{
+                                    width: '64px',
+                                    height: '48px',
+                                    objectFit: 'cover',
+                                    borderRadius: '6px',
+                                    flexShrink: 0
+                                }}
+                            />
+                            <div>
+                                <p style={{ fontSize: '11px', color: '#9ca3af', margin: '0 0 4px' }}>{post.date}</p>
+                                <p style={{
+                                    fontSize: '13px',
+                                    color: '#111827',
+                                    fontWeight: '600',
+                                    margin: 0,
+                                    lineHeight: '1.45',
+                                    display: '-webkit-box',
+                                    WebkitLineClamp: 2,
+                                    WebkitBoxOrient: 'vertical',
+                                    overflow: 'hidden'
+                                }}>
+                                    {post.title}
+                                </p>
                             </div>
-                            <div className="recent-content">
-                                <ul>
-                                    <li>
-                                        <i className="fa-solid fa-calendar-days" />
-                                        {post.date}
-                                    </li>
-                                </ul>
-                                <h6>
-                                    <Link to="/news-details">{post.title}</Link>
-                                </h6>
-                            </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>
 
-            <div className="single-sidebar-widget">
-                <div className="wid-title">
-                    <h3>Tags</h3>
-                </div>
-                <div className="news-widget-categories">
-                    <div className="tagcloud">
-                        {tags.map((tag, index) => (
-                            <Link to="/news-details" key={index}>
-                                {tag}
-                            </Link>
-                        ))}
-                    </div>
+            {/* Tags */}
+            <div style={sidebarBlock}>
+                <p style={sidebarHeading}>Tags</p>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                    {tags.map((tag, i) => (
+                        <Link to="/blog" key={i} style={{
+                            padding: '5px 12px',
+                            borderRadius: '20px',
+                            border: '1.5px solid #e5e7eb',
+                            fontSize: '12px',
+                            color: '#374151',
+                            textDecoration: 'none',
+                            fontWeight: '500',
+                            transition: 'all 0.2s'
+                        }}
+                        onMouseEnter={e => {
+                            (e.currentTarget as HTMLElement).style.backgroundColor = '#2563eb'
+                            ;(e.currentTarget as HTMLElement).style.color = '#fff'
+                            ;(e.currentTarget as HTMLElement).style.borderColor = '#2563eb'
+                        }}
+                        onMouseLeave={e => {
+                            (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'
+                            ;(e.currentTarget as HTMLElement).style.color = '#374151'
+                            ;(e.currentTarget as HTMLElement).style.borderColor = '#e5e7eb'
+                        }}
+                        >
+                            {tag}
+                        </Link>
+                    ))}
                 </div>
             </div>
 
-            <BlogSubscription/>
+            {/* Subscribe */}
+            <BlogSubscription />
         </div>
     );
 };

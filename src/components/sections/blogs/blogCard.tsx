@@ -1,38 +1,102 @@
 import { BlogPostDataType } from "@/db/blogPostsThreeData"
 import { Link } from "react-router-dom"
 
-const BlogCard = ({ news, className }: { news: BlogPostDataType, className?: string }) => {
+const BlogCard = ({ news }: { news: BlogPostDataType, className?: string }) => {
     return (
-        <div className={`news-card-items ${className}`}>
-            <div className="news-image">
-                <img src={news.image} alt="news-img" />
-                <div className="post-date">
-                    <h3>
-                        {news.date.day} <br />
-                        <span>{news.date.month}</span>
-                    </h3>
+        <Link
+            to={news.link}
+            style={{
+                display: 'block',
+                backgroundColor: '#fff',
+                borderRadius: '12px',
+                overflow: 'hidden',
+                border: '1px solid #e5e7eb',
+                textDecoration: 'none',
+                transition: 'box-shadow 0.25s ease, transform 0.25s ease',
+                height: '100%',
+            }}
+            onMouseEnter={e => {
+                (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 30px rgba(0,0,0,0.10)'
+                ;(e.currentTarget as HTMLElement).style.transform = 'translateY(-3px)'
+            }}
+            onMouseLeave={e => {
+                (e.currentTarget as HTMLElement).style.boxShadow = 'none'
+                ;(e.currentTarget as HTMLElement).style.transform = 'translateY(0)'
+            }}
+        >
+            {/* Image */}
+            <div style={{ width: '100%', aspectRatio: '16/9', overflow: 'hidden' }}>
+                <img
+                    src={news.image}
+                    alt={news.title}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.4s ease' }}
+                    onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.04)')}
+                    onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
+                />
+            </div>
+
+            {/* Content */}
+            <div style={{ padding: '20px 22px 24px' }}>
+                {/* Category pill */}
+                <span style={{
+                    display: 'inline-block',
+                    backgroundColor: '#eff6ff',
+                    color: '#2563eb',
+                    fontSize: '11px',
+                    fontWeight: '600',
+                    letterSpacing: '0.05em',
+                    textTransform: 'uppercase',
+                    padding: '4px 10px',
+                    borderRadius: '20px',
+                    marginBottom: '12px'
+                }}>
+                    {news.category}
+                </span>
+
+                {/* Title */}
+                <h3 style={{
+                    fontSize: '17px',
+                    fontWeight: '700',
+                    color: '#111827',
+                    lineHeight: '1.45',
+                    marginBottom: '10px',
+                    letterSpacing: '-0.01em'
+                }}>
+                    {news.title}
+                </h3>
+
+                {/* Description */}
+                <p style={{
+                    fontSize: '14px',
+                    color: '#6b7280',
+                    lineHeight: '1.65',
+                    marginBottom: '18px',
+                    display: '-webkit-box',
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: 'vertical',
+                    overflow: 'hidden'
+                }}>
+                    {news.description}
+                </p>
+
+                {/* Footer meta */}
+                <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    fontSize: '12px',
+                    color: '#9ca3af',
+                    borderTop: '1px solid #f3f4f6',
+                    paddingTop: '14px'
+                }}>
+                    <i className="fa-regular fa-calendar" style={{ fontSize: '11px' }} />
+                    <span>{news.date.day} {news.date.month} {news.date.year}</span>
+                    <span style={{ margin: '0 4px' }}>·</span>
+                    <i className="fa-regular fa-user" style={{ fontSize: '11px' }} />
+                    <span>{news.author}</span>
                 </div>
             </div>
-            <div className="news-content">
-                <ul>
-                    <li>
-                        <i className="fa-regular fa-user" />
-                        By {news.author}
-                    </li>
-                    <li>
-                        <i className="fa-solid fa-tag" />
-                        {news.category}
-                    </li>
-                </ul>
-                <h3>
-                    <Link to={news.link}>{news.title}</Link>
-                </h3>
-                <Link to={news.link} className="theme-btn-2 mt-3">
-                    read More
-                    <i className="fa-solid fa-arrow-right-long" />
-                </Link>
-            </div>
-        </div>
+        </Link>
     )
 }
 
