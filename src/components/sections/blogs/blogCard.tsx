@@ -25,11 +25,11 @@ const BlogCard = ({ news }: { news: BlogPostDataType, className?: string }) => {
             }}
         >
             {/* Image */}
-            <div style={{ width: '100%', aspectRatio: '16/9', overflow: 'hidden' }}>
+            <div style={{ width: '100%', height: '220px', overflow: 'hidden', flexShrink: 0 }}>
                 <img
                     src={news.image}
                     alt={news.title}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.4s ease' }}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block', transition: 'transform 0.4s ease' }}
                     onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.04)')}
                     onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
                 />

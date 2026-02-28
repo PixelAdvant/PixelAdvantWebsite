@@ -40,11 +40,11 @@ const Blog = () => {
                             onMouseLeave={e => (e.currentTarget.style.boxShadow = 'none')}
                         >
                             {/* Image side */}
-                            <div style={{ overflow: 'hidden', minHeight: '340px' }}>
+                            <div style={{ overflow: 'hidden', height: '380px' }}>
                                 <img
                                     src={featured.image}
                                     alt={featured.title}
-                                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block' }}
                                 />
                             </div>
                             {/* Text side */}

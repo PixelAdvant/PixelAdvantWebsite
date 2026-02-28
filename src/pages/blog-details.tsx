@@ -19,11 +19,11 @@ const BlogDetails = () => {
                         <div className="col-12 col-lg-8">
 
                             {/* Hero Image */}
-                            <div style={{ borderRadius: '14px', overflow: 'hidden', marginBottom: '32px' }}>
+                            <div style={{ borderRadius: '14px', overflow: 'hidden', marginBottom: '32px', height: '440px' }}>
                                 <img
                                     src="/img/blogs/post-4.jpg"
                                     alt="Blog Hero"
-                                    style={{ width: '100%', display: 'block', maxHeight: '440px', objectFit: 'cover' }}
+                                    style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover', objectPosition: 'center' }}
                                 />
                             </div>
 
