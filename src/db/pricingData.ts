@@ -16,13 +16,13 @@ export const pricingData:PriceDataType[] = [
         plan: 'Basic Plan',
         price: '$149',
         frequency: 'Per month',
-        description: 'Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et',
+        description: 'Essential support for GCC planning and foundational hiring workflows.',
         features: [
-            'Branding and design Identity',
-            'Web site Marketing Solutions',
-            'Free 15 GB Linux Hosting',
-            '24/7 system Monitoring',
-            'Unlimited Download Data'
+            'GCC setup consultation',
+            'Role and skill mapping',
+            'Market benchmark snapshot',
+            'Workflow template pack',
+            'Monthly performance review'
         ],
         buttonText: 'Choose Plan',
         buttonLink: '/contact',
@@ -34,13 +34,13 @@ export const pricingData:PriceDataType[] = [
         plan: 'Most Popular',
         price: '$179',
         frequency: 'Per month',
-        description: 'Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et',
+        description: 'Balanced plan for scaling talent operations with governance controls.',
         features: [
-            'Branding and design Identity',
-            'Web site Marketing Solutions',
-            'Free 15 GB Linux Hosting',
-            '24/7 system Monitoring',
-            'Unlimited Download Data'
+            'AI-led sourcing workflow',
+            'Interview and pipeline dashboard',
+            'SLA and governance tracking',
+            'Managed recruitment support',
+            'Bi-weekly optimization reviews'
         ],
         buttonText: 'Choose Plan',
         buttonLink: '/contact',
@@ -52,13 +52,13 @@ export const pricingData:PriceDataType[] = [
         plan: 'Premium',
         price: '$199',
         frequency: 'Per month',
-        description: 'Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et',
+        description: 'Comprehensive model for enterprise-grade GCC growth and operations.',
         features: [
-            'Branding and design Identity',
-            'Web site Marketing Solutions',
-            'Free 15 GB Linux Hosting',
-            '24/7 system Monitoring',
-            'Unlimited Download Data'
+            'End-to-end GCC execution support',
+            'Advanced workforce analytics',
+            'Compliance and controls advisory',
+            'Dedicated delivery governance',
+            'Continuous scale and maturity roadmap'
         ],
         buttonText: 'Choose Plan',
         buttonLink: '/contact',

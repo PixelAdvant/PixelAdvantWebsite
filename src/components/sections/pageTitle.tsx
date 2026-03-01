@@ -1,8 +1,19 @@
 import { Link } from "react-router-dom";
 
-const PageTitle = ({ title, currentPage }: { title: string; currentPage: string }) => {
+const PageTitle = ({
+  title,
+  currentPage,
+  backgroundImage,
+}: {
+  title: string;
+  currentPage: string;
+  backgroundImage?: string;
+}) => {
   return (
-    <div className="breadcrumb-wrapper bg-cover" style={{ backgroundImage: 'url("/img/hero/gcchero2.jpeg")' }}>
+    <div
+      className="breadcrumb-wrapper bg-cover"
+      style={{ backgroundImage: `url("${backgroundImage || "/img/hero/gcchero2.jpeg"}")` }}
+    >
       <div className="border-shape">
         <img src="/img/circle-shape.png" alt="shape-img" />
       </div>

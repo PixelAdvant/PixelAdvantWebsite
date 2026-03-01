@@ -1,20 +1,26 @@
-import { menuData, MenuItemDataType } from "@/db/menuData";
-import { Fragment, useEffect, useState } from "react";
+import { menuData } from "@/db/menuData";
+import { Fragment } from "react";
 import { Link } from "react-router-dom";
 
+const isExternalHref = (href: string) =>
+    href.startsWith("http://") ||
+    href.startsWith("https://") ||
+    href.startsWith("mailto:") ||
+    href.startsWith("tel:") ||
+    href.startsWith("#");
+
 function Navbar() {
-    const [data, setData] = useState<MenuItemDataType[]>([])
-    useEffect(() => {
-        setData(menuData)
-    })
     return (
         <ul>
-            {data.map(({ link, title, megamenu, submenu }, index) => (
-                <li key={index} className={`${megamenu ? 'menu-thumb' : ''} ${submenu ? 'has-dropdown' : ''} ${index === 0 ? 'active' : ''}`}>
+            {menuData.map(({ link, title, megamenu, megaColumns, submenu }, index) => (
+                <li
+                    key={index}
+                    className={`${megamenu ? 'menu-thumb' : ''} ${megaColumns ? 'has-mega-columns' : ''} ${megamenu || megaColumns || submenu ? 'has-dropdown' : ''} ${index === 0 ? 'active' : ''}`}
+                >
                     <Link to={link}>
                         {title}{' '}
                         {
-                            megamenu || submenu ? <i className="fas fa-angle-down" /> : ''
+                            megamenu || megaColumns || submenu ? <i className="fas fa-angle-down" /> : ''
                         }
                     </Link>
                     {
@@ -44,6 +50,56 @@ function Navbar() {
                                         </div>
                                     ))
                                 }
+                            </li>
+                        </ul>
+                    }
+                    {
+                        megaColumns?.length &&
+                        <ul className="submenu mega-columns-menu">
+                            <li className="mega-columns-grid">
+                                {megaColumns.map((column, columnIndex) => (
+                                    <div key={columnIndex} className="mega-column">
+                                        <h4 className="mega-column-title">
+                                            {column.link ? (
+                                                isExternalHref(column.link) ? (
+                                                    <a
+                                                        href={column.link}
+                                                        target={column.openInNewTab ? "_blank" : undefined}
+                                                        rel={column.openInNewTab ? "noopener noreferrer" : undefined}
+                                                    >
+                                                        {column.title}
+                                                    </a>
+                                                ) : (
+                                                    <Link to={column.link} target={column.openInNewTab ? "_blank" : undefined}>
+                                                        {column.title}
+                                                    </Link>
+                                                )
+                                            ) : (
+                                                column.title
+                                            )}
+                                        </h4>
+                                        {column.description ? <p className="mega-column-desc">{column.description}</p> : null}
+                                        <ul className="mega-column-links">
+                                            {column.links.map((item, itemIndex) => (
+                                                <li key={itemIndex}>
+                                                    {isExternalHref(item.link) ? (
+                                                        <a
+                                                            href={item.link}
+                                                            target={item.openInNewTab ? "_blank" : undefined}
+                                                            rel={item.openInNewTab ? "noopener noreferrer" : undefined}
+                                                        >
+                                                            {item.title}
+                                                        </a>
+                                                    ) : (
+                                                        <Link to={item.link} target={item.openInNewTab ? "_blank" : undefined}>
+                                                            {item.title}
+                                                        </Link>
+                                                    )}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ))}
                             </li>
                         </ul>
                     }

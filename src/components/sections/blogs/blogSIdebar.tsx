@@ -2,39 +2,39 @@ import { Link } from "react-router-dom";
 import BlogSubscription from "./blogSubscription";
 
 const categories = [
-    { name: 'Database Security', count: 8 },
-    { name: 'IT Consultancy', count: 11 },
-    { name: 'App Development', count: 12, active: true },
-    { name: 'UI/UX Design', count: 18 },
-    { name: 'Cyber Security', count: 7 },
+    { name: 'GCC Strategy', count: 8 },
+    { name: 'Talent Solutions', count: 11 },
+    { name: 'Managed Services', count: 12, active: true },
+    { name: 'Workforce Analytics', count: 18 },
+    { name: 'Compliance', count: 7 },
 ];
 
 const recentPosts = [
     {
         imgSrc: '/img/blogs/pp3.jpg',
         date: '18 Dec, 2025',
-        title: 'Colgate-Palmolive Renews with Morz in Malaysia Soon',
+        title: 'How GCC Advisory Improves Launch Readiness',
     },
     {
         imgSrc: '/img/blogs/pp4.jpg',
         date: '18 Dec, 2025',
-        title: 'Bill Gates Launches Clean Energy Investment Fund',
+        title: 'AI-Led Hiring Models for Faster Team Buildout',
     },
     {
         imgSrc: '/img/blogs/pp5.jpg',
         date: '18 Dec, 2025',
-        title: 'Metal Roofing: The Best for Solar Panels',
+        title: 'Managed Services for Scalable GCC Operations',
     },
 ];
 
 const tags = [
-    'Uncategorized',
-    'Construction',
-    'Projects',
+    'GCC',
+    'Talent',
+    'Operations',
     'Expansion',
-    'Design',
-    'Corporat',
-    'Branding',
+    'Compliance',
+    'Advisory',
+    'Workforce',
 ];
 
 const BlogSidebar = () => {

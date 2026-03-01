@@ -1,9 +1,21 @@
 import PageTitle from "@/components/sections/pageTitle"
 
-const ProjectDetails = () => {
+type ProjectDetailsProps = {
+    title?: string
+    currentPage?: string
+    modelTitle?: string
+    category?: string
+}
+
+const ProjectDetails = ({
+    title = "Project Details",
+    currentPage = "Project Details",
+    modelTitle = "GCC Model Information",
+    category = "GCC Delivery Model",
+}: ProjectDetailsProps) => {
     return (
         <>
-            <PageTitle title="Project Details" currentPage="Project Details" />
+            <PageTitle title={title} currentPage={currentPage} />
             <section className="Project-details-section fix section-padding">
                 <div className="container">
                     <div className="project-details-wrapper">
@@ -16,27 +28,27 @@ const ProjectDetails = () => {
                                     <div className="row g-4 justify-content-between">
                                         <div className="col-lg-7">
                                             <div className="details-content pt-5">
-                                                <h3>Project Information</h3>
+                                                <h3>{modelTitle}</h3>
                                                 <p>
-                                                    Nulla faucibus malesuada. In placerat feugiat eros ac tempor. Integer euismod massa sapien, et consequat enim laoreet et. Nulla sit amet nisi dapibus, gravida turpis sit amet, accumsan nisl. Fusce vel semper risus. Morbi congue eros sagittis, sodales turpis venenatis, iaculis dui. Proin ac purus sed nibh dapibus neque. scelerisque sed quis ante.
+                                                    PixelAdvant helps organizations choose and operationalize the right GCC model based on growth goals, talent strategy, risk profile, and speed-to-value expectations. Each model is designed with clear governance, measurable outcomes, and scalable execution standards.
                                                 </p>
                                             </div>
                                         </div>
                                         <div className="col-lg-4">
                                             <div className="project-catagory">
-                                                <h3>Project Info: </h3>
+                                                <h3>Model Info:</h3>
                                                 <ul>
                                                     <li>
                                                         Client:
-                                                        <span>Ralph Edwards</span>
+                                                        <span>PixelAdvant Enterprise Partner</span>
                                                     </li>
                                                     <li>
                                                         Category:
-                                                        <span>IT Management</span>
+                                                        <span>{category}</span>
                                                     </li>
                                                     <li>
                                                         Location:
-                                                        <span>Landon</span>
+                                                        <span>India & Global</span>
                                                     </li>
                                                     <li>
                                                         Share:
@@ -51,9 +63,9 @@ const ProjectDetails = () => {
                                         </div>
                                     </div>
                                     <div className="details-content pt-3">
-                                        <h3>Scope of Project</h3>
+                                        <h3>Scope of Engagement</h3>
                                         <p>
-                                            Pellentesque egestas rutrum nibh facilisis ultrices. Phasellus in magna ut orci malesuada sollicitudin. Aenean faucibus scelerisque convallis. Quisque interdum mauris id nunc molestie, ac tincidunt erat gravida. Nullam dui libero, mollis ac quam et, venenatis tincidunt quam. Proin nec volutpat ligula, id porttitor augue. Proin id volutpat massa. Vivamus tincidunt nunc justo, ac aliquam ex molestie id.
+                                            The engagement scope includes operating model design, leadership planning, hiring engine setup, compliance alignment, process governance, and performance measurement. The objective is to establish a resilient GCC foundation that can scale across business functions.
                                         </p>
                                     </div>
                                     <div className="row g-4 pt-5">
@@ -61,23 +73,11 @@ const ProjectDetails = () => {
                                             <ul className="list">
                                                 <li>
                                                     <i className="fa-regular fa-circle-check" />
-                                                    Branding and design Identity
+                                                    Operating model blueprint
                                                 </li>
                                                 <li>
                                                     <i className="fa-regular fa-circle-check" />
-                                                    Web site Marketing Solutions
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="col-lg-3 col-md-6">
-                                            <ul className="list">
-                                                <li>
-                                                    <i className="fa-regular fa-circle-check" />
-                                                    Branding and design Identity
-                                                </li>
-                                                <li>
-                                                    <i className="fa-regular fa-circle-check" />
-                                                    Web site Marketing Solutions
+                                                    Governance and SLA framework
                                                 </li>
                                             </ul>
                                         </div>
@@ -85,19 +85,31 @@ const ProjectDetails = () => {
                                             <ul className="list">
                                                 <li>
                                                     <i className="fa-regular fa-circle-check" />
-                                                    Branding and design Identity
+                                                    Talent acquisition strategy
                                                 </li>
                                                 <li>
                                                     <i className="fa-regular fa-circle-check" />
-                                                    Web site Marketing Solutions
+                                                    Compliance readiness plan
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className="col-lg-3 col-md-6">
+                                            <ul className="list">
+                                                <li>
+                                                    <i className="fa-regular fa-circle-check" />
+                                                    KPI dashboard architecture
+                                                </li>
+                                                <li>
+                                                    <i className="fa-regular fa-circle-check" />
+                                                    Continuous optimization cycle
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div className="details-content pt-5">
-                                        <h3>The Result of Project</h3>
+                                        <h3>Expected Outcomes</h3>
                                         <p>
-                                            Pellentesque egestas rutrum nibh facilisis ultrices. Phasellus in magna ut orci malesuada sollicitudin. Aenean faucibus scelerisque convallis. Quisque interdum mauris id nunc molestie, ac tincidunt erat gravida. Nullam dui libero, mollis ac quam et, venenatis tincidunt quam. Proin nec volutpat ligula, id porttitor augue. Proin id volutpat massa. Vivamus tincidunt nunc justo, ac aliquam ex molestie id.
+                                            Organizations typically see faster setup timelines, stronger hiring quality, improved operating visibility, and better alignment between global governance and local execution. This creates a sustainable GCC capability with measurable business impact.
                                         </p>
                                     </div>
                                     <div className="row g-4 pt-5">
@@ -118,13 +130,13 @@ const ProjectDetails = () => {
                                         <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=500&q=80" alt="img" />
                                         <div className="content">
                                             <h3>Preview</h3>
-                                            <p>Analytic Solutions</p>
+                                            <p>Model Overview</p>
                                         </div>
                                     </div>
                                     <div className="preview-item">
                                         <div className="content text-right">
                                             <h3>Next</h3>
-                                            <p>Software Development</p>
+                                            <p>Implementation Roadmap</p>
                                         </div>
                                         <img src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=500&q=80" alt="img" />
                                     </div>

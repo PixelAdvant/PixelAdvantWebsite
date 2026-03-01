@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const services = [
-    { name: 'Cleaning Solution', link: '/service-details' },
-    { name: 'Plumbing Solution', link: '/service-details' },
-    { name: 'Air Conditioning', link: '/service-details', active: true },
-    { name: 'Electricity Solution', link: '/service-details' },
-    { name: 'Mechanic Solution', link: '/service-details' },
+    { name: 'Consulting and Advisory', link: '/solutions/consulting-advisory' },
+    { name: 'Smart Talent Acquisition', link: '/solutions/smart-talent-acquisition' },
+    { name: 'AI Led Talent Supply', link: '/solutions/ai-led-talent-supply' },
+    { name: 'Talent Management', link: '/solutions/talent-management' },
+    { name: 'Managed Services', link: '/solutions/managed-services' },
+    { name: 'Workspace Solutions', link: '/solutions/workspace-solutions' },
 ];
 
 const openingHours = [
@@ -16,6 +17,8 @@ const openingHours = [
 ];
 
 const ServiceSidebar = () => {
+    const { pathname } = useLocation();
+
     return (
         <div className="main-sidebar">
             <div className="single-sidebar-widget">
@@ -25,7 +28,7 @@ const ServiceSidebar = () => {
                 <div className="widget-categories">
                     <ul>
                         {services.map((service, index) => (
-                            <li key={index} className={service.active ? 'active' : ''}>
+                            <li key={index} className={pathname === service.link ? 'active' : ''}>
                                 <Link to={service.link}>{service.name}</Link>
                                 <i className="fa-solid fa-arrow-right-long" />
                             </li>
@@ -55,7 +58,7 @@ const ServiceSidebar = () => {
                     </div>
                     <h4>Need Help? Call Here</h4>
                     <h5>
-                        <Link to="tel:+2085550112">+208-555-0112</Link>
+                        <Link to="tel:+2085550112">+91 8904957029</Link>
                     </h5>
                 </div>
             </div>

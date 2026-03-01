@@ -46,17 +46,17 @@ const BlogDetails = () => {
                                             </p>
                                             <div className="hilight-text mt-4 mb-4">
                                                 <p>Key Benefits of Establishing GCC in India:
-                                                    <br />• 30-40% cost savings compared to onshore operations
-                                                    <br />• Access to 5+ million IT professionals annually
-                                                    <br />• Strong English proficiency across talent pool
-                                                    <br />• Proven business infrastructure and regulatory framework</p>
+                                                    <br />- 30-40% cost savings compared to onshore operations
+                                                    <br />- Access to a large and highly skilled talent ecosystem
+                                                    <br />- Strong English proficiency across professional roles
+                                                    <br />- Proven business infrastructure and regulatory framework</p>
                                                 <svg width={36} height={36} viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M0 20.3698H7.71428L2.57139 30.5546H10.2857L15.4286 20.3698V5.09247H0V20.3698Z" fill="#77B80F" />
                                                     <path d="M20.5703 5.09247V20.3698H28.2846L23.1417 30.5546H30.856L35.9989 20.3698V5.09247H20.5703Z" fill="#77B80F" />
                                                 </svg>
                                             </div>
                                             <p className="mt-4 mb-5">
-                                                PixelAdvant's proven methodology for GCC setup includes: comprehensive market research, site selection support, regulatory compliance guidance, talent acquisition and recruitment, team training and development, operational framework establishment, and continuous optimization. We believe that a well-established GCC is not just about reducing costs—it's about creating a sustainable competitive advantage for your organization. By leveraging India's abundant talent, favorable business environment, and our deep expertise, your GCC can become a center of excellence that drives innovation and growth across your global operations.
+                                                PixelAdvant's proven methodology for GCC setup includes comprehensive market research, site selection support, regulatory compliance guidance, talent acquisition, team development, operational framework design, and continuous optimization. A successful GCC is not only about cost efficiency; it is about creating a sustainable competitive advantage through capability, governance, and scale.
                                             </p>
                                             <div className="row g-4">
                                                 <div className="col-lg-6">
@@ -71,7 +71,7 @@ const BlogDetails = () => {
                                                 </div>
                                             </div>
                                             <p className="pt-5">
-                                                Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.
+                                                GCC success depends on disciplined execution across people, process, and technology. Organizations that invest in leadership alignment, data-driven hiring, and measurable operating governance consistently outperform in delivery quality, speed, and long-term resilience.
                                             </p>
                                         </div>
                                     </div>
@@ -80,7 +80,7 @@ const BlogDetails = () => {
                                             <div className="tagcloud">
                                                 <Link to="/blog">Technology</Link>
                                                 <Link to="/blog">Innovation</Link>
-                                                <Link to="/blog">Energy</Link>
+                                                <Link to="/blog">GCC</Link>
                                             </div>
                                         </div>
                                     </div>

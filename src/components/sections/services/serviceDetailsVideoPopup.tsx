@@ -6,7 +6,7 @@ const ServiceDetailsVideoPopup = () => {
     return (
         <>
             <div className="video-thumb">
-                <img src="/img/service/details-video.jpg" alt="img" />
+                <img src="/img/service/image4.jpg" alt="img" />
                 <div className="video-box">
                     <a href="#" onClick={(e) => { e.preventDefault(), setOpen(true) }} className="video-btn ripple video-popup">
                         <i className="fa-solid fa-play" />

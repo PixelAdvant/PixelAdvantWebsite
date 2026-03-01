@@ -17,11 +17,11 @@ const TeamDetails = () => {
                             <div className="col-lg-7">
                                 <div className="team-details-content">
                                     <div className="details-info">
-                                        <h3>Kathryn Murphy</h3>
-                                        <span>Software Engineer</span>
+                                        <h3>Leadership Team Member</h3>
+                                        <span>GCC Strategy & Operations</span>
                                     </div>
                                     <p className="mt-3">
-                                        Mauris sapien neque, placerat ut dolor nec, egestas tincidunt felis. Sed in ornare quam, finibus dui aliquam justo duis eros quam, semper at libero sed, vehicula the  consequat arcu. In ornare, enim at egestas bibendum, ligula ante congue arcu, sed ornare sem nulla is nec magna. Morbi faucibus.
+                                        Our leadership team combines deep experience across GCC setup, talent strategy, and operational governance. We partner with clients to build scalable capabilities, improve hiring outcomes, and accelerate execution maturity.
                                     </p>
                                     <div className="progress-area mt-4">
                                         <div className="progress-wrap">
@@ -65,15 +65,15 @@ const TeamDetails = () => {
                         </div>
                         <div className="team-single-history pt-5">
                             <div className="title">
-                                <h3>Solar Background</h3>
+                                <h3>Professional Background</h3>
                             </div>
-                            <h5 className="pt-5">Diploma in Web Design <span>2012 - 2014</span></h5>
+                            <h5 className="pt-5">GCC Advisory & Transformation <span>2012 - 2016</span></h5>
                             <p className="mt-3">
-                                Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the is quis nostrud vitae exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit The is ipsum dolor sit amet consectetur nulla adipiscing elit. Fusce eleifend porta arcu In hac habitasse the is platea augue thelorem turpoi dictumst. In lacus libero faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed the is sodales augue consequat..
+                                Led multiple GCC launch programs across talent, compliance, and process governance. Built structured operating models that improved hiring velocity and quality while aligning global and local stakeholders.
                             </p>
-                            <h5 className="pt-5">Degree in UI/UX Design <span>2015 - 2016 </span></h5>
+                            <h5 className="pt-5">Global Delivery Leadership <span>2017 - Present</span></h5>
                             <p className="mt-3">
-                                Duis ac ligula vel enim vehicula semper. Praesent diam enim, ultricies sed pharetra in, vestibulum eget elit. Praesent condimentum, eros vitae feugiat faucibus, elit arcu commodo orci, et sodales orci lacus vel urna. Nullam sodales rhoncus nulla, quis gravida mauris blandit ut. Cras a massa non neque faucibus porta id et leo. Nunc sit amet volutpat libero. Maecenas aliquet blandit libero sit amet efficitur. Nam mauris nisi,
+                                Currently driving end-to-end GCC programs focused on scalable talent supply, managed services, and measurable business impact. The team emphasizes data-led decisions, execution discipline, and long-term client value.
                             </p>
                         </div>
                     </div>
