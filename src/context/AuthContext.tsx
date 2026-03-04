@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react'
+import { api } from '@/lib/api'
 
 export type UserRole = 'admin' | 'content_creator' | 'marketing'
 
@@ -12,81 +13,78 @@ export interface User {
 
 interface AuthContextType {
     user: User | null
+    token: string | null
     isAuthenticated: boolean
-    login: (username: string, password: string) => boolean
+    isLoading: boolean
+    login: (username: string, password: string) => Promise<{ success: boolean; error?: string }>
     logout: () => void
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
 
-// Dummy users database
-const dummyUsers: Record<string, { password: string; user: User }> = {
-    admin: {
-        password: 'admin123',
-        user: {
-            id: '1',
-            username: 'admin',
-            email: 'admin@pixeladvant.com',
-            role: 'admin',
-            name: 'Admin User'
-        }
-    },
-    content_creator: {
-        password: 'creator123',
-        user: {
-            id: '2',
-            username: 'content_creator',
-            email: 'creator@pixeladvant.com',
-            role: 'content_creator',
-            name: 'Content Creator'
-        }
-    },
-    marketing: {
-        password: 'marketing123',
-        user: {
-            id: '3',
-            username: 'marketing',
-            email: 'marketing@pixeladvant.com',
-            role: 'marketing',
-            name: 'Marketing Manager'
-        }
-    }
-}
-
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [user, setUser] = useState<User | null>(null)
+    const [token, setToken] = useState<string | null>(null)
+    const [isLoading, setIsLoading] = useState(true)
 
-    // Check if user is already logged in (from localStorage)
+    // Restore session from localStorage on mount, verify token is still valid
     useEffect(() => {
+        const storedToken = localStorage.getItem('dashboardToken')
         const storedUser = localStorage.getItem('dashboardUser')
-        if (storedUser) {
+
+        if (storedToken && storedUser) {
             try {
+                // Set state immediately for fast UI restore
+                setToken(storedToken)
                 setUser(JSON.parse(storedUser))
-            } catch (error) {
+
+                // Verify token with backend (non-blocking)
+                api.post('/auth/verify', {}, storedToken)
+                    .then(data => {
+                        setUser(data.user)
+                    })
+                    .catch(() => {
+                        // Token expired or invalid – clear session
+                        localStorage.removeItem('dashboardToken')
+                        localStorage.removeItem('dashboardUser')
+                        setUser(null)
+                        setToken(null)
+                    })
+            } catch {
+                localStorage.removeItem('dashboardToken')
                 localStorage.removeItem('dashboardUser')
             }
         }
+        setIsLoading(false)
     }, [])
 
-    const login = (username: string, password: string): boolean => {
-        const userData = dummyUsers[username]
-        if (userData && userData.password === password) {
-            setUser(userData.user)
-            localStorage.setItem('dashboardUser', JSON.stringify(userData.user))
-            return true
+    const login = async (username: string, password: string): Promise<{ success: boolean; error?: string }> => {
+        try {
+            const data = await api.post('/auth/login', { username, password })
+            setUser(data.user)
+            setToken(data.token)
+            localStorage.setItem('dashboardToken', data.token)
+            localStorage.setItem('dashboardUser', JSON.stringify(data.user))
+            return { success: true }
+        } catch (err: unknown) {
+            const message = err instanceof Error ? err.message : 'Login failed'
+            return { success: false, error: message }
         }
-        return false
     }
 
     const logout = () => {
         setUser(null)
+        setToken(null)
+        localStorage.removeItem('dashboardToken')
         localStorage.removeItem('dashboardUser')
     }
 
     return (
         <AuthContext.Provider value={{
             user,
+            token,
             isAuthenticated: !!user,
+            isLoading,
             login,
             logout
         }}>
@@ -97,8 +95,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
 export const useAuth = () => {
     const context = useContext(AuthContext)
-    if (!context) {
-        throw new Error('useAuth must be used within AuthProvider')
-    }
+    if (!context) throw new Error('useAuth must be used within AuthProvider')
     return context
 }

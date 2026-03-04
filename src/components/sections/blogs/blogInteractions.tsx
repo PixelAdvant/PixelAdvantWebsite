@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 interface BlogInteractionsProps {
     blogTitle?: string
@@ -42,158 +42,84 @@ const BlogInteractions = ({ blogTitle = 'Blog Post', blogUrl = 'https://pixeladv
         }
     }
 
+    const shareBtn: React.CSSProperties = {
+        width: '36px',
+        height: '36px',
+        borderRadius: '50%',
+        border: '1.5px solid #e5e7eb',
+        backgroundColor: '#fff',
+        cursor: 'pointer',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        fontSize: '13px',
+        color: '#6b7280',
+        transition: 'all 0.2s'
+    }
     return (
         <div style={{
-            padding: '20px',
-            backgroundColor: '#f8f9fa',
-            borderRadius: '8px',
-            marginTop: '30px',
-            marginBottom: '30px'
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            gap: '16px',
+            padding: '20px 0',
+            borderTop: '1px solid #f3f4f6',
+            borderBottom: '1px solid #f3f4f6',
+            margin: '32px 0'
         }}>
-            <div style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                flexWrap: 'wrap',
-                gap: '20px'
-            }}>
-                {/* Like Button */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <button
-                        onClick={handleLike}
-                        style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '8px',
-                            padding: '8px 16px',
-                            backgroundColor: isLiked ? '#ff6b35' : '#e0e0e0',
-                            color: isLiked ? 'white' : '#333',
-                            border: 'none',
-                            borderRadius: '4px',
-                            cursor: 'pointer',
-                            fontSize: '14px',
-                            fontWeight: '600',
-                            transition: 'all 0.3s ease'
-                        }}
-                    >
-                        <i className={`fa-${isLiked ? 'solid' : 'regular'} fa-heart`} />
-                        {likes > 0 ? ` ${likes} ${likes === 1 ? 'Like' : 'Likes'}` : 'Like'}
-                    </button>
-                </div>
+            {/* Like */}
+            <button
+                onClick={handleLike}
+                style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    padding: '8px 20px',
+                    backgroundColor: isLiked ? '#eff6ff' : '#f9fafb',
+                    color: isLiked ? '#2563eb' : '#374151',
+                    border: isLiked ? '1.5px solid #2563eb' : '1.5px solid #e5e7eb',
+                    borderRadius: '20px',
+                    cursor: 'pointer',
+                    fontSize: '14px',
+                    fontWeight: '600',
+                    transition: 'all 0.2s'
+                }}
+            >
+                <i className={`fa-${isLiked ? 'solid' : 'regular'} fa-heart`} style={{ color: isLiked ? '#2563eb' : '#9ca3af' }} />
+                {likes > 0 ? `${likes} ${likes === 1 ? 'Like' : 'Likes'}` : 'Like this article'}
+            </button>
 
-                {/* Share Buttons */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <span style={{ fontSize: '14px', fontWeight: '600', color: '#333' }}>
-                        <i className="fa-solid fa-share-nodes" /> Share:
-                    </span>
+            {/* Share */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <span style={{ fontSize: '13px', fontWeight: '600', color: '#6b7280', marginRight: '4px' }}>
+                    Share
+                </span>
+                {[
+                    { platform: 'facebook', icon: 'fab fa-facebook-f', hover: '#3b5998' },
+                    { platform: 'twitter', icon: 'fa-brands fa-x-twitter', hover: '#000' },
+                    { platform: 'linkedin', icon: 'fab fa-linkedin-in', hover: '#0077b5' },
+                    { platform: 'copy', icon: 'fa-solid fa-link', hover: '#374151' },
+                ].map(({ platform, icon, hover }) => (
                     <button
-                        onClick={() => handleShare('facebook')}
-                        title="Share on Facebook"
-                        style={{
-                            width: '36px',
-                            height: '36px',
-                            borderRadius: '4px',
-                            border: '1px solid #ddd',
-                            backgroundColor: 'white',
-                            cursor: 'pointer',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            transition: 'all 0.3s ease'
+                        key={platform}
+                        onClick={() => handleShare(platform)}
+                        title={`Share on ${platform}`}
+                        style={shareBtn}
+                        onMouseEnter={e => {
+                            (e.currentTarget as HTMLElement).style.backgroundColor = hover
+                            ;(e.currentTarget as HTMLElement).style.color = '#fff'
+                            ;(e.currentTarget as HTMLElement).style.borderColor = hover
                         }}
-                        onMouseEnter={(e) => {
-                            (e.target as HTMLButtonElement).style.backgroundColor = '#3b5998'
-                            ;(e.target as HTMLButtonElement).style.color = 'white'
-                        }}
-                        onMouseLeave={(e) => {
-                            (e.target as HTMLButtonElement).style.backgroundColor = 'white'
-                            ;(e.target as HTMLButtonElement).style.color = '#333'
+                        onMouseLeave={e => {
+                            (e.currentTarget as HTMLElement).style.backgroundColor = '#fff'
+                            ;(e.currentTarget as HTMLElement).style.color = '#6b7280'
+                            ;(e.currentTarget as HTMLElement).style.borderColor = '#e5e7eb'
                         }}
                     >
-                        <i className="fab fa-facebook-f" />
+                        <i className={icon} />
                     </button>
-
-                    <button
-                        onClick={() => handleShare('twitter')}
-                        title="Share on Twitter"
-                        style={{
-                            width: '36px',
-                            height: '36px',
-                            borderRadius: '4px',
-                            border: '1px solid #ddd',
-                            backgroundColor: 'white',
-                            cursor: 'pointer',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            transition: 'all 0.3s ease'
-                        }}
-                        onMouseEnter={(e) => {
-                            (e.target as HTMLButtonElement).style.backgroundColor = '#1da1f2'
-                            ;(e.target as HTMLButtonElement).style.color = 'white'
-                        }}
-                        onMouseLeave={(e) => {
-                            (e.target as HTMLButtonElement).style.backgroundColor = 'white'
-                            ;(e.target as HTMLButtonElement).style.color = '#333'
-                        }}
-                    >
-                        <i className="fa-brands fa-x-twitter" />
-                    </button>
-
-                    <button
-                        onClick={() => handleShare('linkedin')}
-                        title="Share on LinkedIn"
-                        style={{
-                            width: '36px',
-                            height: '36px',
-                            borderRadius: '4px',
-                            border: '1px solid #ddd',
-                            backgroundColor: 'white',
-                            cursor: 'pointer',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            transition: 'all 0.3s ease'
-                        }}
-                        onMouseEnter={(e) => {
-                            (e.target as HTMLButtonElement).style.backgroundColor = '#0077b5'
-                            ;(e.target as HTMLButtonElement).style.color = 'white'
-                        }}
-                        onMouseLeave={(e) => {
-                            (e.target as HTMLButtonElement).style.backgroundColor = 'white'
-                            ;(e.target as HTMLButtonElement).style.color = '#333'
-                        }}
-                    >
-                        <i className="fab fa-linkedin-in" />
-                    </button>
-
-                    <button
-                        onClick={() => handleShare('copy')}
-                        title="Copy link"
-                        style={{
-                            width: '36px',
-                            height: '36px',
-                            borderRadius: '4px',
-                            border: '1px solid #ddd',
-                            backgroundColor: 'white',
-                            cursor: 'pointer',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            transition: 'all 0.3s ease'
-                        }}
-                        onMouseEnter={(e) => {
-                            (e.target as HTMLButtonElement).style.backgroundColor = '#666'
-                            ;(e.target as HTMLButtonElement).style.color = 'white'
-                        }}
-                        onMouseLeave={(e) => {
-                            (e.target as HTMLButtonElement).style.backgroundColor = 'white'
-                            ;(e.target as HTMLButtonElement).style.color = '#333'
-                        }}
-                    >
-                        <i className="fa-solid fa-link" />
-                    </button>
-                </div>
+                ))}
             </div>
         </div>
     )

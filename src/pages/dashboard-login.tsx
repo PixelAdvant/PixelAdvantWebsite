@@ -15,18 +15,13 @@ const DashboardLogin = () => {
         setError('')
         setLoading(true)
 
-        try {
-            if (login(username, password)) {
-                // Redirect to dashboard based on role
-                navigate('/dashboard')
-            } else {
-                setError('Invalid username or password')
-            }
-        } catch (err) {
-            setError('Login failed. Please try again.')
-        } finally {
-            setLoading(false)
+        const result = await login(username, password)
+        if (result.success) {
+            navigate('/dashboard')
+        } else {
+            setError(result.error || 'Invalid username or password')
         }
+        setLoading(false)
     }
 
     return (
@@ -184,21 +179,22 @@ const DashboardLogin = () => {
                         </button>
                     </form>
 
-                    {/* Demo Credentials */}
+                    {/* DB Credentials Note */}
                     <div style={{
                         marginTop: '30px',
                         padding: '15px',
-                        backgroundColor: '#f8f9fa',
+                        backgroundColor: '#f8faff',
+                        border: '1px solid #dbeafe',
                         borderRadius: '6px',
                         fontSize: '13px'
                     }}>
-                        <p style={{ fontWeight: '600', marginBottom: '10px', color: '#333' }}>
-                            <i className="fa-solid fa-info-circle me-2" />Demo Credentials:
+                        <p style={{ fontWeight: '600', marginBottom: '10px', color: '#1e40af' }}>
+                            <i className="fa-solid fa-database me-2" />Database Credentials:
                         </p>
-                        <div style={{ lineHeight: '1.8', color: '#666' }}>
-                            <p style={{ margin: '5px 0' }}>👤 <strong>Admin:</strong> admin / admin123</p>
-                            <p style={{ margin: '5px 0' }}>✍️ <strong>Content Creator:</strong> content_creator / creator123</p>
-                            <p style={{ margin: '5px 0' }}>📊 <strong>Marketing:</strong> marketing / marketing123</p>
+                        <div style={{ lineHeight: '1.8', color: '#374151' }}>
+                            <p style={{ margin: '5px 0' }}>👤 <strong>Admin:</strong> admin / Admin@2025!</p>
+                            <p style={{ margin: '5px 0' }}>✍️ <strong>Creator:</strong> content_creator / Creator@2025!</p>
+                            <p style={{ margin: '5px 0' }}>📊 <strong>Marketing:</strong> marketing / Marketing@2025!</p>
                         </div>
                     </div>
                 </div>

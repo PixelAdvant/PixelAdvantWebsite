@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 interface Comment {
     id: number;
@@ -61,23 +60,41 @@ const BlogComments = () => {
     };
 
     const renderComment = (comment: Comment, isReply = false) => (
-        <div key={comment.id} className={`blog-single-comment d-flex gap-4 pb-5 ${isReply ? 'ms-5 mt-3' : 'pt-4'}`}>
-            <div className="image">
-                <img src={comment.image} alt="comment" />
-            </div>
-            <div className="content" style={{ flex: 1 }}>
-                <div className="head d-flex flex-wrap gap-2 align-items-center justify-content-between">
-                    <div className="con">
-                        <h5><Link to="/news-details">{comment.author}</Link> {isReply && <span style={{ fontSize: '12px', color: '#ff6b35' }}>• Author</span>}</h5>
-                        <span>{comment.date}</span>
-                    </div>
-                    <div className="star">
-                        {[...Array(5)].map((_, i) => (
-                            <i key={i} className="fas fa-star" />
-                        ))}
+        <div key={comment.id} style={{
+            display: 'flex',
+            gap: '14px',
+            paddingTop: isReply ? '16px' : '24px',
+            paddingBottom: '24px',
+            borderBottom: '1px solid #f3f4f6',
+            marginLeft: isReply ? '44px' : '0'
+        }}>
+            {/* Avatar */}
+            <img
+                src={comment.image}
+                alt={comment.author}
+                style={{ width: '40px', height: '40px', borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }}
+            />
+            <div style={{ flex: 1 }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '8px' }}>
+                    <div>
+                        <span style={{ fontSize: '14px', fontWeight: '700', color: '#111827' }}>
+                            {comment.author}
+                        </span>
+                        {isReply && (
+                            <span style={{
+                                marginLeft: '8px',
+                                fontSize: '11px',
+                                color: '#2563eb',
+                                backgroundColor: '#eff6ff',
+                                padding: '2px 7px',
+                                borderRadius: '10px',
+                                fontWeight: '600'
+                            }}>Team</span>
+                        )}
+                        <p style={{ fontSize: '12px', color: '#9ca3af', margin: '2px 0 0' }}>{comment.date}</p>
                     </div>
                 </div>
-                <p className="mt-30 mb-4">{comment.text}</p>
+                <p style={{ fontSize: '14px', color: '#374151', lineHeight: '1.7', margin: '0 0 12px' }}>{comment.text}</p>
                 
                 <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
                     <button
@@ -85,9 +102,9 @@ const BlogComments = () => {
                         style={{
                             background: 'none',
                             border: 'none',
-                            color: '#ff6b35',
+                            color: '#2563eb',
                             cursor: 'pointer',
-                            fontSize: '14px',
+                            fontSize: '13px',
                             fontWeight: '600',
                             padding: '0'
                         }}
@@ -176,10 +193,10 @@ const BlogComments = () => {
                                     onClick={() => handleReplySubmit(comment.id)}
                                     style={{
                                         padding: '8px 20px',
-                                        backgroundColor: '#ff6b35',
+                                        backgroundColor: '#2563eb',
                                         color: 'white',
                                         border: 'none',
-                                        borderRadius: '4px',
+                                        borderRadius: '6px',
                                         cursor: 'pointer',
                                         fontSize: '13px',
                                         fontWeight: '600'
@@ -220,10 +237,18 @@ const BlogComments = () => {
     );
 
     return (
-        <div className="comments-area">
-            <div className="comments-heading">
-                <h3>{commentsData.length} Comments</h3>
-            </div>
+        <div style={{ marginTop: '40px' }}>
+            <h4 style={{
+                fontSize: '18px',
+                fontWeight: '800',
+                color: '#111827',
+                letterSpacing: '-0.01em',
+                marginBottom: '24px',
+                paddingBottom: '16px',
+                borderBottom: '1px solid #f3f4f6'
+            }}>
+                {commentsData.length} {commentsData.length === 1 ? 'Comment' : 'Comments'}
+            </h4>
             {commentsData.map((comment) => renderComment(comment))}
         </div>
     );
