@@ -3,8 +3,8 @@ import { TeamMemberDataType } from "./teamMembersOneData";
 export const teamMembersTwoData: TeamMemberDataType[] = [
     {
         id: 1,
-        name: 'Marvin McKinney',
-        role: 'Web Designer',
+        name: 'Aarav Mehta',
+        role: 'GCC Strategy Lead',
         image: '/img/team/01.jpg',
         delay: '.3',
         socialLinks: [
@@ -25,8 +25,8 @@ export const teamMembersTwoData: TeamMemberDataType[] = [
     },
     {
         id: 2,
-        name: 'Bessie Cooper',
-        role: 'President of Sales',
+        name: 'Nisha Kapoor',
+        role: 'Talent Solutions Director',
         image: '/img/team/02.jpg',
         delay: '.5',
         socialLinks: [
@@ -47,8 +47,8 @@ export const teamMembersTwoData: TeamMemberDataType[] = [
     },
     {
         id: 3,
-        name: 'Dianne Russell',
-        role: 'Marketing Manager',
+        name: 'Rohit Sharma',
+        role: 'Managed Services Head',
         image: '/img/team/03.jpg',
         delay: '.7',
         socialLinks: [

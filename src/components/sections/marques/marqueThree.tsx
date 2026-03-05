@@ -1,18 +1,18 @@
 import { Fragment } from "react";
 
 const marqueeItems = [
-    'Solar Pane',
-    'Water Heating',
-    'Financing',
-    'Hydro Power',
-    'Solar Pane',
-    'Water Heating',
-    'Financing',
-    'Hydro Power',
-    'Solar Pane',
-    'IT Solution',
-    'Water Heating',
-    'Hydro Power',
+    'GCC Advisory',
+    'Talent Acquisition',
+    'Managed Services',
+    'Workspace Solutions',
+    'GCC Advisory',
+    'Talent Acquisition',
+    'Managed Services',
+    'Workspace Solutions',
+    'GCC Advisory',
+    'IT Solutions',
+    'Talent Acquisition',
+    'Managed Services',
 ];
 const MarqueThree = () => {
     return (

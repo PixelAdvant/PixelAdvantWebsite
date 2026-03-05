@@ -15,7 +15,7 @@ const HeroTwo = () => {
                                     duration: .5
                                 }}
                             >
-                                Renewable Solar Power Energy
+                                Build Scalable GCC Operations
                             </motion.h1>
                             <motion.p
                                 initial={{ y: 40 }}
@@ -25,8 +25,8 @@ const HeroTwo = () => {
                                     delay: 0.3
                                 }}
                             >
-                                Transmds is the world’s driving worldwide coordinations supplier we uphold
-                                industry and exchange the worldwide trade of merchandi
+                                PixelAdvant helps enterprises launch and scale Global Capability Centers with advisory,
+                                talent, and managed services designed for measurable outcomes.
                             </motion.p>
                             <motion.div
                                 initial={{ y: 40 }}

@@ -19,7 +19,7 @@ const AboutOne = () => {
                   </div>
                 </div>
                 <AboutRoundedTextVideoPopup/>
-                <div className="about-image-1 bg-cover wow slideLeft" data-delay=".3" style={{ backgroundImage: 'url("/img/about/gcc-expertise.jpg")' }}>
+                <div className="about-image-1 bg-cover wow slideLeft" data-delay=".3" style={{ backgroundImage: 'url("/img/about/image2.avif")' }}>
                   <div className="about-image-2 wow slideUp" data-delay=".5">
                     <img src="/img/about/image1.jpg" alt="about-img" />
                   </div>

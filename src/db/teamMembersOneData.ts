@@ -14,9 +14,9 @@ export interface TeamMemberDataType {
 export const teamMembersOneData: TeamMemberDataType[] = [
     {
         id: 1,
-        role: "Scrum Master",
-        name: "Cameron Williamson",
-        description: "Integer at sapien nec sapien sollicitudin ultrices in ut nisl.",
+        role: "GCC Strategy Lead",
+        name: "Aarav Mehta",
+        description: "Leads enterprise GCC roadmap design and operating model transformation initiatives.",
         image: "https://randomuser.me/api/portraits/men/41.jpg",
         socialLinks: [
             {
@@ -36,9 +36,9 @@ export const teamMembersOneData: TeamMemberDataType[] = [
     },
     {
         id: 2,
-        role: "Engineering",
-        name: "Leslie Alexander",
-        description: "Integer at sapien nec sapien sollicitudin ultrices in ut nisl.",
+        role: "Talent Solutions Director",
+        name: "Nisha Kapoor",
+        description: "Builds AI-led recruitment frameworks for high-growth GCC teams across functions.",
         image: "https://randomuser.me/api/portraits/women/52.jpg",
         socialLinks: [
             {
@@ -58,9 +58,9 @@ export const teamMembersOneData: TeamMemberDataType[] = [
     },
     {
         id: 3,
-        role: "UI/UX Designer",
-        name: "Ronald Richards",
-        description: "Integer at sapien nec sapien sollicitudin ultrices in ut nisl.",
+        role: "Managed Services Head",
+        name: "Rohit Sharma",
+        description: "Owns process governance, SLA performance, and delivery optimization programs.",
         image: "https://randomuser.me/api/portraits/men/58.jpg",
         socialLinks: [
             {
@@ -80,9 +80,9 @@ export const teamMembersOneData: TeamMemberDataType[] = [
     },
     {
         id: 4,
-        role: "Web Designer",
-        name: "Darrell Steward",
-        description: "Integer at sapien nec sapien sollicitudin ultrices in ut nisl.",
+        role: "Workforce Analytics Lead",
+        name: "Priya Nair",
+        description: "Drives talent intelligence and KPI-led decision support for GCC scaling.",
         image: "https://randomuser.me/api/portraits/women/63.jpg",
         socialLinks: [
             {

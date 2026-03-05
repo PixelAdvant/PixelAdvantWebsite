@@ -3,8 +3,8 @@ import { TeamMemberDataType } from "./teamMembersOneData";
 export const teamMembersThreeData:TeamMemberDataType[] = [
     {
         id: 1,
-        name: 'Marvin McKinney',
-        role: 'Web Designer',
+        name: 'Aarav Mehta',
+        role: 'GCC Strategy Lead',
         image: 'https://randomuser.me/api/portraits/men/32.jpg',
         socialLinks: [
             {
@@ -25,8 +25,8 @@ export const teamMembersThreeData:TeamMemberDataType[] = [
     },
     {
         id: 2,
-        name: 'Marvin McKinney',
-        role: 'Web Designer',
+        name: 'Nisha Kapoor',
+        role: 'Talent Solutions Director',
         image: 'https://randomuser.me/api/portraits/women/44.jpg',
         socialLinks: [
             {
@@ -47,8 +47,8 @@ export const teamMembersThreeData:TeamMemberDataType[] = [
     },
     {
         id: 3,
-        name: 'Marvin McKinney',
-        role: 'Web Designer',
+        name: 'Rohit Sharma',
+        role: 'Managed Services Head',
         image: 'https://randomuser.me/api/portraits/men/67.jpg',
         socialLinks: [
             {
@@ -69,8 +69,8 @@ export const teamMembersThreeData:TeamMemberDataType[] = [
     },
     {
         id: 4,
-        name: 'Marvin McKinney',
-        role: 'Web Designer',
+        name: 'Priya Nair',
+        role: 'Workforce Analytics Lead',
         image: 'https://randomuser.me/api/portraits/women/68.jpg',
         socialLinks: [
             {
@@ -91,8 +91,8 @@ export const teamMembersThreeData:TeamMemberDataType[] = [
     },
     {
         id: 5,
-        name: 'Marvin McKinney',
-        role: 'Web Designer',
+        name: 'Vikram Nair',
+        role: 'Global Delivery Excellence',
         image: 'https://randomuser.me/api/portraits/men/75.jpg',
         socialLinks: [
             {

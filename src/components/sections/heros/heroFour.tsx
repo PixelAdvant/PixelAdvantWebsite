@@ -9,20 +9,20 @@ import { motion } from "motion/react"
 const heroSlides = [
     {
         image: '/img/hero/hero-7.jpg',
-        title: 'We Provide our clients Best Solar Services',
-        description: 'Transmds is the world’s driving worldwide coordinations supplier we uphold industry and exchange the worldwide trade of merchandi',
+        title: 'End-to-End GCC Transformation Services',
+        description: 'PixelAdvant combines strategy, talent acquisition, and managed operations to help enterprises build high-performing GCC capabilities.',
         link: '/',
     },
     {
         image: '/img/hero/hero-5.jpg',
-        title: 'We Provide our clients Best Solar Services',
-        description: 'Transmds is the world’s driving worldwide coordinations supplier we uphold industry and exchange the worldwide trade of merchandi',
+        title: 'End-to-End GCC Transformation Services',
+        description: 'PixelAdvant combines strategy, talent acquisition, and managed operations to help enterprises build high-performing GCC capabilities.',
         link: '/',
     },
     {
         image: '/img/hero/hero-9.jpg',
-        title: 'We Provide our clients Best Solar Services',
-        description: 'Transmds is the world’s driving worldwide coordinations supplier we uphold industry and exchange the worldwide trade of merchandi',
+        title: 'End-to-End GCC Transformation Services',
+        description: 'PixelAdvant combines strategy, talent acquisition, and managed operations to help enterprises build high-performing GCC capabilities.',
         link: '/',
     },
 ]

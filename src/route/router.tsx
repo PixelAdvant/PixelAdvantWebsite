@@ -12,6 +12,7 @@ import Jobs from "@/pages/jobs";
 import ProductOne from "@/pages/product-one";
 import ProductThree from "@/pages/product-three";
 import ProductTwo from "@/pages/product-two";
+import Products from "@/pages/products";
 import Project from "@/pages/project";
 import ProjectCarousel from "@/pages/project-carousel";
 import ProjectDetails from "@/pages/project-details";
@@ -61,6 +62,30 @@ export const router = createRouter([
                 element:<ServiceDetails/>
             },
             {
+                path:'/solutions/consulting-advisory',
+                element:<ServiceDetails solutionKey="consultingAdvisory" />
+            },
+            {
+                path:'/solutions/smart-talent-acquisition',
+                element:<ServiceDetails solutionKey="smartTalentAcquisition" />
+            },
+            {
+                path:'/solutions/ai-led-talent-supply',
+                element:<ServiceDetails solutionKey="aiLedTalentSupply" />
+            },
+            {
+                path:'/solutions/talent-management',
+                element:<ServiceDetails solutionKey="talentManagement" />
+            },
+            {
+                path:'/solutions/managed-services',
+                element:<ServiceDetails solutionKey="managedServices" />
+            },
+            {
+                path:'/solutions/workspace-solutions',
+                element:<ServiceDetails solutionKey="workspaceSolutions" />
+            },
+            {
                 path:'/project',
                 element:<Project/>
             },
@@ -71,6 +96,18 @@ export const router = createRouter([
             {
                 path:'/project-details',
                 element:<ProjectDetails/>
+            },
+            {
+                path:'/models/captive-model',
+                element:<ProjectDetails title="Captive Model" currentPage="Captive Model" modelTitle="Captive Model Information" category="Captive Model" />
+            },
+            {
+                path:'/models/shared-services-model',
+                element:<ProjectDetails title="Shared Services Model" currentPage="Shared Services Model" modelTitle="Shared Services Model Information" category="Shared Services Model" />
+            },
+            {
+                path:'/models/build-operate-transfer',
+                element:<ProjectDetails title="Build Operate Transfer" currentPage="Build Operate Transfer" modelTitle="Build Operate Transfer Information" category="Build Operate Transfer" />
             },
             {
                 path:'/team',
@@ -90,6 +127,18 @@ export const router = createRouter([
             },
             {
                 path:'/products/Advantage plus',
+                element:<ProductTwo/>
+            },
+            {
+                path:'/products',
+                element:<Products/>
+            },
+            {
+                path:'/products/click-100',
+                element:<ProductOne/>
+            },
+            {
+                path:'/products/advantage-plus',
                 element:<ProductTwo/>
             },
             {

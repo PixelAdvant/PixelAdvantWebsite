@@ -17,7 +17,8 @@ const HeaderOne = () => {
                             <div className="header-left">
                                 <div className="logo">
                                     <Link to="/" className="header-logo">
-                                        <img src="/img/logo/black-logo.svg" alt="logo-img" />
+                                        {/* <img src="/img/logo/black-logo.svg" alt="logo-img" /> */}
+                                        <div style={{ display: "flex", alignItems: "center", gap: "4px" }}><img src="/img/logo/PixelAdvantlogo.jpg" alt="Pixel Advant Logo" style={{ height: "42px" }} /><span style={{ fontSize: "20px", fontWeight: "bold" }}><span style={{ color: "#4FC3F7" }}>Pixel</span><span style={{ color: "#0D47A1" }}> Advant</span></span></div>
                                     </Link>
                                 </div>
                             </div>

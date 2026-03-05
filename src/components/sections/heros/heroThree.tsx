@@ -10,19 +10,19 @@ const heroSlides = [
     {
         id: 1,
         image: '/img/hero/hero-5.jpg',
-        title: 'Powering the Future with Renewable',
+        title: 'Scaling GCC Delivery with Confidence',
         link: '/project-details',
     },
     {
         id: 2,
         image: '/img/hero/hero-6.jpg',
-        title: 'Powering the Future with Renewable',
+        title: 'Scaling GCC Delivery with Confidence',
         link: '/project-details',
     },
     {
         id: 3,
         image: '/img/hero/hero-7.jpg',
-        title: 'Powering the Future with Renewable',
+        title: 'Scaling GCC Delivery with Confidence',
         link: '/project-details',
     },
 ];

@@ -2,12 +2,12 @@ import { SuAndroid, SuApple, SuBoost, SuInternet, SuSmartWatch, SuTV } from "@/l
 import SectionTitle from "../ui/sectionTitle";
 
 const offerItems = [
-    { id: 1, icon: <SuInternet />, title: 'Website', isActive: false, delay: '.2' },
-    { id: 2, icon: <SuAndroid />, title: 'Power', isActive: false, delay: '.4' },
-    { id: 3, icon: <SuApple />, title: 'Pane', isActive: true, delay: '.6', },
-    { id: 4, icon: <SuSmartWatch />, title: 'Solar Watch', isActive: false, delay: '.8' },
-    { id: 5, icon: <SuTV />, title: 'Solar Tv', isActive: false, delay: '.9' },
-    { id: 6, icon: <SuBoost />, title: 'IOT', isActive: false, delay: '.9' },
+    { id: 1, icon: <SuInternet />, title: 'GCC Advisory', isActive: false, delay: '.2' },
+    { id: 2, icon: <SuAndroid />, title: 'Talent Solutions', isActive: false, delay: '.4' },
+    { id: 3, icon: <SuApple />, title: 'AI Recruitment', isActive: true, delay: '.6', },
+    { id: 4, icon: <SuSmartWatch />, title: 'Managed Services', isActive: false, delay: '.8' },
+    { id: 5, icon: <SuTV />, title: 'Workspace Strategy', isActive: false, delay: '.9' },
+    { id: 6, icon: <SuBoost />, title: 'Compliance Ops', isActive: false, delay: '.9' },
 ];
 
 const Offer = () => {
@@ -21,8 +21,8 @@ const Offer = () => {
             </div>
             <div className="container">
                 <SectionTitle className="text-center">
-                    <SectionTitle.SubTitle>Our offering</SectionTitle.SubTitle>
-                    <SectionTitle.Title className="text-white">Harnessing The Sun The Bright <br />Choice For Future</SectionTitle.Title>
+                    <SectionTitle.SubTitle>Our Capabilities</SectionTitle.SubTitle>
+                    <SectionTitle.Title className="text-white">Comprehensive GCC <br /> Services for Scalable Growth</SectionTitle.Title>
                 </SectionTitle>
                 <div className="row">
                     {offerItems.map((item) => (
