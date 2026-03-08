@@ -4,7 +4,12 @@ export type SolutionDetailKey =
   | "aiLedTalentSupply"
   | "talentManagement"
   | "managedServices"
-  | "workspaceSolutions";
+  | "workspaceSolutions"
+  | "applicationEngineering"
+  | "qualityEngineering"
+  | "businessArchitecture"
+  | "productDevelopment"
+  | "legalServices";
 
 export interface SolutionQuickFact {
   label: string;
@@ -244,5 +249,155 @@ export const solutionDetailsData: Record<SolutionDetailKey, SolutionDetailData> 
       { label: "Best For", value: "New Sites and Team Expansion" },
       { label: "Typical Timeline", value: "6-10 Weeks" }
     ]
-  }
+  },
+  applicationEngineering: {
+    pageTitle: "Application Engineering",
+    heading: "Application Engineering Services",
+    bannerImage: "/img/service/image1.jpg",
+    overview: [
+      "We design, build, and modernize enterprise applications that power your digital operations.",
+      "From cloud-native development to legacy modernization, our teams deliver robust, scalable, and maintainable software solutions tailored to your business needs.",
+    ],
+    focusAreas: [
+      { title: "Cloud-Native Development", description: "Build highly scalable applications using microservices, containers, and cloud platforms." },
+      { title: "API & Integration Services", description: "Design and implement RESTful and GraphQL APIs for seamless system integration." },
+      { title: "Legacy Modernization", description: "Refactor and migrate legacy applications to modern, maintainable architectures." },
+      { title: "DevOps Enablement", description: "Implement CI/CD pipelines and automated workflows for faster, reliable delivery." },
+    ],
+    benefits: [
+      "Faster time-to-market with agile engineering practices",
+      "Reduced technical debt through proactive modernization",
+      "Higher availability and performance at scale",
+    ],
+    deliverables: [
+      "Architecture design documents and blueprints",
+      "Production-ready application code with automated tests",
+      "CI/CD pipeline setup and operational runbooks",
+    ],
+    quickFacts: [
+      { label: "Engagement Model", value: "Project-Based or Dedicated Team" },
+      { label: "Best For", value: "Product Companies & GCCs" },
+      { label: "Typical Timeline", value: "8-16 Weeks" },
+    ],
+  },
+  qualityEngineering: {
+    pageTitle: "Quality Engineering",
+    heading: "Quality Engineering Services",
+    bannerImage: "/img/service/image1.jpg",
+    overview: [
+      "We embed quality at every stage of the software delivery lifecycle through automated testing, performance validation, and continuous monitoring.",
+      "Our quality engineering teams ensure your software meets the highest standards for reliability, security, and user experience.",
+    ],
+    focusAreas: [
+      { title: "Test Automation", description: "Build comprehensive automated test suites covering unit, integration, and end-to-end scenarios." },
+      { title: "Performance Testing", description: "Validate system performance under load with structured benchmarking and profiling." },
+      { title: "Security Testing", description: "Identify vulnerabilities through SAST, DAST, and penetration testing methodologies." },
+      { title: "QA Strategy & Governance", description: "Define quality frameworks, metrics, and governance processes to sustain delivery excellence." },
+    ],
+    benefits: [
+      "Lower defect escape rates in production",
+      "Faster feedback loops through shift-left testing",
+      "Compliance-ready quality documentation",
+    ],
+    deliverables: [
+      "Automated test suite and CI/CD integration",
+      "Performance benchmark reports",
+      "Quality metrics dashboard and defect trend analysis",
+    ],
+    quickFacts: [
+      { label: "Engagement Model", value: "Embedded QA or Managed Testing" },
+      { label: "Best For", value: "Agile & DevOps Teams" },
+      { label: "Typical Timeline", value: "4-12 Weeks" },
+    ],
+  },
+  businessArchitecture: {
+    pageTitle: "Technical & Business Architecture",
+    heading: "Technical & Business Architecture",
+    bannerImage: "/img/service/image1.jpg",
+    overview: [
+      "We provide end-to-end architecture advisory covering enterprise systems, technical standards, and business process alignment.",
+      "Our architects bridge the gap between business strategy and technology execution to deliver coherent, future-proof systems.",
+    ],
+    focusAreas: [
+      { title: "Enterprise Architecture", description: "Define technology landscapes, integration patterns, and governance frameworks for large enterprises." },
+      { title: "Solution Architecture", description: "Design scalable, secure, and cost-effective solutions aligned to business requirements." },
+      { title: "Business Process Modeling", description: "Map and optimize business processes to eliminate inefficiencies and enable digital transformation." },
+      { title: "Technology Roadmapping", description: "Create multi-year technology roadmaps aligned with business goals and market trends." },
+    ],
+    benefits: [
+      "Reduced system complexity through architectural discipline",
+      "Better alignment between IT investments and business outcomes",
+      "Faster decision-making with clear architecture blueprints",
+    ],
+    deliverables: [
+      "Enterprise and solution architecture diagrams",
+      "Business process models and gap analysis",
+      "Technology roadmap with prioritized initiatives",
+    ],
+    quickFacts: [
+      { label: "Engagement Model", value: "Advisory or Embedded Architect" },
+      { label: "Best For", value: "Digital Transformation Programs" },
+      { label: "Typical Timeline", value: "6-12 Weeks" },
+    ],
+  },
+  productDevelopment: {
+    pageTitle: "Product Development",
+    heading: "End-to-End Product Development",
+    bannerImage: "/img/service/image1.jpg",
+    overview: [
+      "We partner with businesses to design, develop, and launch digital products that users love and businesses depend on.",
+      "From ideation to production, our product teams bring together design thinking, agile engineering, and data-informed iteration.",
+    ],
+    focusAreas: [
+      { title: "Product Discovery & UX Design", description: "Validate product ideas through user research, prototyping, and iterative design sprints." },
+      { title: "MVP Development", description: "Build lean, functional minimum viable products to validate assumptions and gather real-world feedback." },
+      { title: "Product Scaling", description: "Grow your product with feature expansion, performance optimization, and platform scalability." },
+      { title: "Product Analytics", description: "Instrument and analyze product usage to guide data-driven feature prioritization." },
+    ],
+    benefits: [
+      "Faster time from idea to validated product",
+      "Higher user adoption through research-led design",
+      "Sustainable product velocity through mature engineering practices",
+    ],
+    deliverables: [
+      "Product discovery report and UX prototype",
+      "Production-deployed MVP with analytics",
+      "Product backlog and roadmap for scale",
+    ],
+    quickFacts: [
+      { label: "Engagement Model", value: "Full-Cycle Product Team" },
+      { label: "Best For", value: "Startups and Innovation Centers" },
+      { label: "Typical Timeline", value: "12-24 Weeks" },
+    ],
+  },
+  legalServices: {
+    pageTitle: "Legal Services",
+    heading: "GCC Legal Services",
+    bannerImage: "/img/service/image1.jpg",
+    overview: [
+      "We provide specialized legal advisory services to support every stage of your GCC setup and operations in India.",
+      "From entity registration and compliance to employment law and IP protection, our legal partners ensure your GCC operates with confidence.",
+    ],
+    focusAreas: [
+      { title: "Entity Setup & Registration", description: "Navigate the regulatory landscape for company registration, tax structure, and statutory compliance." },
+      { title: "Employment Law & HR Compliance", description: "Ensure your employment contracts, HR policies, and labor practices meet India's regulatory standards." },
+      { title: "Intellectual Property Protection", description: "Secure your IP through trademarks, patents, and robust contractual frameworks." },
+      { title: "Ongoing Regulatory Compliance", description: "Stay ahead of regulatory changes with proactive monitoring and compliance support." },
+    ],
+    benefits: [
+      "Confident market entry with full regulatory compliance",
+      "Reduced legal risk through expert advisory",
+      "Protected intellectual property and business interests",
+    ],
+    deliverables: [
+      "Entity setup documentation and registration",
+      "Employment contract templates and HR policy framework",
+      "IP registration filings and compliance calendar",
+    ],
+    quickFacts: [
+      { label: "Engagement Model", value: "Advisory + Implementation" },
+      { label: "Best For", value: "GCC Setup and Expansion" },
+      { label: "Typical Timeline", value: "4-8 Weeks" },
+    ],
+  },
 };

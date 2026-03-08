@@ -34,7 +34,7 @@ const HeaderOne = () => {
                                 <div className="header-button">
                                     <Link to="/contact" className="theme-btn">
                                         <span>
-                                            get A Quote {' '}
+                                            Let&apos;s Talk {' '}
                                             <i className="fa-solid fa-arrow-right-long" />
                                         </span>
                                     </Link>

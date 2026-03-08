@@ -4,11 +4,16 @@ import About from "@/pages/about";
 import Blog from "@/pages/blog";
 import BlogDetails from "@/pages/blog-details";
 import BlogStandard from "@/pages/blog-standard";
+import Brochure from "@/pages/brochure";
+import CaseStudies from "@/pages/case-studies";
 import Contact from "@/pages/contact";
 import Dashboard from "@/pages/dashboard";
 import DashboardLogin from "@/pages/dashboard-login";
+import DigitalEngineering from "@/pages/digital-engineering";
+import GCCSolutions from "@/pages/gcc-solutions";
 import Home from "@/pages/home";
 import Jobs from "@/pages/jobs";
+import LeadershipTeam from "@/pages/leadership-team";
 import ProductOne from "@/pages/product-one";
 import ProductThree from "@/pages/product-three";
 import ProductTwo from "@/pages/product-two";
@@ -16,12 +21,15 @@ import Products from "@/pages/products";
 import Project from "@/pages/project";
 import ProjectCarousel from "@/pages/project-carousel";
 import ProjectDetails from "@/pages/project-details";
+import Recruitment from "@/pages/recruitment";
+import Resources from "@/pages/resources";
 import Service from "@/pages/service";
 import ServiceCarousel from "@/pages/service-carousel";
 import ServiceDetails from "@/pages/service-details";
 import Team from "@/pages/team";
 import TeamCarousel from "@/pages/team-carousel";
 import TeamDetails from "@/pages/team-details";
+import Whitepapers from "@/pages/whitepapers";
 import { createBrowserRouter, createHashRouter } from "react-router-dom";
 
 // Detect if running on GitHub Pages
@@ -180,6 +188,91 @@ export const router = createRouter([
             {
                 path:'/careers',
                 element:<Jobs/>
+            },
+            // ── About Us submenu ──────────────────────────
+            {
+                path:'/about/leadership-team',
+                element:<LeadershipTeam/>
+            },
+            // ── Recruitment Solutions ─────────────────────
+            {
+                path:'/recruitment',
+                element:<Recruitment/>
+            },
+            {
+                path:'/recruitment/click-100',
+                element:<ProductOne/>
+            },
+            {
+                path:'/recruitment/advisory-consultancy',
+                element:<ServiceDetails solutionKey="consultingAdvisory" />
+            },
+            {
+                path:'/recruitment/hire-global-talent',
+                element:<ServiceDetails solutionKey="smartTalentAcquisition" />
+            },
+            {
+                path:'/recruitment/workforce-strategy',
+                element:<ServiceDetails solutionKey="talentManagement" />
+            },
+            // ── Digital Engineering ───────────────────────
+            {
+                path:'/digital-engineering',
+                element:<DigitalEngineering/>
+            },
+            {
+                path:'/digital-engineering/application-engineering',
+                element:<ServiceDetails solutionKey="applicationEngineering" />
+            },
+            {
+                path:'/digital-engineering/quality-engineering',
+                element:<ServiceDetails solutionKey="qualityEngineering" />
+            },
+            {
+                path:'/digital-engineering/architecture',
+                element:<ServiceDetails solutionKey="businessArchitecture" />
+            },
+            {
+                path:'/digital-engineering/product-development',
+                element:<ServiceDetails solutionKey="productDevelopment" />
+            },
+            // ── GCC Solutions ─────────────────────────────
+            {
+                path:'/gcc-solutions',
+                element:<GCCSolutions/>
+            },
+            {
+                path:'/gcc-solutions/consulting-advisory',
+                element:<ServiceDetails solutionKey="consultingAdvisory" />
+            },
+            {
+                path:'/gcc-solutions/engagement-models',
+                element:<ProjectDetails title="GCC Engagement Models" currentPage="Engagement Models" modelTitle="GCC Engagement Models" category="GCC Models" />
+            },
+            {
+                path:'/gcc-solutions/talent-workspace',
+                element:<ServiceDetails solutionKey="workspaceSolutions" />
+            },
+            {
+                path:'/gcc-solutions/legal-services',
+                element:<ServiceDetails solutionKey="legalServices" />
+            },
+            // ── Resources ────────────────────────────────
+            {
+                path:'/resources',
+                element:<Resources/>
+            },
+            {
+                path:'/resources/whitepapers',
+                element:<Whitepapers/>
+            },
+            {
+                path:'/resources/case-studies',
+                element:<CaseStudies/>
+            },
+            {
+                path:'/resources/brochure',
+                element:<Brochure/>
             },
         ]
     },
