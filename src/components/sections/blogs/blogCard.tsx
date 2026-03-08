@@ -40,8 +40,8 @@ const BlogCard = ({ news }: { news: BlogPostDataType, className?: string }) => {
                 {/* Category pill */}
                 <span style={{
                     display: 'inline-block',
-                    backgroundColor: '#eff6ff',
-                    color: '#2563eb',
+                    backgroundColor: '#f0eefb',
+                    color: '#5b47e0',
                     fontSize: '11px',
                     fontWeight: '600',
                     letterSpacing: '0.05em',

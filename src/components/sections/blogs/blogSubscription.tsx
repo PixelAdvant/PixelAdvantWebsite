@@ -62,13 +62,13 @@ const BlogSubscription = () => {
             <div style={{
                 width: '48px',
                 height: '48px',
-                backgroundColor: '#eff6ff',
+                backgroundColor: '#f0eefb',
                 borderRadius: '50%',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 margin: '0 auto 16px',
-                color: '#2563eb',
+                color: '#5b47e0',
                 fontSize: '20px'
             }}>
                 <i className="fa-solid fa-bell" />
@@ -120,7 +120,7 @@ const BlogSubscription = () => {
                         disabled={loading}
                         style={{
                             padding: '11px 22px',
-                            backgroundColor: '#2563eb',
+                            backgroundColor: '#5b47e0',
                             color: 'white',
                             border: 'none',
                             borderRadius: '8px',

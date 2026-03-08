@@ -28,8 +28,8 @@ const BlogDetails = () => {
                                 <span
                                     style={{
                                         display: "inline-block",
-                                        backgroundColor: "#eff6ff",
-                                        color: "#2563eb",
+                                        backgroundColor: "#f0eefb",
+                                        color: "#5b47e0",
                                         fontSize: "11px",
                                         fontWeight: "700",
                                         letterSpacing: "0.06em",
@@ -88,7 +88,7 @@ const BlogDetails = () => {
 
                                 <blockquote
                                     style={{
-                                        borderLeft: "4px solid #2563eb",
+                                        borderLeft: "4px solid #5b47e0",
                                         backgroundColor: "#f8faff",
                                         padding: "24px 28px",
                                         borderRadius: "0 10px 10px 0",

@@ -15,10 +15,10 @@
 // $heading-font: "Playfair Display", serif;
 // $body-font: "Inter", sans-serif;
 
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap");
 
-$heading-font: "Manrope", sans-serif;
-$body-font: "Manrope", sans-serif;
+$heading-font: "Plus Jakarta Sans", sans-serif;
+$body-font: "Inter", sans-serif;
 
 // @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap");
 
@@ -33,12 +33,20 @@ body {
     font-family: $body-font;
     font-size: 16px;
     font-weight: normal;
-    line-height: 28px;
+    line-height: 1.75;
     color: $text-color;
     background-color: $white;
 	padding: 0;
 	margin: 0;
 	overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: rgba(91, 71, 224, 0.15);
+    color: #0f172a;
 }
 
 ul {
@@ -131,6 +139,10 @@ a {
     cursor: pointer;
     color: $header-color;
 	@include transition;
+
+	&:hover {
+		color: #5b47e0;
+	}
 }
 
 p {

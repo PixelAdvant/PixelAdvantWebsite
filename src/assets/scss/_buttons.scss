@@ -3,96 +3,113 @@
 
 //>>>>> Component Button Here <<<<<//
 .theme-btn {
-    background-color: $theme-color;
+    background: linear-gradient(135deg, #5b47e0 0%, #7c6fec 100%);
     color: $white;
     display: inline-block;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
-    padding: 24px 40px;
-    border-radius: 0;
+    padding: 15px 36px;
+    border-radius: 50px;
     text-transform: capitalize;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    letter-spacing: 0.01em;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     position: relative;
     z-index: 1;
     line-height: 1;
+    box-shadow: 0 4px 15px rgba(91, 71, 224, 0.35);
+    overflow: hidden;
 
     &::before {
         content: "";
-        background-color: $header-color;
-        width: 0;
-        height: 50%;
+        background: linear-gradient(135deg, #7c6fec 0%, #5b47e0 100%);
+        width: 100%;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
-        -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-        transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        opacity: 0;
+        -webkit-transition: opacity 0.3s ease;
+        transition: opacity 0.3s ease;
         z-index: -1;
+        border-radius: 50px;
     }
 
     &::after {
-        content: "";
-        background-color: $header-color;
-        width: 0;
-        height: 50%;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-        transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-        z-index: -1;
+        display: none;
     }
 
     i {
-        margin-left: 10px;
+        margin-left: 8px;
+        transition: transform 0.2s ease;
     }
 
     &:hover {
        color: $white;
+       box-shadow: 0 6px 24px rgba(91, 71, 224, 0.45);
+       transform: translateY(-2px);
 
-        &::before,&::after {
-            width: 100%;
+        &::before {
+            opacity: 1;
+        }
+
+        i {
+            transform: translateX(3px);
         }
     }
 
+    &:active {
+        transform: translateY(0);
+    }
+
     &.hover-white {
-        &::before,&::after {
-            background-color: $white;
+        &::before {
+            background: $white;
         }
 
         &:hover {
             color: $header-color;
+            box-shadow: 0 6px 24px rgba(255, 255, 255, 0.3);
         }
     }
 
     &.bg-white {
-        background-color: $white;
+        background: $white;
         color: $header-color;
+        box-shadow: 0 4px 15px rgba(15, 23, 42, 0.12);
+
+        &::before {
+            background: #f1f5f9;
+        }
 
         &:hover {
-            color: $white;
+            color: $header-color;
+            box-shadow: 0 6px 24px rgba(15, 23, 42, 0.18);
         }
     }
 
     &.border-white {
-        border: 1px solid $white;
-        background-color: transparent;
-        padding: 22px 40px;
+        border: 2px solid rgba(255,255,255,0.7);
+        background: transparent;
+        box-shadow: none;
+        padding: 13px 34px;
 
         @include breakpoint (max-md){
-            padding: 18px 32px;
+            padding: 11px 28px;
         }
     
         @include breakpoint (max-sm){
-            padding: 16px 30px;
+            padding: 10px 24px;
         }
 
-        &::before,&::after {
-            background-color: $white;
+        &::before {
+            background: $white;
         }
 
         &:hover {
             color: $header-color !important;
+            box-shadow: none;
+            border-color: $white;
         }
     }
 

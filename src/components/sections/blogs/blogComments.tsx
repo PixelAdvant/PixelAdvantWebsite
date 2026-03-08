@@ -84,8 +84,8 @@ const BlogComments = () => {
                             <span style={{
                                 marginLeft: '8px',
                                 fontSize: '11px',
-                                color: '#2563eb',
-                                backgroundColor: '#eff6ff',
+                                color: '#5b47e0',
+                                backgroundColor: '#f0eefb',
                                 padding: '2px 7px',
                                 borderRadius: '10px',
                                 fontWeight: '600'
@@ -102,7 +102,7 @@ const BlogComments = () => {
                         style={{
                             background: 'none',
                             border: 'none',
-                            color: '#2563eb',
+                            color: '#5b47e0',
                             cursor: 'pointer',
                             fontSize: '13px',
                             fontWeight: '600',
@@ -193,7 +193,7 @@ const BlogComments = () => {
                                     onClick={() => handleReplySubmit(comment.id)}
                                     style={{
                                         padding: '8px 20px',
-                                        backgroundColor: '#2563eb',
+                                        backgroundColor: '#5b47e0',
                                         color: 'white',
                                         border: 'none',
                                         borderRadius: '6px',

@@ -57,8 +57,8 @@ const Blog = () => {
                             }}>
                                 <span style={{
                                     display: 'inline-block',
-                                    backgroundColor: '#eff6ff',
-                                    color: '#2563eb',
+                                    backgroundColor: '#f0eefb',
+                                    color: '#5b47e0',
                                     fontSize: '11px',
                                     fontWeight: '700',
                                     letterSpacing: '0.06em',
@@ -121,8 +121,8 @@ const Blog = () => {
                                 style={{
                                     padding: '7px 18px',
                                     borderRadius: '20px',
-                                    border: activeCategory === cat ? '1.5px solid #2563eb' : '1.5px solid #e5e7eb',
-                                    backgroundColor: activeCategory === cat ? '#2563eb' : '#fff',
+                                    border: activeCategory === cat ? '1.5px solid #5b47e0' : '1.5px solid #e5e7eb',
+                                    backgroundColor: activeCategory === cat ? '#5b47e0' : '#fff',
                                     color: activeCategory === cat ? '#fff' : '#374151',
                                     fontSize: '13px',
                                     fontWeight: '600',
