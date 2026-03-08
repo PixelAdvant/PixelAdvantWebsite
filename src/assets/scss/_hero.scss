@@ -3,6 +3,7 @@
 
 .hero-1 {
     position: relative;
+    background: linear-gradient(135deg, #f8faff 0%, #f0eefb 50%, #f5f3ff 100%);
 
     .array-button {
         position: absolute;
@@ -24,22 +25,23 @@
             width: 48px;
             height: 48px;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            color: #fff;
+            background: #fff;
+            border: 1px solid rgba(91, 71, 224, 0.2);
+            color: #5b47e0;
             font-size: 15px;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: background 0.25s ease, transform 0.2s ease;
+            transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.10);
 
             &:hover {
-                background: rgba(91, 71, 224, 0.7);
+                background: #5b47e0;
+                color: #fff;
                 border-color: transparent;
                 transform: scale(1.1);
+                box-shadow: 0 6px 20px rgba(91, 71, 224, 0.35);
             }
         }
     }
@@ -114,75 +116,52 @@
 
 
     .hero-image {
-        overflow: hidden;
-        position: absolute !important;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 1;
-        z-index: -2;
-        background-size: cover;
-        transform: scale(1);
-        -webkit-transition: all 8s ease-out 0s;
-        -moz-transition: all 8s ease-out 0s;
-        -ms-transition: all 8s ease-out 0s;
-        -o-transition: all 8s ease-out 0s;
-        transition: all 8s ease-out 0s;
-
-        &::before {
-            @include before;
-            background: linear-gradient(120deg, rgba(15, 23, 42, 0.32) 0%, rgba(17, 34, 57, 0.26) 55%, rgba(22, 49, 54, 0.22) 100%);
-            z-index: -1;
-        }
+        display: none;
     }
 
     .hero-content {
-        padding: 130px 0;
+        padding: 100px 0;
         position: relative;
         z-index: 9;
 
         @include breakpoint (max-md){
             text-align: center;
             margin: 0 auto;
-            padding: 95px 0;
+            padding: 70px 0 50px;
         }
 
         h6 {
-            color: $white;
-            background: rgba(255, 255, 255, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.35);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
+            color: #5b47e0;
+            background: rgba(91, 71, 224, 0.08);
+            border: 1px solid rgba(91, 71, 224, 0.22);
             padding: 7px 20px;
             border-radius: 50px;
             line-height: 1;
             display: inline-block;
             letter-spacing: 0.1em;
             font-size: 12px;
-            font-weight: 600;
+            font-weight: 700;
             margin-bottom: 24px;
         }
 
         h1 {
-            color: $white;
+            color: #0f172a;
             font-size: 58px;
             line-height: 1.1;
             margin-bottom: 22px;
-            letter-spacing: -0.025em;
+            letter-spacing: -0.03em;
             font-weight: 800;
-            text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
 
             @include breakpoint (max-xxl){
-                font-size: 56px;
+                font-size: 54px;
             }
 
             @include breakpoint (max-lg){
-                font-size: 46px;
+                font-size: 44px;
             }
 
             @include breakpoint (max-md){
-                font-size: 36px;
+                font-size: 34px;
             }
 
             @include breakpoint (max-sm){
@@ -191,13 +170,12 @@
         }
 
         p {
-            color: rgba(255, 255, 255, 0.95);
+            color: #475569;
             font-size: 17px;
             font-weight: 400;
-            line-height: 1.7;
-            margin-bottom: 32px;
+            line-height: 1.75;
+            margin-bottom: 36px;
             max-width: 520px;
-            text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
         }
 
         .hero-button {
@@ -208,6 +186,27 @@
 
             a, button {
                 margin: 0 !important;
+            }
+
+            .theme-btn-outline {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                padding: 14px 32px;
+                border-radius: 50px;
+                border: 2px solid #5b47e0;
+                color: #5b47e0;
+                font-size: 15px;
+                font-weight: 600;
+                background: transparent;
+                transition: all 0.25s ease;
+                text-decoration: none;
+                line-height: 1;
+
+                &:hover {
+                    background: #5b47e0;
+                    color: #fff;
+                }
             }
 
             @include breakpoint (max-md){
@@ -225,8 +224,8 @@
     .hero-visual-main {
         border-radius: 28px;
         overflow: hidden;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 35px 60px rgba(0, 0, 0, 0.35);
+        border: 1px solid rgba(91, 71, 224, 0.12);
+        box-shadow: 0 32px 64px rgba(15, 23, 42, 0.14), 0 0 0 1px rgba(91, 71, 224, 0.06);
 
         img {
             width: 100%;

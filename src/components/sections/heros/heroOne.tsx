@@ -74,7 +74,6 @@ const Card = ({ slide, isActive, onDemoClick }: { slide: SlideType; isActive: bo
       initial={{ opacity: 0 }}
       animate={{ opacity: isActive ? 1 : 0 }}
     >
-      <div className="hero-image" style={{ backgroundImage: `url(${slide.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
       <div className="container">
         <div className="row g-4 align-items-center">
           <div className="col-xl-7 col-lg-7">
@@ -120,16 +119,16 @@ const Card = ({ slide, isActive, onDemoClick }: { slide: SlideType; isActive: bo
                 }}
                 className="hero-button"
               >
-                <Link to={slide.link} className="theme-btn theme-color-2">
-                  <span>Learn More <i className="fas fa-chevron-right" /></span>
+                <Link to={slide.link} className="theme-btn">
+                  Learn More <i className="fas fa-chevron-right" />
                 </Link>
                 {onDemoClick ? (
-                  <button type="button" className="theme-btn" onClick={onDemoClick} style={{ marginLeft: '10px' }}>
-                    <span>Request Demo <i className="fas fa-calendar-check" /></span>
+                  <button type="button" className="theme-btn-outline" onClick={onDemoClick}>
+                    Request Demo <i className="fas fa-calendar-check" />
                   </button>
                 ) : (
-                  <Link to="/contact" className="theme-btn" style={{ marginLeft: '10px' }}>
-                    <span>Request Demo <i className="fas fa-calendar-check" /></span>
+                  <Link to="/contact" className="theme-btn-outline">
+                    Request Demo <i className="fas fa-calendar-check" />
                   </Link>
                 )}
               </motion.div>
