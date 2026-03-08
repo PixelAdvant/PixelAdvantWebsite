@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay, EffectFade } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import 'swiper/css';
+import 'swiper/css/effect-fade';
 import { Link } from "react-router-dom";
 
 interface SlideType {
@@ -73,7 +74,7 @@ const Card = ({ slide, isActive, onDemoClick }: { slide: SlideType; isActive: bo
       initial={{ opacity: 0 }}
       animate={{ opacity: isActive ? 1 : 0 }}
     >
-      <div className="hero-image bg-cover" />
+      <div className="hero-image" style={{ backgroundImage: `url(${slide.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
       <div className="container">
         <div className="row g-4 align-items-center">
           <div className="col-xl-7 col-lg-7">
