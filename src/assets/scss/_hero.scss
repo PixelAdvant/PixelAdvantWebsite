@@ -108,7 +108,7 @@
 
         &::before {
             @include before;
-            background: linear-gradient(120deg, #0f1a2f 0%, #112239 55%, #163136 100%);
+            background: linear-gradient(120deg, rgba(15, 23, 42, 0.60) 0%, rgba(17, 34, 57, 0.52) 55%, rgba(22, 49, 54, 0.48) 100%);
             z-index: -1;
         }
     }
@@ -126,42 +126,52 @@
 
         h6 {
             color: $white;
-            background-color: $theme-color;
-            padding: 8px 20px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            padding: 7px 20px;
+            border-radius: 50px;
             line-height: 1;
             display: inline-block;
-            letter-spacing: 1px;
-            margin-bottom: 20px;
+            letter-spacing: 0.1em;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 24px;
         }
 
         h1 {
             color: $white;
-            font-size: 56px;
-            line-height: 1.08;
-            margin-bottom: 26px;
+            font-size: 58px;
+            line-height: 1.1;
+            margin-bottom: 22px;
+            letter-spacing: -0.025em;
+            font-weight: 800;
 
             @include breakpoint (max-xxl){
                 font-size: 56px;
             }
 
             @include breakpoint (max-lg){
-                font-size: 48px;
+                font-size: 46px;
             }
 
             @include breakpoint (max-md){
-                font-size: 38px;
+                font-size: 36px;
             }
 
             @include breakpoint (max-sm){
-                font-size: 30px;
+                font-size: 28px;
             }
         }
 
         p {
-            color: $white;
-            font-size: 16px;
-            font-weight: 500;
-            margin-bottom: 28px;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.7;
+            margin-bottom: 32px;
+            max-width: 520px;
         }
     }
 

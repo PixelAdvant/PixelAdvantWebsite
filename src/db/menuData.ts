@@ -35,10 +35,6 @@ export type MenuItemDataType = {
 
 export const menuData: MenuItemDataType[] = [
   {
-    title: 'Home',
-    link: '/',
-  },
-  {
     title: 'About',
     link: '/about',
     submenu: [
