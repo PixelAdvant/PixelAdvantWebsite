@@ -1,6 +1,8 @@
+import { useRef } from "react"
 import { motion } from "motion/react"
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Autoplay, EffectFade, Navigation } from "swiper/modules";
+import { Autoplay, EffectFade } from "swiper/modules";
+import type { Swiper as SwiperType } from "swiper";
 import 'swiper/css';
 import { Link } from "react-router-dom";
 
@@ -32,26 +34,25 @@ const slidesData: SlideType[] = [
 ];
 
 const HeroOne = ({ onDemoClick }: { onDemoClick?: () => void }) => {
+  const swiperRef = useRef<SwiperType | null>(null)
+
   return (
     <section className="hero-section hero-1">
       <div className="array-button">
-        <button type="button" className="array-prev hero-one-prev"><i className="fa fa-arrow-left" /></button>
-        <button type="button" className="array-next hero-one-next"><i className="fa fa-arrow-right" /></button>
+        <button type="button" className="array-prev" onClick={() => swiperRef.current?.slidePrev()}><i className="fa fa-arrow-left" /></button>
+        <button type="button" className="array-next" onClick={() => swiperRef.current?.slideNext()}><i className="fa fa-arrow-right" /></button>
       </div>
       <Swiper
         loop={true}
         slidesPerView={1}
         effect="fade"
-        speed={3000}
+        speed={1200}
         autoplay={{
           delay: 7000,
           disableOnInteraction: false,
         }}
-        navigation={{
-          nextEl: ".hero-one-next",
-          prevEl: ".hero-one-prev",
-        }}
-        modules={[Navigation, EffectFade, Autoplay]}
+        onSwiper={(swiper) => { swiperRef.current = swiper }}
+        modules={[EffectFade, Autoplay]}
       >
         {slidesData.map((slide) => (
           <SwiperSlide key={slide.id}>

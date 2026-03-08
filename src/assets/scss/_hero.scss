@@ -4,7 +4,7 @@
 .hero-1 {
     position: relative;
 
-    .array-button{
+    .array-button {
         position: absolute;
         top: 50%;
         right: 30px;
@@ -12,12 +12,36 @@
         transform: translateY(-50%);
         @include flex;
         justify-content: space-between;
-        z-index: 9;
+        z-index: 99;
+        pointer-events: none;
 
         @include breakpoint (max-lg){
             display: none;
         }
-  
+
+        button {
+            pointer-events: all;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: #fff;
+            font-size: 15px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.25s ease, transform 0.2s ease;
+
+            &:hover {
+                background: rgba(91, 71, 224, 0.7);
+                border-color: transparent;
+                transform: scale(1.1);
+            }
+        }
     }
 
     .swiper-slide-active .hero-image {
@@ -172,6 +196,21 @@
             line-height: 1.7;
             margin-bottom: 32px;
             max-width: 520px;
+        }
+
+        .hero-button {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 14px;
+
+            a, button {
+                margin: 0 !important;
+            }
+
+            @include breakpoint (max-md){
+                justify-content: center;
+            }
         }
     }
 
