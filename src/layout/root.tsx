@@ -1,5 +1,6 @@
 import Footer from '@/components/sections/footer'
 import HeaderOne from '@/components/headers/headerOne'
+import WhatsAppButton from '@/components/ui/WhatsAppButton'
 import { Outlet, ScrollRestoration } from 'react-router-dom'
 import useAnimation from '@/hooks/useAnimation';
 
@@ -10,6 +11,7 @@ const RootLayout = () => {
             <HeaderOne />
             <Outlet />
             <Footer />
+            <WhatsAppButton />
             <ScrollRestoration />
         </>
     )
