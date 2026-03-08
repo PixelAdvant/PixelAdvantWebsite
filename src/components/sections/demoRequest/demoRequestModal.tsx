@@ -59,14 +59,15 @@ const DemoRequestModal = ({ isOpen, onClose }: DemoRequestModalProps) => {
         <>
             <div className="modal-overlay" onClick={onClose} />
             <div className="demo-request-modal">
-                <button className="modal-close" onClick={onClose}>
-                    <i className="fa-solid fa-times" />
-                </button>
-
-                <div className="modal-content">
+                <div className="modal-header-section">
+                    <button className="modal-close" onClick={onClose}>
+                        <i className="fa-solid fa-times" />
+                    </button>
                     <h2>Request a Product Demo</h2>
                     <p>Schedule a personalized demo of our AI-led talent acquisition platform</p>
+                </div>
 
+                <div className="modal-content">
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">
                             <label>Full Name*</label>
@@ -158,7 +159,7 @@ const DemoRequestModal = ({ isOpen, onClose }: DemoRequestModalProps) => {
                         )}
 
                         <button type="submit" className="theme-btn" disabled={loading}>
-                            {loading ? 'Submitting...' : 'Request Demo'}
+                            <span>{loading ? 'Submitting...' : 'Request Demo'}</span>
                         </button>
                     </form>
                 </div>

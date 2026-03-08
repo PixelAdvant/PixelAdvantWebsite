@@ -3,7 +3,7 @@
 
 //>>>>> Header Top Start <<<<<//<//
 .header-top-section {
-	background-color: $header-color;
+	background: linear-gradient(135deg, #5b47e0 0%, #7c6fec 100%);
 	padding: 10px 0;
 	position: relative;
 	z-index: 99;
@@ -14,7 +14,7 @@
 
 	&::before {
 		@include before;
-		background-color: $theme-color;
+		background-color: rgba(255, 255, 255, 0.10);
 		z-index: -1;
 		left: 81%;
 
@@ -205,7 +205,7 @@
 				a {
 					display: inline-block;
 					font-size: 15px;
-					font-weight: 500;
+					font-weight: 600;
 					color: #0f172a;
 					padding: 22px 0;
 					text-align: left;
@@ -249,7 +249,7 @@
 						a {
 							position: relative;
 							z-index: 11;
-							font-size: 16px;
+							font-size: 15px;
 							font-weight: 600;
 							color: $header-color;
 							padding: 0 25px;
@@ -487,11 +487,7 @@
 									padding: 0 !important;
 									border: none !important;
 									width: auto;
-									font-size: 16px;
-									font-weight: 600;
-									line-height: 1.35;
-									color: #333333 !important;
-									background: transparent !important;
+								font-size: 15px;
 
 									&:hover {
 										color: $theme-color !important;
@@ -589,17 +585,18 @@
 			}
 
 			.header-button {
-				margin-right: 50px;
+				margin-right: 20px;
 
 				.theme-btn {
-					padding: 22px 30px;
+					padding: 14px 24px;
+					font-size: 14px;
 				}
 
 				@include breakpoint (max-xl4) {
 					margin-right: 0;
 				}
 
-				@include breakpoint (max-xxxl) {
+				@include breakpoint (max-lg) {
 					display: none;
 				}
 			}
