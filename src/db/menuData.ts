@@ -46,7 +46,7 @@ export const menuData: MenuItemDataType[] = [
     title: 'Recruitment Solutions',
     link: '/recruitment',
     submenu: [
-      { title: 'Click-100 Platform', link: '/recruitment/click-100' },
+      { title: 'Click-100 Platform', link: 'https://pixeladvant.github.io/Click100-Landing/' },
       { title: 'Advisory and Consultancy', link: '/recruitment/advisory-consultancy' },
       { title: 'Hire Global Talent', link: '/recruitment/hire-global-talent' },
       { title: 'Workforce Strategy', link: '/recruitment/workforce-strategy' },

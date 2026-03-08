@@ -126,7 +126,19 @@ function Navbar() {
                                                         </ul>
                                                     </li>
                                                     :
-                                                    <li ><Link to={dropdown.link}>{dropdown.title}</Link></li>
+                                                    <li>
+                                                        {isExternalHref(dropdown.link) ? (
+                                                            <a
+                                                                href={dropdown.link}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                            >
+                                                                {dropdown.title}
+                                                            </a>
+                                                        ) : (
+                                                            <Link to={dropdown.link}>{dropdown.title}</Link>
+                                                        )}
+                                                    </li>
                                             }
                                         </Fragment>
                                     )

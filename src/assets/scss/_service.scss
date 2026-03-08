@@ -401,8 +401,15 @@
 .service-details-wrapper {
     .service-details-items {
         .details-image {
+            height: 420px;
+            overflow: hidden;
+            border-radius: 8px;
+
             img {
-                @include imgw;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center top;
             }
         }
 
@@ -501,8 +508,15 @@
                 margin-bottom: 40px;
 
                 .thumb {
+                    height: 260px;
+                    overflow: hidden;
+                    border-radius: 8px;
+
                     img {
-                        @include imgw;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
                     }
                 }
             }

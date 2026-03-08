@@ -6,6 +6,7 @@ import BlogDetails from "@/pages/blog-details";
 import BlogStandard from "@/pages/blog-standard";
 import Brochure from "@/pages/brochure";
 import CaseStudies from "@/pages/case-studies";
+import Click100Redirect from "@/pages/click100-redirect";
 import Contact from "@/pages/contact";
 import Dashboard from "@/pages/dashboard";
 import DashboardLogin from "@/pages/dashboard-login";
@@ -14,7 +15,6 @@ import GCCSolutions from "@/pages/gcc-solutions";
 import Home from "@/pages/home";
 import Jobs from "@/pages/jobs";
 import LeadershipTeam from "@/pages/leadership-team";
-import ProductOne from "@/pages/product-one";
 import ProductThree from "@/pages/product-three";
 import ProductTwo from "@/pages/product-two";
 import Products from "@/pages/products";
@@ -131,7 +131,7 @@ export const router = createRouter([
             },
             {
                 path:'/products/Click 100',
-                element:<ProductOne/>
+                element:<Click100Redirect/>
             },
             {
                 path:'/products/Advantage plus',
@@ -143,7 +143,7 @@ export const router = createRouter([
             },
             {
                 path:'/products/click-100',
-                element:<ProductOne/>
+                element:<Click100Redirect/>
             },
             {
                 path:'/products/advantage-plus',
@@ -201,7 +201,7 @@ export const router = createRouter([
             },
             {
                 path:'/recruitment/click-100',
-                element:<ProductOne/>
+                element:<Click100Redirect/>
             },
             {
                 path:'/recruitment/advisory-consultancy',
