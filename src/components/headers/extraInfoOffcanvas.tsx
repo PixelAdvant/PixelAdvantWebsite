@@ -21,7 +21,8 @@ const ExtraInfoOffcanvas = () => {
                             <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                                 <div className="offcanvas__logo">
                                     <Link to="/">
-                                        <img src="/img/logo/black-logo.svg" alt="logo-img" />
+                                        {/* <img src="/img/logo/black-logo.svg" alt="logo-img" /> */}
+                                        <img src="/img/logo/logo.png" alt="logo-img" style={{ height: "90px", width: "auto", objectFit: "cover" }} />
                                     </Link>
                                 </div>
                                 <div className="offcanvas__close">
@@ -32,7 +33,7 @@ const ExtraInfoOffcanvas = () => {
                             </div>
                             <MobileMenuList/>
                             <p className="text d-none d-lg-block">
-                                Nullam dignissim, ante scelerisque the is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                                PixelAdvant is your trusted partner in Global Capability Centers. With 400+ years of collective expertise, we provide innovative solutions for consulting, talent acquisition, and managed services.
                             </p>
                             <div className="mobile-menu fix mb-3" />
                             <div className="offcanvas__contact">
@@ -43,7 +44,7 @@ const ExtraInfoOffcanvas = () => {
                                             <i className="fal fa-map-marker-alt" />
                                         </div>
                                         <div className="offcanvas__contact-text">
-                                            <Link to="#">Main Street, Melbourne, Australia</Link>
+                                            <Link to="#">India and United States</Link>
                                         </div>
                                     </li>
                                     <li className="d-flex align-items-center">
@@ -51,7 +52,7 @@ const ExtraInfoOffcanvas = () => {
                                             <i className="fal fa-envelope" />
                                         </div>
                                         <div className="offcanvas__contact-text">
-                                            <Link to="mailto:info@azent.com"><span className="mailto:info@example.com">info@example.com</span></Link>
+                                            <Link to="mailto:info@pixeladvant.com"><span className="mailto:info@pixeladvant.com">info@pixeladvant.com</span></Link>
                                         </div>
                                     </li>
                                     <li className="d-flex align-items-center">
@@ -67,7 +68,7 @@ const ExtraInfoOffcanvas = () => {
                                             <i className="far fa-phone" />
                                         </div>
                                         <div className="offcanvas__contact-text">
-                                            <Link to="tel:+11002345909">+11002345909</Link>
+                                            <Link to="tel:+91 8904957029">+91 8904957029</Link>
                                         </div>
                                     </li>
                                 </ul>

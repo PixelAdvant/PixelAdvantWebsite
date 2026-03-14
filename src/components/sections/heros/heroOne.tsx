@@ -18,7 +18,7 @@ interface SlideType {
 const slidesData: SlideType[] = [
   {
     id: 1,
-    image: '/img/hero/image1.jpg',
+    image: '/img/hero/heroimage1.png',
     title: 'EMPOWERING GLOBAL INNOVATION CENTERS',
     heading: 'Putting the Right<br /> Solutions and Methods<br /> in Place',
     description: 'Unlock the full potential of your Global Capability Center with our comprehensive consulting, talent acquisition, and managed services solutions.',

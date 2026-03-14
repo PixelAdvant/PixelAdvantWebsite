@@ -91,7 +91,8 @@ const Footer = () => {
                             <div className="single-footer-widget">
                                 <div className="widget-head">
                                     <Link to="/">
-                                        <img src="/img/logo/white-logo.svg" alt="logo-img" />
+                                        <img src="/img/logo/logo.png" alt="logo-img" style={{ height: "90px", width: "auto", objectFit: "cover" }} />
+                                        {/* <img src="/img/logo/white-logo.svg" alt="logo-img" /> */}
                                     </Link>
                                 </div>
                                 <div className="footer-content">
