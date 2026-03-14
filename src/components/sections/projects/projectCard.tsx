@@ -11,7 +11,7 @@ const ProjectCard = ({ project, className, iconCalss, isIconShow=true }: Project
     return (
         <div className={`project-items ${className}`}>
             <div className="project-image">
-                <img src={project.image} alt="project-img" />
+                <img src={project.image} alt={project.title || 'project-img'} loading="lazy" decoding="async" />
                 <div className="project-content">
                     <p>{project.category}</p>
                     <h4>

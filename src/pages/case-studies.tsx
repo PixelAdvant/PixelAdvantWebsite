@@ -1,8 +1,11 @@
 import PageTitle from "@/components/sections/pageTitle"
+import SEO from '@/components/SEO'
+import { pageSEOConfig } from '@/lib/seoConfig'
 
 const CaseStudies = () => {
   return (
     <>
+      <SEO {...pageSEOConfig.caseStudies} />
       <PageTitle title="Case Studies" currentPage="Case Studies" />
       <section className="section-padding fix">
         <div className="container">

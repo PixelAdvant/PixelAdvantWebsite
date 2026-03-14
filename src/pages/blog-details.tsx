@@ -4,6 +4,8 @@ import BlogSidebar from "@/components/sections/blogs/blogSIdebar";
 import BlogInteractions from "@/components/sections/blogs/blogInteractions";
 import PageTitle from "@/components/sections/pageTitle";
 import { Link } from "react-router-dom";
+import SEO from '@/components/SEO';
+import { pageSEOConfig } from '@/lib/seoConfig';
 
 const BlogDetails = () => {
     const blogTitle = "Establishing Your Global Capability Centre in India";
@@ -11,6 +13,16 @@ const BlogDetails = () => {
 
     return (
         <>
+            <SEO
+                {...pageSEOConfig.blogDetails}
+                title={blogTitle}
+                description={`Read about ${blogTitle}. Expert insights on GCC setup, consulting, and global capability centre trends from Pixel Advant.`}
+                ogType="article"
+                article={{
+                    author: 'Pixel Advant',
+                    section: 'GCC Insights',
+                }}
+            />
             <PageTitle currentPage="Blog Details" title="Blog Post" />
             <section style={{ backgroundColor: "#fff", padding: "60px 0 80px" }}>
                 <div className="container">

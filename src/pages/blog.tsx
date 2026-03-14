@@ -4,6 +4,8 @@ import BlogSubscription from "@/components/sections/blogs/blogSubscription"
 import PageTitle from "@/components/sections/pageTitle"
 import { blogPostsThreeData } from "@/db/blogPostsThreeData"
 import { Link } from "react-router-dom"
+import SEO from '@/components/SEO'
+import { pageSEOConfig } from '@/lib/seoConfig'
 
 const allCategories = ['All', ...Array.from(new Set(blogPostsThreeData.map(p => p.category)))]
 
@@ -17,6 +19,7 @@ const Blog = () => {
 
     return (
         <>
+            <SEO {...pageSEOConfig.blog} />
             <PageTitle currentPage="Blogs" title="Blog" />
 
             <section style={{ backgroundColor: '#fff', padding: '60px 0 80px' }}>

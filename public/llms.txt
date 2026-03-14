@@ -1,0 +1,39 @@
+# Pixel Advant — llms.txt
+# https://www.pixeladvant.com
+
+## About Pixel Advant
+Pixel Advant is an India-based consulting and technology services company specialising in Global Capability Centre (GCC) setup, management, and consulting. We help multinational corporations (MNCs) establish, scale, and optimise their Global Capability Centres in India.
+
+## Core Services
+- **GCC Setup & Consulting**: End-to-end GCC establishment services in India — from strategy and location selection to legal setup, talent acquisition, and infrastructure.
+- **Recruitment Solutions**: Smart talent acquisition, AI-led talent supply, workforce strategy, and Click 100 recruitment platform.
+- **Digital Engineering**: Application engineering, quality engineering, business architecture, and product development services.
+- **GCC Engagement Models**: Captive Model, Shared Services Model, Build-Operate-Transfer (BOT) model.
+- **Managed Services**: Ongoing operational management and optimisation of GCCs.
+- **Workspace Solutions**: Physical and virtual workspace setup for GCC teams in India.
+- **Legal Services**: GCC company registration, compliance, FEMA regulations, and legal structuring in India.
+- **Consulting & Advisory**: Strategic roadmapping, location benchmarking, and GCC maturity assessment.
+
+## Industries Served
+Pixel Advant serves clients across Fintech/BFSI, Healthcare, Technology/SaaS, Manufacturing, Retail/E-commerce, and AdTech/Media industries.
+
+## Key Pages
+- Homepage: https://www.pixeladvant.com/
+- About Us: https://www.pixeladvant.com/about
+- GCC Solutions: https://www.pixeladvant.com/gcc-solutions
+- Recruitment: https://www.pixeladvant.com/recruitment
+- Digital Engineering: https://www.pixeladvant.com/digital-engineering
+- Products: https://www.pixeladvant.com/products
+- Blog: https://www.pixeladvant.com/blog
+- Resources: https://www.pixeladvant.com/resources
+- Case Studies: https://www.pixeladvant.com/resources/case-studies
+- Contact: https://www.pixeladvant.com/contact
+- Careers: https://www.pixeladvant.com/careers
+- Leadership Team: https://www.pixeladvant.com/about/leadership-team
+
+## Location
+Pixel Advant operates from India, serving global MNCs looking to set up or expand their GCCs in major Indian tech hubs including Bengaluru, Hyderabad, Pune, Chennai, and Delhi NCR.
+
+## Contact
+Website: https://www.pixeladvant.com
+Contact Page: https://www.pixeladvant.com/contact

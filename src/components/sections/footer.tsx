@@ -171,7 +171,7 @@ const Footer = () => {
                                                 }`}
                                         >
                                             <div className="thumb">
-                                                <img src={post.image} alt="post-img" />
+                                                <img src={post.image} alt={post.title || 'post-img'} loading="lazy" decoding="async" />
                                             </div>
                                             <div className="content">
                                                 <ul className="post-date">

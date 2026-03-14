@@ -41,7 +41,7 @@ const PartnersOne = ({ className }: { className?: string }) => {
                                 return (
                                     <SwiperSlide key={id}>
                                         <div className="brand-image">
-                                            <img src={img} alt="brand-img" />
+                                            <img src={img} alt="brand-img" loading="lazy" decoding="async" />
                                         </div>
                                     </SwiperSlide>
                                 )

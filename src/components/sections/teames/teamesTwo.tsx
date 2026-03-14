@@ -28,7 +28,7 @@ const TeamesTwo = ({ isTitleShow }: { isTitleShow: boolean }) => {
                         >
                             <div className="team-card-items">
                                 <div className="team-image">
-                                    <img src={member.image} alt="team-img" />
+                                    <img src={member.image} alt={member.name || 'team-img'} loading="lazy" decoding="async" />
                                     <div className="social-profile">
                                         <span className="plus-btn">
                                             <i className="fas fa-share-alt" />

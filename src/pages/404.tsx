@@ -1,9 +1,12 @@
 import PageTitle from "@/components/sections/pageTitle"
 import { Link } from "react-router-dom"
+import SEO from '@/components/SEO'
+import { pageSEOConfig } from '@/lib/seoConfig'
 
 const Error = () => {
     return (
         <>
+            <SEO {...pageSEOConfig.error404} />
             <PageTitle currentPage="404" title="Page Not Found" />
             <section className="Error-section section-padding fix">
                 <div className="container">

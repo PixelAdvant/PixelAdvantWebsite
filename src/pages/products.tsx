@@ -1,5 +1,7 @@
 import PageTitle from "@/components/sections/pageTitle";
 import { Link } from "react-router-dom";
+import SEO from '@/components/SEO';
+import { pageSEOConfig } from '@/lib/seoConfig';
 
 const products = [
   {
@@ -17,6 +19,7 @@ const products = [
 const Products = () => {
   return (
     <>
+      <SEO {...pageSEOConfig.products} />
       <PageTitle title="Products" currentPage="Products" />
       <section className="service-section fix section-padding">
         <div className="container">
