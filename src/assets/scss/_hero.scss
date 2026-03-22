@@ -5,6 +5,21 @@
     position: relative;
     background: linear-gradient(135deg, #f8faff 0%, #f0eefb 50%, #f5f3ff 100%);
 
+    .hero-slide-inner {
+        min-height: 620px;
+        display: flex;
+        align-items: center;
+
+        > .container {
+            width: 100%;
+        }
+
+        @include breakpoint (max-lg){
+            min-height: auto;
+            display: block;
+        }
+    }
+
     .array-button {
         position: absolute;
         top: 50%;
@@ -120,14 +135,20 @@
     }
 
     .hero-content {
-        padding: 100px 0;
+        max-width: 560px;
+        padding: 84px 0;
         position: relative;
         z-index: 9;
+
+        @include breakpoint (max-lg){
+            max-width: 100%;
+            padding: 72px 0 54px;
+        }
 
         @include breakpoint (max-md){
             text-align: center;
             margin: 0 auto;
-            padding: 70px 0 50px;
+            padding: 58px 0 40px;
         }
 
         h6 {
@@ -146,22 +167,22 @@
 
         h1 {
             color: #0f172a;
-            font-size: 58px;
-            line-height: 1.1;
-            margin-bottom: 22px;
+            font-size: 52px;
+            line-height: 1.08;
+            margin-bottom: 18px;
             letter-spacing: -0.03em;
             font-weight: 800;
 
             @include breakpoint (max-xxl){
-                font-size: 54px;
+                font-size: 48px;
             }
 
             @include breakpoint (max-lg){
-                font-size: 44px;
+                font-size: 40px;
             }
 
             @include breakpoint (max-md){
-                font-size: 34px;
+                font-size: 32px;
             }
 
             @include breakpoint (max-sm){
@@ -171,11 +192,11 @@
 
         p {
             color: #475569;
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 400;
-            line-height: 1.75;
-            margin-bottom: 36px;
-            max-width: 520px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            max-width: 500px;
         }
 
         .hero-button {
@@ -217,8 +238,12 @@
 
     .hero-visual {
         position: relative;
-        max-width: 500px;
+        max-width: 440px;
         margin-left: auto;
+
+        @include breakpoint (max-lg){
+            margin: 0 auto;
+        }
     }
 
     .hero-visual-main {
@@ -229,7 +254,7 @@
 
         img {
             width: 100%;
-            height: 470px;
+            height: 410px;
             object-fit: cover;
             display: block;
         }
@@ -240,7 +265,7 @@
         background-color: $white;
         border-radius: 14px;
         padding: 10px 12px;
-        min-width: 170px;
+        min-width: 156px;
         box-shadow: 0 16px 30px rgba(14, 20, 27, 0.24);
 
         .label {
@@ -255,37 +280,37 @@
 
         h5 {
             margin: 0 0 2px;
-            font-size: 24px;
+            font-size: 22px;
             color: $header-color;
             line-height: 1.1;
         }
 
         p {
             margin: 0;
-            font-size: 13px;
+            font-size: 12px;
             color: $text-color;
             line-height: 1.35;
         }
 
         &.card-one {
-            top: 32px;
-            left: -22px;
+            top: 24px;
+            left: -12px;
         }
 
         &.card-two {
-            right: -16px;
-            bottom: 24px;
+            right: -10px;
+            bottom: 22px;
         }
     }
 
     @include breakpoint (max-xl){
         .hero-visual {
-            max-width: 420px;
+            max-width: 380px;
         }
 
         .hero-visual-main {
             img {
-                height: 400px;
+                height: 360px;
             }
         }
 

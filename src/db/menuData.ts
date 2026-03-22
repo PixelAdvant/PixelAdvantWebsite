@@ -47,9 +47,9 @@ export const menuData: MenuItemDataType[] = [
     link: '/recruitment',
     submenu: [
       { title: 'Click-100 Platform', link: 'https://pixeladvant.github.io/Click100-Landing/' },
-      { title: 'Advisory and Consultancy', link: '/recruitment/advisory-consultancy' },
-      { title: 'Hire Global Talent', link: '/recruitment/hire-global-talent' },
-      { title: 'Workforce Strategy', link: '/recruitment/workforce-strategy' },
+      { title: 'Consulting & Advisory', link: '/recruitment/advisory-consultancy' },
+      { title: 'Smart Talent Acquisition', link: '/recruitment/hire-global-talent' },
+      { title: 'Talent Management', link: '/recruitment/workforce-strategy' },
     ],
   },
   {
@@ -69,6 +69,8 @@ export const menuData: MenuItemDataType[] = [
       { title: 'Consulting and Advisory', link: '/gcc-solutions/consulting-advisory' },
       { title: 'GCC Engagement Models', link: '/gcc-solutions/engagement-models' },
       { title: 'Talent & Workspace Solutions', link: '/gcc-solutions/talent-workspace' },
+      { title: 'IT Services', link: '/gcc-solutions/it-services' },
+      { title: 'Digital Marketing Services', link: '/gcc-solutions/digital-marketing-services' },
       { title: 'Legal Services', link: '/gcc-solutions/legal-services' },
     ],
   },
