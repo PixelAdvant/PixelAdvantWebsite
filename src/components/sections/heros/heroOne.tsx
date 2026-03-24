@@ -18,19 +18,35 @@ interface SlideType {
 const slidesData: SlideType[] = [
   {
     id: 1,
-    image: '/img/hero/image1.jpg',
+    image: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80',
     title: 'EMPOWERING GLOBAL INNOVATION CENTERS',
-    heading: 'Putting the Right<br /> Solutions and Methods<br /> in Place',
+    heading: 'Putting the Right Solutions<br /> and Methods in Place',
     description: 'Unlock the full potential of your Global Capability Center with our comprehensive consulting, talent acquisition, and managed services solutions.',
     link: '/about',
   },
   {
     id: 2,
-    image: '/img/hero/image2.webp',
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1400&q=80',
     title: 'TRANSFORM YOUR WORKFORCE',
-    heading: 'AI-Led Smart Talent<br /> Acquisition & Supply<br /> Process',
+    heading: 'AI-Led Smart Talent<br /> Acquisition and Supply',
     description: 'Leverage our advanced AI solutions for efficient and targeted talent acquisition with real-time insights and data-driven decision making.',
     link: '/service',
+  },
+  {
+    id: 3,
+    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80',
+    title: 'SCALABLE IT SERVICES',
+    heading: 'Build Secure, Modern Technology<br /> Systems That Grow With You',
+    description: 'From custom software and managed cloud operations to cybersecurity and digital transformation, we help businesses create stronger IT foundations.',
+    link: '/gcc-solutions/it-services',
+  },
+  {
+    id: 4,
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80',
+    title: 'PERFORMANCE DIGITAL MARKETING',
+    heading: 'Turn Visibility Into Qualified<br /> Demand and Measurable Growth',
+    description: 'Our SEO, paid media, content, automation, and reputation programmes are designed to generate better traffic, stronger leads, and sustainable growth.',
+    link: '/gcc-solutions/digital-marketing-services',
   },
 ];
 
@@ -71,12 +87,13 @@ export default HeroOne
 const Card = ({ slide, isActive, onDemoClick }: { slide: SlideType; isActive: boolean; onDemoClick?: () => void }) => {
   return (
     <motion.div
+      className="hero-slide-inner"
       initial={{ opacity: 0 }}
       animate={{ opacity: isActive ? 1 : 0 }}
     >
       <div className="container">
         <div className="row g-4 align-items-center">
-          <div className="col-xl-7 col-lg-7">
+          <div className="col-xl-6 col-lg-6">
             <div className="hero-content">
               <motion.h6
                 initial={{ x: '100%', opacity: 0 }}
@@ -134,7 +151,7 @@ const Card = ({ slide, isActive, onDemoClick }: { slide: SlideType; isActive: bo
               </motion.div>
             </div>
           </div>
-          <div className="col-xl-5 col-lg-5">
+          <div className="col-xl-6 col-lg-6">
             <motion.div
               className="hero-visual"
               initial={{ x: 60, opacity: 0 }}

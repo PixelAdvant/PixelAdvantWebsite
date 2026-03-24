@@ -1,11 +1,16 @@
 import { ServiceDataType } from "@/db/serviceOneData";
+import { ServiceIcon } from "@/lib/serviceIcons";
 import { Link } from "react-router-dom";
 
 const ServiceCard = ({ service, className }: { service: ServiceDataType; className?: string }) => {
     return (
         <div className={`service-box-items ${className}`}>
             <div className="icon">
-                <img src={service.icon} alt={service.title || 'icon-img'} loading="lazy" decoding="async" />
+                {service.iconKey ? (
+                    <ServiceIcon iconKey={service.iconKey} />
+                ) : service.icon ? (
+                    <img src={service.icon} alt={service.title || 'icon-img'} loading="lazy" decoding="async" />
+                ) : null}
             </div>
             <div className="content">
                 <h4>

@@ -1,9 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
 
 const services = [
-    { name: 'Consulting and Advisory', link: '/solutions/consulting-advisory' },
+    { name: 'Consulting & Advisory', link: '/solutions/consulting-advisory' },
     { name: 'Smart Talent Acquisition', link: '/solutions/smart-talent-acquisition' },
-    { name: 'AI Led Talent Supply', link: '/solutions/ai-led-talent-supply' },
+    { name: 'AI-Led Talent Supply', link: '/solutions/ai-led-talent-supply' },
     { name: 'Talent Management', link: '/solutions/talent-management' },
     { name: 'Managed Services', link: '/solutions/managed-services' },
     { name: 'Workspace Solutions', link: '/solutions/workspace-solutions' },

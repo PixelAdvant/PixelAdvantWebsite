@@ -1,13 +1,14 @@
-import { SuAndroid, SuApple, SuBoost, SuInternet, SuSmartWatch, SuTV } from "@/lib/icons"
+import { ServiceIcon } from "@/lib/serviceIcons"
+import type { ServiceIconKey } from "@/lib/serviceIcons"
 import SectionTitle from "../ui/sectionTitle";
 
 const offerItems = [
-    { id: 1, icon: <SuInternet />, title: 'GCC Advisory', isActive: false, delay: '.2' },
-    { id: 2, icon: <SuAndroid />, title: 'Talent Solutions', isActive: false, delay: '.4' },
-    { id: 3, icon: <SuApple />, title: 'AI Recruitment', isActive: true, delay: '.6', },
-    { id: 4, icon: <SuSmartWatch />, title: 'Managed Services', isActive: false, delay: '.8' },
-    { id: 5, icon: <SuTV />, title: 'Workspace Strategy', isActive: false, delay: '.9' },
-    { id: 6, icon: <SuBoost />, title: 'Compliance Ops', isActive: false, delay: '.9' },
+    { id: 1, iconKey: 'strategy' as ServiceIconKey, title: 'GCC Advisory', isActive: false, delay: '.2' },
+    { id: 2, iconKey: 'talent' as ServiceIconKey, title: 'Talent Solutions', isActive: false, delay: '.4' },
+    { id: 3, iconKey: 'automation' as ServiceIconKey, title: 'AI Recruitment', isActive: true, delay: '.6', },
+    { id: 4, iconKey: 'operations' as ServiceIconKey, title: 'Managed Services', isActive: false, delay: '.8' },
+    { id: 5, iconKey: 'workspace' as ServiceIconKey, title: 'Workspace Strategy', isActive: false, delay: '.9' },
+    { id: 6, iconKey: 'security' as ServiceIconKey, title: 'Compliance Ops', isActive: false, delay: '.9' },
 ];
 
 const Offer = () => {
@@ -38,7 +39,9 @@ const Offer = () => {
                                 <div className="shape-bottom">
                                     <img src="/img/shape/offer-bottom.png" alt="shape-img" />
                                 </div>
-                                <div className="icon">{item.icon}</div>
+                                <div className="icon">
+                                    <ServiceIcon iconKey={item.iconKey} />
+                                </div>
                                 <div className="content">
                                     <h5>{item.title}</h5>
                                 </div>

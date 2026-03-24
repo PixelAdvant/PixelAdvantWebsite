@@ -1,4 +1,5 @@
 import SectionTitle from "@/components/ui/sectionTitle"
+import { ServiceIcon } from "@/lib/serviceIcons"
 import { Link } from "react-router-dom"
 
 const AboutTwo = () => {
@@ -14,7 +15,7 @@ const AboutTwo = () => {
                                 </div>
                                 <div className="counter-shape float-bob-y">
                                     <div className="icon">
-                                        <img src="/img/about/icon-1.svg" alt="icon-img" />
+                                        <ServiceIcon iconKey="consulting" />
                                     </div>
                                     <div className="content">
                                         <h3><span className="count">400</span>Years+</h3>
@@ -40,7 +41,7 @@ const AboutTwo = () => {
                                 <div className="about-icon-items">
                                     <div className="icon-items wow slideUp" data-delay=".7">
                                         <div className="icon">
-                                            <img src="/img/about/icon-4.svg" alt="icon-img" />
+                                            <ServiceIcon iconKey="strategy" />
                                         </div>
                                         <div className="content">
                                             <h4>Expert Solutions</h4>
@@ -51,7 +52,7 @@ const AboutTwo = () => {
                                     </div>
                                     <div className="icon-items wow slideUp" data-delay=".9">
                                         <div className="icon">
-                                            <img src="/img/about/icon-5.svg" alt="icon-img" />
+                                            <ServiceIcon iconKey="operations" />
                                         </div>
                                         <div className="content">
                                             <h4>End-to-End Support</h4>

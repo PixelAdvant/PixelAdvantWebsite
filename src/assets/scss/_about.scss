@@ -51,6 +51,24 @@
                left: 0;
             }
 
+            .icon {
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                background-color: rgba(91, 71, 224, 0.08);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+
+                .service-lucide-icon {
+                    width: 30px;
+                    height: 30px;
+                    stroke: $theme-color;
+                    stroke-width: 1.9;
+                }
+            }
+
             .content {
                 h3 {
                     font-size: 28px;
@@ -142,21 +160,31 @@
                 margin-top: 30px;
             }
 
-            .icon-items {
-                @include flex;
-                gap: 25px;
+                .icon-items {
+                    @include flex;
+                    gap: 25px;
 
-                .icon {
-                    width: 80px;
-                    height: 80px;
-                    line-height: 80px;
-                    text-align: center;
-                    border-radius: 50%;
-                    background-color: $theme-color;
-                    color: $white;
-                }
+                    .icon {
+                        width: 80px;
+                        height: 80px;
+                        text-align: center;
+                        border-radius: 50%;
+                        background-color: $theme-color;
+                        color: $white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-shrink: 0;
 
-                .content {
+                        .service-lucide-icon {
+                            width: 34px;
+                            height: 34px;
+                            stroke: $white;
+                            stroke-width: 1.8;
+                        }
+                    }
+
+                    .content {
                     flex-basis: 60%;
                 }
             }
@@ -206,7 +234,11 @@
                 }
 
                 .icon {
-                    filter: grayscale(100%) brightness(300%)
+                    background-color: rgba(255, 255, 255, 0.14);
+
+                    .service-lucide-icon {
+                        stroke: $white;
+                    }
                 }
     
                 .content {
@@ -275,6 +307,10 @@
                     .icon {
                         background-color: $white;
                         color: $theme-color;
+
+                        .service-lucide-icon {
+                            stroke: $theme-color;
+                        }
                     }
                 }
             }

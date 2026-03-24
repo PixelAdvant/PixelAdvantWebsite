@@ -34,16 +34,16 @@ type ServiceDetailsProps = {
 }
 
 const ServiceDetails = ({
-    title = "Services Details",
-    currentPage = "Services Details",
-    serviceTitle = "GCC Solutions Overview",
+    title,
+    currentPage,
+    serviceTitle,
     solutionKey,
 }: ServiceDetailsProps) => {
     const solutionData = solutionKey ? solutionDetailsData[solutionKey] : undefined
 
-    const resolvedTitle = solutionData?.pageTitle || title
-    const resolvedCurrentPage = solutionData?.pageTitle || currentPage
-    const resolvedServiceTitle = solutionData?.heading || serviceTitle
+    const resolvedTitle = title ?? solutionData?.pageTitle ?? "Services Details"
+    const resolvedCurrentPage = currentPage ?? resolvedTitle
+    const resolvedServiceTitle = serviceTitle ?? solutionData?.heading ?? "GCC Solutions Overview"
     const resolvedBannerImage = solutionData?.bannerImage || "/img/service/image1.jpg"
     const resolvedOverview = solutionData?.overview || [
         "PixelAdvant provides end-to-end GCC services focused on faster setup, stronger talent outcomes, and sustainable operational scale.",
