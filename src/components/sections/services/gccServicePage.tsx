@@ -1,6 +1,7 @@
 import PageTitle from "@/components/sections/pageTitle";
 import SectionTitle from "@/components/ui/sectionTitle";
 import { GCCServicePageData } from "@/db/gccServicePagesData";
+import { ServiceIcon } from "@/lib/serviceIcons";
 import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 
@@ -105,7 +106,11 @@ const GCCServicePage = ({ page }: { page: GCCServicePageData }) => {
                 <div key={offering.title} className="col-xl-4 col-md-6 wow slideUp" data-delay={`.${3 + index}`}>
                   <div className="service-box-items style-3 gcc-service-page__card h-100">
                     <div className="icon">
-                      <img src={offering.icon} alt={offering.title} loading="lazy" decoding="async" />
+                      {offering.iconKey ? (
+                        <ServiceIcon iconKey={offering.iconKey} />
+                      ) : offering.icon ? (
+                        <img src={offering.icon} alt={offering.title} loading="lazy" decoding="async" />
+                      ) : null}
                     </div>
                     <div className="content">
                       <h4>{offering.title}</h4>

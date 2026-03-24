@@ -1,4 +1,5 @@
 import SectionTitle from "@/components/ui/sectionTitle"
+import { ServiceIcon } from "@/lib/serviceIcons"
 import AboutRoundedTextVideoPopup from "./aboutRoundedTextVideoPopup"
 import { Link } from "react-router-dom"
 
@@ -12,7 +13,7 @@ const AboutOne = () => {
               <div className="about-image-items">
                 <div className="counter-shape float-bob-y">
                   <div className="icon">
-                    <img src="/img/about/icon-1.svg" alt="icon-img" />
+                    <ServiceIcon iconKey="talent" />
                   </div>
                   <div className="content">
                     <h3><span className="count">6,561</span>+</h3>
@@ -38,7 +39,7 @@ const AboutOne = () => {
                 <div className="about-icon-items">
                   <div className="icon-items wow slideUp" data-delay=".7">
                     <div className="icon">
-                      <img src="/img/about/icon-2.svg" alt="icon-img" />
+                      <ServiceIcon iconKey="strategy" />
                     </div>
                     <div className="content">
                       <h4>Expert Solutions</h4>
@@ -49,7 +50,7 @@ const AboutOne = () => {
                   </div>
                   <div className="icon-items wow slideUp" data-delay=".9">
                     <div className="icon">
-                      <img src="/img/about/icon-3.svg" alt="icon-img" />
+                      <ServiceIcon iconKey="security" />
                     </div>
                     <div className="content">
                       <h4>End-to-End Support</h4>

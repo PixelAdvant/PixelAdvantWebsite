@@ -16,7 +16,7 @@ const HeaderOne = () => {
                             <div className="header-left">
                                 <div className="logo">
                                     <Link to="/" className="header-logo">
-                                    <img src="/img/logo/logo.png" alt="logo-img" style={{ height: "90px", width: "auto", objectFit: "cover" }} />
+                                    <img src="/img/logo/logo.png" alt="logo-img" />
                                         {/* <img src="/img/logo/logo.png" sizes="" alt="logo-img" /> */}
                                     </Link>
                                 </div>

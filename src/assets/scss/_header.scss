@@ -4,7 +4,7 @@
 //>>>>> Header Top Start <<<<<//<//
 .header-top-section {
 	background: linear-gradient(135deg, #5b47e0 0%, #7c6fec 100%);
-	padding: 10px 0;
+	padding: 8px 0;
 	position: relative;
 	z-index: 99;
 
@@ -62,10 +62,10 @@
 
 	.contact-list {
 		@include flex;
-		gap: 25px;
+		gap: 22px;
 
 		li {
-			font-size: 15px;
+			font-size: 14px;
 			color: $text-color-2;
 
 			a {
@@ -74,21 +74,22 @@
 
 			i {
 				color: $white;
-				margin-right: 10px;
+				margin-right: 8px;
 			}
 		}
 	}
 
 	.top-right {
 		@include flex;
-		gap: 30px;
+		gap: 22px;
 
 		.social-icon {
-			gap: 15px;
+			gap: 12px;
 
 			span {
 				color: $white;
 				font-weight: 500;
+				font-size: 14px;
 			}
 
 			a {
@@ -178,7 +179,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 10px 0;
+	padding: 6px 0;
 
 	.main-menu {
 		> ul {
@@ -192,7 +193,7 @@
 				position: relative;
 				list-style: none;
 				display: inline-block;
-				margin-inline-end: 40px;
+				margin-inline-end: 32px;
 
 				&:last-child {
 					margin-inline-end: 0;
@@ -555,7 +556,7 @@
 	}
 
 	.header-main.style-2 {
-		gap: clamp(18px, 2vw, 32px);
+		gap: clamp(14px, 1.6vw, 24px);
 
 		.header-left {
 			flex: 0 0 auto;
@@ -570,16 +571,18 @@
 			align-items: center;
 
 			img {
-				width: clamp(128px, 10vw, 150px);
+				width: clamp(118px, 8.6vw, 136px);
+				max-height: 54px;
 				height: auto;
 				display: block;
+				object-fit: contain;
 			}
 		}
 
 		.header-right {
 			flex: 1 1 auto;
 			min-width: 0;
-			gap: clamp(16px, 1.4vw, 28px);
+			gap: clamp(12px, 1.1vw, 20px);
 		}
 
 		.mean__menu-wrapper {
@@ -595,7 +598,7 @@
 				align-items: center;
 				justify-content: center;
 				flex-wrap: nowrap;
-				gap: clamp(14px, 1.3vw, 24px);
+				gap: clamp(10px, 1vw, 18px);
 				white-space: nowrap;
 			}
 
@@ -605,7 +608,7 @@
 			}
 
 			> nav > ul > li > a {
-				padding: 18px 0;
+				padding: 16px 0;
 				font-size: 14px;
 			}
 		}
@@ -631,7 +634,7 @@
 		}
 
 		.header-right {
-			gap: 28px;
+			gap: 20px;
 
 			@include breakpoint (max-lg) {
 				gap: 25px;
@@ -642,10 +645,10 @@
 			}
 
 			.header-button {
-				margin-right: 20px;
+				margin-right: 8px;
 
 				.theme-btn {
-					padding: 14px 24px;
+					padding: 12px 20px;
 					font-size: 14px;
 				}
 
@@ -666,7 +669,7 @@
 				}
 
 				.sidebar__toggle {
-					font-size: 24px;
+					font-size: 22px;
 					color: $white;
 
 					@include breakpoint (max-xl4) {
@@ -1165,7 +1168,7 @@
 		.header-main {
 
 			.header-right {
-				gap: 50px;
+				gap: 20px;
 
 				@include breakpoint (max-lg) {
 					gap: 25px;
@@ -1440,38 +1443,38 @@
 
 	.page-heading {
 		position: relative;
-		padding: 180px 0;
+		padding: 150px 0;
 		text-align: center;
 		z-index: 9;
 
 		@include breakpoint (max-xl) {
-			padding: 140px 0;
-		}
-
-		@include breakpoint (max-lg) {
 			padding: 120px 0;
 		}
 
+		@include breakpoint (max-lg) {
+			padding: 96px 0;
+		}
+
 		@include breakpoint (max-md) {
-			padding: 100px 0;
+			padding: 82px 0;
 		}
 
 		@include breakpoint (max-sm) {
-			padding: 80px 0;
+			padding: 70px 0;
 		}
 
 		h1 {
 			color: $white;
-			font-size: 65px;
+			font-size: 58px;
 			position: relative;
 			z-index: 9;
 
 			@include breakpoint(max-lg) {
-				font-size: 52px;
+				font-size: 46px;
 			}
 
 			@include breakpoint(max-sm) {
-				font-size: 42px;
+				font-size: 36px;
 			}
 		}
 

@@ -1,4 +1,6 @@
 import SectionTitle from '@/components/ui/sectionTitle';
+import { ServiceIcon } from '@/lib/serviceIcons';
+import type { ServiceIconKey } from '@/lib/serviceIcons';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 
@@ -6,25 +8,25 @@ const achievements = [
     {
         count: 6561,
         description: "Global Experts",
-        icon: "/img/achievement-icon/icon-expertise.svg",
+        iconKey: "talent" as ServiceIconKey,
         delay: ".3"
     },
     {
         count: 600,
         description: "Successful Placements",
-        icon: "/img/achievement-icon/icon-global.svg",
+        iconKey: "management" as ServiceIconKey,
         delay: ".5"
     },
     {
         count: 250,
         description: "Innovation Solutions",
-        icon: "/img/achievement-icon/icon-innovation.svg",
+        iconKey: "development" as ServiceIconKey,
         delay: ".7"
     },
     {
         count: 590,
         description: "Client Support",
-        icon: "/img/achievement-icon/icon-support.svg",
+        iconKey: "operations" as ServiceIconKey,
         delay: ".9"
     }
 ];
@@ -54,7 +56,7 @@ const AchievementOne = () => {
                                 key={index}
                             >
                                 <div className="icon">
-                                    <img src={achievement.icon} alt="icon-img" />
+                                    <ServiceIcon iconKey={achievement.iconKey} />
                                 </div>
                                 <div className="content" ref={ref}>
                                     {

@@ -71,6 +71,23 @@
         }
 
         .counter-items {
+            .icon {
+                width: 64px;
+                height: 64px;
+                border-radius: 16px;
+                background: rgba(255, 255, 255, 0.12);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .service-lucide-icon {
+                    width: 32px;
+                    height: 32px;
+                    stroke: $white;
+                    stroke-width: 1.8;
+                }
+            }
+
             &:not(:last-child){
                 border-right: 1px solid $white;
                 padding-right: 70px;
@@ -160,13 +177,23 @@
     .icon {
         width: 70px;
         height: 70px;
-        line-height: 70px;
         text-align: center;
         border-radius: 50%;
         background: $white;
         margin: 0 auto;
         margin-top: -35px;
         @include transition;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .service-lucide-icon {
+            width: 30px;
+            height: 30px;
+            stroke: $theme-color;
+            stroke-width: 1.8;
+            @include transition;
+        }
     }
 
     .content {
@@ -218,6 +245,10 @@
             svg path {
                 fill: #fff;
             }
+
+            .service-lucide-icon {
+                stroke: $white;
+            }
         }
     }
 
@@ -243,6 +274,10 @@
 
             svg path {
                 fill: #fff;
+            }
+
+            .service-lucide-icon {
+                stroke: $white;
             }
         }
     }

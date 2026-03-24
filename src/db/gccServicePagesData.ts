@@ -1,3 +1,5 @@
+import type { ServiceIconKey } from "@/lib/serviceIcons";
+
 export interface GCCServicePageCta {
   label: string;
   link: string;
@@ -6,7 +8,8 @@ export interface GCCServicePageCta {
 export interface GCCServiceOffering {
   title: string;
   description: string;
-  icon: string;
+  icon?: string;
+  iconKey?: ServiceIconKey;
   items: string[];
 }
 
@@ -149,8 +152,10 @@ export const itServicesPageData: GCCServicePageData = {
   heroTitle: "Your Trusted Partner for IT Services in India",
   heroDescription:
     "Pixel Advant helps businesses strengthen technology infrastructure, modernise applications, secure digital operations, and scale with the right engineering and support models.",
-  heroImage: "/img/project/gcc-it-services.jpg",
-  bannerImage: "/img/project/gcc-it-services.jpg",
+  heroImage:
+    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80",
+  bannerImage:
+    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
   trustPoints: [
     "Managed IT and cloud solutions",
     "Secure and scalable infrastructure",
@@ -170,7 +175,7 @@ export const itServicesPageData: GCCServicePageData = {
       title: "Custom Software Development",
       description:
         "We build business-critical software that supports internal operations, customer experience, and workflow automation.",
-      icon: "/img/service/icon/s-icon-1.svg",
+      iconKey: "development",
       items: [
         "Custom web application development",
         "Enterprise software and workflow platforms",
@@ -183,7 +188,7 @@ export const itServicesPageData: GCCServicePageData = {
       title: "Web Design and Development",
       description:
         "Our web teams deliver high-performance websites built for credibility, conversion, and long-term manageability.",
-      icon: "/img/service/icon/s-icon-2.svg",
+      iconKey: "web",
       items: [
         "Responsive website design and development",
         "E-commerce builds on Shopify, WooCommerce, and similar platforms",
@@ -196,7 +201,7 @@ export const itServicesPageData: GCCServicePageData = {
       title: "IT Staffing and Tech Talent Acquisition",
       description:
         "We help businesses secure high-value technical talent for permanent, contract, remote, and leadership requirements.",
-      icon: "/img/service/icon/s-icon-3.svg",
+      iconKey: "talent",
       items: [
         "IT contract staffing",
         "Permanent IT staffing",
@@ -209,7 +214,7 @@ export const itServicesPageData: GCCServicePageData = {
       title: "Cloud Solutions and Managed IT Services",
       description:
         "We support migration, infrastructure management, compliance, and operational continuity across modern cloud estates.",
-      icon: "/img/service/icon/s-icon-10.svg",
+      iconKey: "cloud",
       items: [
         "Cloud migration consulting for AWS, Azure, and Google Cloud",
         "Managed IT infrastructure services",
@@ -222,7 +227,7 @@ export const itServicesPageData: GCCServicePageData = {
       title: "IT Consulting and Digital Transformation",
       description:
         "Our consultants help identify technology gaps, prioritise investments, and build a practical roadmap for transformation.",
-      icon: "/img/service/icon/s-icon-11.svg",
+      iconKey: "strategy",
       items: [
         "IT strategy and roadmap consulting",
         "Digital transformation advisory",
@@ -235,7 +240,7 @@ export const itServicesPageData: GCCServicePageData = {
       title: "Cybersecurity Services",
       description:
         "We help protect digital assets through assessments, controls, compliance readiness, and response planning.",
-      icon: "/img/service/icon/s-icon-12.svg",
+      iconKey: "security",
       items: [
         "Vulnerability assessment and penetration testing",
         "Security audits for ISO 27001 and SOC 2 readiness",
@@ -300,8 +305,10 @@ export const digitalMarketingServicesPageData: GCCServicePageData = {
   heroTitle: "Digital Marketing Services Built for Measurable Growth",
   heroDescription:
     "Pixel Advant helps businesses attract the right traffic, convert demand into qualified leads, and build sustainable digital visibility with channel strategies tied to outcomes.",
-  heroImage: "/img/project/gcc-digital-transformation.jpg",
-  bannerImage: "/img/project/gcc-digital-transformation.jpg",
+  heroImage:
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80",
+  bannerImage:
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80",
   trustPoints: [
     "SEO and AI search visibility",
     "Paid campaigns focused on qualified leads",
@@ -321,7 +328,7 @@ export const digitalMarketingServicesPageData: GCCServicePageData = {
       title: "Search Engine Optimization",
       description:
         "Our SEO services combine technical strength, content planning, and AI-search visibility to improve discoverability across search journeys.",
-      icon: "/img/service/icon/s-icon-4.svg",
+      iconKey: "seo",
       items: [
         "Technical SEO audit and optimisation",
         "On-page and off-page SEO services",
@@ -334,7 +341,7 @@ export const digitalMarketingServicesPageData: GCCServicePageData = {
       title: "Pay-Per-Click Advertising",
       description:
         "We manage paid campaigns with a focus on spend efficiency, conversion quality, and channel-to-pipeline visibility.",
-      icon: "/img/service/icon/s-icon-5.svg",
+      iconKey: "paidMedia",
       items: [
         "Google Ads management",
         "Meta Ads and LinkedIn Ads",
@@ -347,7 +354,7 @@ export const digitalMarketingServicesPageData: GCCServicePageData = {
       title: "Social Media Marketing",
       description:
         "Our social strategies help businesses strengthen brand reputation, audience engagement, and thought leadership across the right platforms.",
-      icon: "/img/service/icon/s-icon-7.svg",
+      iconKey: "social",
       items: [
         "Social media strategy and content calendar",
         "Content creation services",
@@ -360,7 +367,7 @@ export const digitalMarketingServicesPageData: GCCServicePageData = {
       title: "Content Marketing and Strategy",
       description:
         "We create content systems that educate audiences, improve search visibility, and support conversion across campaigns and sales journeys.",
-      icon: "/img/service/icon/s-icon-8.svg",
+      iconKey: "content",
       items: [
         "SEO blog and article writing",
         "Website copy and landing page content",
@@ -373,7 +380,7 @@ export const digitalMarketingServicesPageData: GCCServicePageData = {
       title: "Email Marketing and Automation",
       description:
         "We design lifecycle campaigns and automation workflows that keep leads engaged and improve conversion over time.",
-      icon: "/img/service/icon/s-icon-9.svg",
+      iconKey: "email",
       items: [
         "Email campaign strategy and execution",
         "Drip campaigns and workflow automation",
@@ -386,7 +393,7 @@ export const digitalMarketingServicesPageData: GCCServicePageData = {
       title: "Online Reputation Management",
       description:
         "We help businesses monitor brand perception, strengthen review profiles, and improve what prospects see when they research you online.",
-      icon: "/img/service/icon/s-icon-13.svg",
+      iconKey: "reputation",
       items: [
         "Brand monitoring and sentiment analysis",
         "Negative content suppression guidance",

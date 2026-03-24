@@ -1,4 +1,5 @@
 import { ServiceDataType } from "@/db/serviceOneData"
+import { ServiceIcon } from "@/lib/serviceIcons"
 import { Link } from "react-router-dom"
 
 const ServiceCardTwo = ({ service }: { service: ServiceDataType }) => {
@@ -8,11 +9,19 @@ const ServiceCardTwo = ({ service }: { service: ServiceDataType }) => {
                 <img src={service.image} alt="service-img" />
             </div>
             <div className="icon-2">
-                <img src={service.icon} alt="img" />
+                {service.iconKey ? (
+                    <ServiceIcon iconKey={service.iconKey} />
+                ) : service.icon ? (
+                    <img src={service.icon} alt="img" />
+                ) : null}
             </div>
             <div className="service-content">
                 <div className="icon">
-                    <img src={service.icon} alt="img" />
+                    {service.iconKey ? (
+                        <ServiceIcon iconKey={service.iconKey} />
+                    ) : service.icon ? (
+                        <img src={service.icon} alt="img" />
+                    ) : null}
                 </div>
                 <h4>
                     <Link to={service.link}>{service.title}</Link>

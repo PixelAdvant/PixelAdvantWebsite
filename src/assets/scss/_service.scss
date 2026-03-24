@@ -331,6 +331,13 @@
         bottom: 8px;
         right: 8px;
         opacity: .2;
+
+        .service-lucide-icon {
+            width: 74px;
+            height: 74px;
+            stroke: $theme-color;
+            stroke-width: 1.4;
+        }
     }
 
     .service-image {
@@ -349,6 +356,9 @@
             height: 70px;
             line-height: 65px;
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border-radius: 8px;
             background-color: $theme-color;
             margin-bottom: 30px;
@@ -361,6 +371,13 @@
             
             img {
                 filter: grayscale(100%) brightness(300%);
+            }
+
+            .service-lucide-icon {
+                width: 34px;
+                height: 34px;
+                stroke: $white;
+                stroke-width: 1.9;
             }
         }
 

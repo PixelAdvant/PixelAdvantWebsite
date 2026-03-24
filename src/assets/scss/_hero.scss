@@ -6,7 +6,7 @@
     background: linear-gradient(135deg, #f8faff 0%, #f0eefb 50%, #f5f3ff 100%);
 
     .hero-slide-inner {
-        min-height: 620px;
+        min-height: 500px;
         display: flex;
         align-items: center;
 
@@ -22,9 +22,9 @@
 
     .array-button {
         position: absolute;
-        top: 50%;
-        right: 30px;
-        left: 30px;
+        top: 48%;
+        right: 24px;
+        left: 24px;
         transform: translateY(-50%);
         @include flex;
         justify-content: space-between;
@@ -37,13 +37,13 @@
 
         button {
             pointer-events: all;
-            width: 48px;
-            height: 48px;
+            width: 44px;
+            height: 44px;
             border-radius: 50%;
             background: #fff;
             border: 1px solid rgba(91, 71, 224, 0.2);
             color: #5b47e0;
-            font-size: 15px;
+            font-size: 14px;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -135,8 +135,8 @@
     }
 
     .hero-content {
-        max-width: 560px;
-        padding: 84px 0;
+        max-width: 500px;
+        padding: 54px 0;
         position: relative;
         z-index: 9;
 
@@ -155,69 +155,73 @@
             color: #5b47e0;
             background: rgba(91, 71, 224, 0.08);
             border: 1px solid rgba(91, 71, 224, 0.22);
-            padding: 7px 20px;
+            padding: 6px 18px;
             border-radius: 50px;
             line-height: 1;
             display: inline-block;
             letter-spacing: 0.1em;
             font-size: 12px;
             font-weight: 700;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
 
         h1 {
             color: #0f172a;
-            font-size: 52px;
+            font-size: 42px;
             line-height: 1.08;
-            margin-bottom: 18px;
+            margin-bottom: 16px;
             letter-spacing: -0.03em;
             font-weight: 800;
 
             @include breakpoint (max-xxl){
-                font-size: 48px;
-            }
-
-            @include breakpoint (max-lg){
                 font-size: 40px;
             }
 
+            @include breakpoint (max-lg){
+                font-size: 36px;
+            }
+
             @include breakpoint (max-md){
-                font-size: 32px;
+                font-size: 30px;
             }
 
             @include breakpoint (max-sm){
-                font-size: 28px;
+                font-size: 26px;
             }
         }
 
         p {
             color: #475569;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 400;
-            line-height: 1.7;
-            margin-bottom: 30px;
-            max-width: 500px;
+            line-height: 1.65;
+            margin-bottom: 26px;
+            max-width: 470px;
         }
 
         .hero-button {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            gap: 14px;
+            gap: 12px;
 
             a, button {
                 margin: 0 !important;
+            }
+
+            .theme-btn {
+                padding: 13px 28px;
             }
 
             .theme-btn-outline {
                 display: inline-flex;
                 align-items: center;
                 gap: 8px;
-                padding: 14px 32px;
+                padding: 12px 26px;
                 border-radius: 50px;
                 border: 2px solid #5b47e0;
                 color: #5b47e0;
-                font-size: 15px;
+                font-size: 14px;
                 font-weight: 600;
                 background: transparent;
                 transition: all 0.25s ease;
@@ -238,7 +242,7 @@
 
     .hero-visual {
         position: relative;
-        max-width: 440px;
+        max-width: 360px;
         margin-left: auto;
 
         @include breakpoint (max-lg){
@@ -247,14 +251,14 @@
     }
 
     .hero-visual-main {
-        border-radius: 28px;
+        border-radius: 24px;
         overflow: hidden;
         border: 1px solid rgba(91, 71, 224, 0.12);
         box-shadow: 0 32px 64px rgba(15, 23, 42, 0.14), 0 0 0 1px rgba(91, 71, 224, 0.06);
 
         img {
             width: 100%;
-            height: 410px;
+            height: 320px;
             object-fit: cover;
             display: block;
         }
@@ -263,9 +267,9 @@
     .hero-float-card {
         position: absolute;
         background-color: $white;
-        border-radius: 14px;
-        padding: 10px 12px;
-        min-width: 156px;
+        border-radius: 12px;
+        padding: 8px 10px;
+        min-width: 142px;
         box-shadow: 0 16px 30px rgba(14, 20, 27, 0.24);
 
         .label {
@@ -280,37 +284,37 @@
 
         h5 {
             margin: 0 0 2px;
-            font-size: 22px;
+            font-size: 20px;
             color: $header-color;
             line-height: 1.1;
         }
 
         p {
             margin: 0;
-            font-size: 12px;
+            font-size: 11px;
             color: $text-color;
             line-height: 1.35;
         }
 
         &.card-one {
-            top: 24px;
-            left: -12px;
+            top: 20px;
+            left: -8px;
         }
 
         &.card-two {
-            right: -10px;
-            bottom: 22px;
+            right: -8px;
+            bottom: 18px;
         }
     }
 
     @include breakpoint (max-xl){
         .hero-visual {
-            max-width: 380px;
+            max-width: 340px;
         }
 
         .hero-visual-main {
             img {
-                height: 360px;
+                height: 300px;
             }
         }
 
@@ -327,7 +331,7 @@
 
     @include breakpoint (max-lg){
         .hero-visual {
-            margin: 12px auto 0;
+            margin: 8px auto 0;
             max-width: 460px;
         }
 
@@ -351,7 +355,7 @@
     @include breakpoint (max-md){
         .hero-visual-main {
             img {
-                height: 340px;
+                height: 300px;
             }
         }
 
