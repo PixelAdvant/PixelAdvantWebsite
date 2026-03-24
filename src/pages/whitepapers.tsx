@@ -1,8 +1,11 @@
 import PageTitle from "@/components/sections/pageTitle"
+import SEO from '@/components/SEO'
+import { pageSEOConfig } from '@/lib/seoConfig'
 
 const Whitepapers = () => {
   return (
     <>
+      <SEO {...pageSEOConfig.whitepapers} />
       <PageTitle title="Whitepapers" currentPage="Whitepapers" />
       <section className="section-padding fix">
         <div className="container">

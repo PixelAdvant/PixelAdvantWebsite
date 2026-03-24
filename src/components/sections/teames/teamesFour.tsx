@@ -25,7 +25,7 @@ const TeamesFour = () => {
                         >
                             <div className="team-box-items">
                                 <div className="team-image">
-                                    <img src={member.image} alt="team-img" />
+                                    <img src={member.image} alt={member.name || 'team-img'} loading="lazy" decoding="async" />
                                 </div>
                                 <div className="team-content">
                                     <h3>

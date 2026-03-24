@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom"
 import ExtraInfoOffcanvas from "./extraInfoOffcanvas"
 import Navbar from "./navbar"
-import SearchPopup from "./searchPopup"
 import TopHeaderOne from "./topHeaderOne"
 import useSticky from "@/hooks/useSticky"
 
@@ -30,7 +29,6 @@ const HeaderOne = () => {
                                         </nav>
                                     </div>
                                 </div>
-                                <SearchPopup />
                                 <div className="header-button">
                                     <Link to="/contact" className="theme-btn">
                                         <span>

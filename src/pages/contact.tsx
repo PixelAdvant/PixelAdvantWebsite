@@ -2,10 +2,13 @@ import ContactAddress from "@/components/sections/contact/contactAddress"
 import ContactForm from "@/components/sections/contact/contactForm"
 import ContactMap from "@/components/sections/contact/contactMap"
 import PageTitle from "@/components/sections/pageTitle"
+import SEO from '@/components/SEO'
+import { pageSEOConfig } from '@/lib/seoConfig'
 
 const Contact = () => {
     return (
         <>
+            <SEO {...pageSEOConfig.contact} />
             <PageTitle currentPage="Contact Us" title="Contact Us" />
             <section className="contact-section fix section-padding">
                 <div className="container">

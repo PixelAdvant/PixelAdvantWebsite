@@ -11,6 +11,8 @@ import Contact from "@/pages/contact";
 import Dashboard from "@/pages/dashboard";
 import DashboardLogin from "@/pages/dashboard-login";
 import DigitalEngineering from "@/pages/digital-engineering";
+import GCCDigitalMarketing from "@/pages/gcc-digital-marketing";
+import GCCITServices from "@/pages/gcc-it-services";
 import GCCSolutions from "@/pages/gcc-solutions";
 import Home from "@/pages/home";
 import Jobs from "@/pages/jobs";
@@ -252,6 +254,14 @@ export const router = createRouter([
             {
                 path:'/gcc-solutions/talent-workspace',
                 element:<ServiceDetails solutionKey="workspaceSolutions" />
+            },
+            {
+                path:'/gcc-solutions/it-services',
+                element:<GCCITServices/>
+            },
+            {
+                path:'/gcc-solutions/digital-marketing-services',
+                element:<GCCDigitalMarketing/>
             },
             {
                 path:'/gcc-solutions/legal-services',

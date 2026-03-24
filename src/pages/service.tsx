@@ -1,10 +1,13 @@
 import PageTitle from "@/components/sections/pageTitle"
 import ServiceCard from "@/components/sections/services/serviceCard"
 import { serviceOneData } from "@/db/serviceOneData"
+import SEO from '@/components/SEO'
+import { pageSEOConfig } from '@/lib/seoConfig'
 
 const Service = () => {
     return (
         <>
+            <SEO {...pageSEOConfig.service} />
             <PageTitle title="Services" currentPage="Services" />
             <section className="service-section fix section-padding">
                 <div className="container">

@@ -1,8 +1,11 @@
 import PageTitle from "@/components/sections/pageTitle"
+import SEO from '@/components/SEO'
+import { pageSEOConfig } from '@/lib/seoConfig'
 
 const Brochure = () => {
   return (
     <>
+      <SEO {...pageSEOConfig.brochure} />
       <PageTitle title="Brochure" currentPage="Brochure" />
       <section className="section-padding fix">
         <div className="container">

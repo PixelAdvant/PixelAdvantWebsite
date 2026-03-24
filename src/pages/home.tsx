@@ -10,12 +10,15 @@ import ServicesOne from '@/components/sections/services/servicesOne'
 import TeamesOne from '@/components/sections/teames/teamesOne'
 import TestimonialOne from '@/components/sections/testimonials/testimonialOne'
 import DemoRequestModal from '@/components/sections/demoRequest/demoRequestModal'
+import SEO from '@/components/SEO'
+import { pageSEOConfig } from '@/lib/seoConfig'
 
 const Home = () => {
     const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
 
     return (
         <div>
+            <SEO {...pageSEOConfig.home} />
             <HeroOne onDemoClick={() => setIsDemoModalOpen(true)} />
             <AboutOne />
             <PartnersOne className='pt-0'/>

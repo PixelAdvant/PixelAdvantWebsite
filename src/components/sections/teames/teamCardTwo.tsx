@@ -5,7 +5,7 @@ const TeamCardTwo = ({ member }: { member: TeamMemberDataType }) => {
     return (
         <div className="single-team-items">
             <div className="team-image">
-                <img src={member.image} alt="team-img" />
+                <img src={member.image} alt={member.name || 'team-img'} loading="lazy" decoding="async" />
                 <div className="social-profile">
                     <ul>
                         {

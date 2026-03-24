@@ -5,7 +5,7 @@ const ServiceCard = ({ service, className }: { service: ServiceDataType; classNa
     return (
         <div className={`service-box-items ${className}`}>
             <div className="icon">
-                <img src={service.icon} alt="icon-img" />
+                <img src={service.icon} alt={service.title || 'icon-img'} loading="lazy" decoding="async" />
             </div>
             <div className="content">
                 <h4>
