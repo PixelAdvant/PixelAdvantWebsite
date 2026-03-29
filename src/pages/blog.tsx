@@ -139,7 +139,7 @@ const Blog = () => {
                     </div>
 
                     {/* ── Blog Grid ── */}
-                    <div className="row g-4">
+                    <div className="row g-4" style={{ position: 'relative', zIndex: 1 }}>
                         {filtered.length === 0 ? (
                             <div className="col-12" style={{ textAlign: 'center', padding: '40px 0', color: '#9ca3af' }}>
                                 No posts in this category yet.
@@ -154,9 +154,11 @@ const Blog = () => {
                     </div>
 
                     {/* ── Subscribe Banner ── */}
-                    <div className="row mt-5">
-                        <div className="col-lg-8 col-12 mx-auto">
-                            <BlogSubscription />
+                    <div style={{ position: 'relative', zIndex: 2, marginTop: '60px' }}>
+                        <div className="row">
+                            <div className="col-lg-8 col-12 mx-auto">
+                                <BlogSubscription />
+                            </div>
                         </div>
                     </div>
 

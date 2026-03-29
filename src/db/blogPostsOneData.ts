@@ -7,7 +7,7 @@ export const blogPostsOneData: BlogPostDataType[] = [
         date: { day: '17', month: 'Feb', year: '2025' },
         title: "2025 Global Capability Center Trends and Insights",
         description: "Explore the latest trends in GCC establishment and management, including AI integration and talent optimization strategies.",
-        link: "/news-details",
+        link: "/blog-details",
         author: 'PixelAdvant',
         category: 'GCC Insights',
         delay: ".3"
@@ -18,7 +18,7 @@ export const blogPostsOneData: BlogPostDataType[] = [
         date: { day: '17', month: 'May', year: '2025' },
         title: "Navigating the Talent Market: AI-Led Recruitment Success",
         description: "Discover how AI-driven talent acquisition is transforming recruitment strategies and improving placement accuracy.",
-        link: "/news-details",
+        link: "/blog-details",
         author: 'PixelAdvant',
         category: 'Talent Solutions',
         delay: ".5"
@@ -29,7 +29,7 @@ export const blogPostsOneData: BlogPostDataType[] = [
         date: { day: '17', month: 'July', year: '2025' },
         title: "Mastering Smart Talent Acquisition with Advanced AI",
         description: "Learn how to leverage AI-powered tools for intelligent talent identification, assessment, and acquisition.",
-        link: "/news-details",
+        link: "/blog-details",
         author: 'PixelAdvant',
         category: 'Technology',
         delay: ".7"

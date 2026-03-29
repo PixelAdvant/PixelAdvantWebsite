@@ -12,7 +12,7 @@ const BlogsTwo = () => {
             <SectionTitle.SubTitle>Latest Blog</SectionTitle.SubTitle>
             <SectionTitle.Title>Our Latest Blog</SectionTitle.Title>
           </SectionTitle>
-          <Link to="/news" className="theme-btn wow slideUp" data-delay=".5">
+          <Link to="/blog" className="theme-btn wow slideUp" data-delay=".5">
             All Article
             <i className="fa-solid fa-arrow-right-long" />
           </Link>

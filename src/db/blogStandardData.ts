@@ -10,7 +10,7 @@ export const blogStandardData:BlogPostDataType[] = [
         title: 'Top GCC Trends Reshaping Global Talent',
         description:
             'Discover the emerging trends in Global Capability Centers and how they\'re transforming the talent acquisition landscape. From AI-driven hiring to hybrid work models, explore what\'s next.',
-        link: '/news-details',
+        link: '/blog-details',
         delay:'0.2s'
     },
     {
@@ -22,7 +22,7 @@ export const blogStandardData:BlogPostDataType[] = [
         title: 'Understanding the Global Talent Market',
         description:
             'Gain deep insights into global talent markets and employment trends. Learn how macro-economic factors, technology adoption, and skill trends are shaping recruitment strategies.',
-        link: '/news-details',
+        link: '/blog-details',
         delay:'0.2s'
     },
     {
@@ -34,7 +34,7 @@ export const blogStandardData:BlogPostDataType[] = [
         title: 'AI-Powered Recruitment: Finding Top Talent',
         description:
             'Explore how artificial intelligence is revolutionizing recruitment by identifying top talent faster and more accurately. Discover tools and techniques that leading organizations are using.',
-        link: '/news-details',
+        link: '/blog-details',
         delay:'0.2s'
     },
 ];

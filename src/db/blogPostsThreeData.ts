@@ -23,7 +23,7 @@ export const blogPostsThreeData:BlogPostDataType[] = [
         author: 'PixelAdvant',
         category: 'GCC Setup',
         title: 'Establishing Your Global Capability Centre in India',
-        link: '/news-details',
+        link: '/blog-details',
         description:'Complete guide to setting up a high-performing GCC in India with PixelAdvant expertise',
         delay:'.3'
     },
@@ -34,7 +34,7 @@ export const blogPostsThreeData:BlogPostDataType[] = [
         author: 'PixelAdvant',
         category: 'Recruitment',
         title: 'Top Talent Acquisition Strategies for GCC India',
-        link: '/news-details',
+        link: '/blog-details',
         description:'How to build a world-class team through smart global recruitment practices',
         delay:'.3'
     },
@@ -45,7 +45,7 @@ export const blogPostsThreeData:BlogPostDataType[] = [
         author: 'PixelAdvant',
         category: 'Best Practices',
         title: 'GCC Success Stories: Lessons from Industry Leaders',
-        link: '/news-details',
+        link: '/blog-details',
         description:'Real-world case studies showing how companies scale with GCC operations in India',
         delay:'.3'
     },
@@ -56,7 +56,7 @@ export const blogPostsThreeData:BlogPostDataType[] = [
         author: 'PixelAdvant',
         category: 'AI & Recruitment',
         title: 'AI-Powered Recruitment: Transforming Global Hiring',
-        link: '/news-details',
+        link: '/blog-details',
         description:'Discover how PixelAdvant uses AI to streamline recruitment for multinational teams',
         delay:'.3'
     },
@@ -67,7 +67,7 @@ export const blogPostsThreeData:BlogPostDataType[] = [
         author: 'PixelAdvant',
         category: 'Talent Management',
         title: 'Retaining Top Talent: Building High-Performance Teams in India',
-        link: '/news-details',
+        link: '/blog-details',
         description:'Strategic approaches to keep your best talent and reduce attrition in competitive markets',
         delay:'.3'
     },
@@ -78,7 +78,7 @@ export const blogPostsThreeData:BlogPostDataType[] = [
         author: 'PixelAdvant',
         category: 'Managed Services',
         title: 'Managed Recruitment Services: Outsourcing for Scale',
-        link: '/news-details',
+        link: '/blog-details',
         description:'Let PixelAdvant handle your complete recruitment and GCC management needs',
         delay:'.3'
     },

@@ -42,13 +42,13 @@ const recentPosts = [
         image: "/img/blogs/pp1.jpg",
         date: "20 Feb, 2025",
         title: "Global Capability Centers - Future of Work",
-        link: "/news-details",
+        link: "/blog-details",
     },
     {
         image: "/img/blogs/pp2.jpg",
         date: "15 Dec, 2025",
         title: "AI-Led Talent Acquisition Excellence",
-        link: "/news-details",
+        link: "/blog-details",
     },
 ];
 

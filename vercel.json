@@ -78,6 +78,51 @@
       "source": "/jobs",
       "destination": "/careers",
       "statusCode": 301
+    },
+    {
+      "source": "/service",
+      "destination": "/gcc-solutions",
+      "statusCode": 301
+    },
+    {
+      "source": "/service-details",
+      "destination": "/gcc-solutions",
+      "statusCode": 301
+    },
+    {
+      "source": "/service-carousel",
+      "destination": "/gcc-solutions",
+      "statusCode": 301
+    },
+    {
+      "source": "/project",
+      "destination": "/gcc-solutions/engagement-models",
+      "statusCode": 301
+    },
+    {
+      "source": "/project-details",
+      "destination": "/gcc-solutions/engagement-models",
+      "statusCode": 301
+    },
+    {
+      "source": "/project-carousel",
+      "destination": "/gcc-solutions/engagement-models",
+      "statusCode": 301
+    },
+    {
+      "source": "/news-standard",
+      "destination": "/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/products",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/:path*",
+      "destination": "/",
+      "statusCode": 301
     }
   ]
 }
