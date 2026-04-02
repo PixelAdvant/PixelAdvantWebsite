@@ -6,6 +6,7 @@ import BlogDetails from "@/pages/blog-details";
 import BlogStandard from "@/pages/blog-standard";
 import Brochure from "@/pages/brochure";
 import CaseStudies from "@/pages/case-studies";
+import Click100Platform from "@/pages/click100-platform";
 import Click100Redirect from "@/pages/click100-redirect";
 import Contact from "@/pages/contact";
 import Dashboard from "@/pages/dashboard";
@@ -203,7 +204,11 @@ export const router = createRouter([
             },
             {
                 path:'/recruitment/click-100',
-                element:<Click100Redirect/>
+                element:<Click100Platform/>
+            },
+            {
+                path:'/click100-platform',
+                element:<Click100Platform/>
             },
             {
                 path:'/recruitment/advisory-consultancy',
