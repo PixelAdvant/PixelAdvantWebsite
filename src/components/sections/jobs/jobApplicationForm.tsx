@@ -81,7 +81,7 @@ const JobApplicationForm = ({ jobId }: JobApplicationFormProps) => {
 
     return (
         <div className="application-form">
-            <h2>Apply Now</h2>
+            <h3 style={{ marginBottom: '20px', fontSize: '22px', fontWeight: '700' }}>Apply Now</h3>
             {job && (
                 <div style={{
                     padding: '15px',

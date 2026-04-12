@@ -147,23 +147,23 @@ export const pageSEOConfig: Record<string, PageSEOConfig> = {
       'IT services by Pixel Advant â€” custom software development, managed cloud services, cybersecurity, IT staffing, and digital transformation support for growth-focused businesses in India.',
     keywords:
       'IT services company India, managed IT services India, custom software development India, cloud services India, cybersecurity services India',
-    canonical: '/gcc-solutions/it-services',
+    canonical: '/digital-engineering/it-services',
     breadcrumbs: [
-      { name: 'GCC Solutions', url: '/gcc-solutions' },
-      { name: 'IT Services', url: '/gcc-solutions/it-services' },
+      { name: 'Digital Engineering', url: '/digital-engineering' },
+      { name: 'IT Services', url: '/digital-engineering/it-services' },
     ],
   },
 
   gccDigitalMarketingServices: {
     title: 'Digital Marketing Services India',
     description:
-      'Digital marketing services by Pixel Advant â€” SEO, PPC, social media, content marketing, email automation, and online reputation management for measurable business growth in India.',
+      'Digital marketing services by Pixel Advant â€" SEO, PPC, social media, content marketing, email automation, and online reputation management for measurable business growth in India.',
     keywords:
       'digital marketing agency India, SEO services India, PPC management India, content marketing India, social media marketing India',
-    canonical: '/gcc-solutions/digital-marketing-services',
+    canonical: '/digital-engineering/digital-marketing-services',
     breadcrumbs: [
-      { name: 'GCC Solutions', url: '/gcc-solutions' },
-      { name: 'Digital Marketing Services', url: '/gcc-solutions/digital-marketing-services' },
+      { name: 'Digital Engineering', url: '/digital-engineering' },
+      { name: 'Digital Marketing Services', url: '/digital-engineering/digital-marketing-services' },
     ],
   },
 

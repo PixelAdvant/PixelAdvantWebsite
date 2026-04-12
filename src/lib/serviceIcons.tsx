@@ -12,10 +12,12 @@ import {
   Mail,
   Megaphone,
   Monitor,
+  Palette,
   Search,
   Settings,
   Share2,
   ShieldCheck,
+  Smartphone,
   Star,
   Users,
 } from "lucide-react";
@@ -31,6 +33,8 @@ export type ServiceIconKey =
   | "research"
   | "development"
   | "web"
+  | "mobile"
+  | "design"
   | "cloud"
   | "strategy"
   | "security"
@@ -52,6 +56,8 @@ const iconMap: Record<ServiceIconKey, LucideIcon> = {
   research: Search,
   development: Code2,
   web: Monitor,
+  mobile: Smartphone,
+  design: Palette,
   cloud: Cloud,
   strategy: Compass,
   security: ShieldCheck,

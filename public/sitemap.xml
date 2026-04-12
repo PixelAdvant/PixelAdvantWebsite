@@ -86,6 +86,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.pixeladvant.com/digital-engineering/it-services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.pixeladvant.com/digital-engineering/digital-marketing-services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.pixeladvant.com/gcc-solutions/legal-services</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

@@ -60,6 +60,8 @@ export const menuData: MenuItemDataType[] = [
       { title: 'Quality Engineering', link: '/digital-engineering/quality-engineering' },
       { title: 'Technical & Business Architecture', link: '/digital-engineering/architecture' },
       { title: 'Product Development', link: '/digital-engineering/product-development' },
+      { title: 'IT Services', link: '/digital-engineering/it-services' },
+      { title: 'Digital Marketing Services', link: '/digital-engineering/digital-marketing-services' },
     ],
   },
   {
@@ -69,8 +71,6 @@ export const menuData: MenuItemDataType[] = [
       { title: 'Consulting and Advisory', link: '/gcc-solutions/consulting-advisory' },
       { title: 'GCC Engagement Models', link: '/gcc-solutions/engagement-models' },
       { title: 'Talent & Workspace Solutions', link: '/gcc-solutions/talent-workspace' },
-      { title: 'IT Services', link: '/gcc-solutions/it-services' },
-      { title: 'Digital Marketing Services', link: '/gcc-solutions/digital-marketing-services' },
       { title: 'Legal Services', link: '/gcc-solutions/legal-services' },
     ],
   },

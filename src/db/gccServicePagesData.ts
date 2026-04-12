@@ -148,115 +148,96 @@ export const itServicesPageData: GCCServicePageData = {
   key: "it-services",
   pageTitle: "IT Services",
   currentPage: "IT Services",
-  heroLabel: "Managed Technology Services",
-  heroTitle: "Your Trusted Partner for IT Services in India",
+  heroLabel: "End-to-End Technology Services",
+  heroTitle: "End-to-End IT Services for Startups and Enterprises",
   heroDescription:
-    "Pixel Advant helps businesses strengthen technology infrastructure, modernise applications, secure digital operations, and scale with the right engineering and support models.",
+    "We design, develop, and deliver digital products that actually perform. Whether you are a founder with a new idea or a business that needs to modernize, our IT services practice in India works with you from the very start through launch and beyond.",
   heroImage:
     "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80",
   bannerImage:
     "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
   trustPoints: [
-    "Managed IT and cloud solutions",
-    "Secure and scalable infrastructure",
-    "Custom software and web delivery",
-    "Business-aligned digital transformation",
+    "Early-stage startups building their first product",
+    "Growth-stage companies scaling their platforms",
+    "Enterprises modernizing old systems",
+    "Teams looking for a long-term tech partner",
   ],
-  introTitle: "Technology Meets Strategy at Pixel Advant",
+  introTitle: "Built to Perform. Delivered on Time.",
   introParagraphs: [
-    "Businesses today need more than technical vendors. They need partners who connect engineering decisions to commercial outcomes, operational resilience, and long-term scale.",
-    "Pixel Advant brings its GCC and talent expertise into IT delivery so startups, mid-sized firms, and enterprise teams can build platforms, modernise systems, and strengthen infrastructure with a single accountable partner.",
+    "We design, develop, and deliver digital products that actually perform. Whether you are a founder with a new idea or a business that needs to modernize, our IT services practice in India works with you from the very start through launch and beyond.",
+    "We work with early-stage startups building their first product, small and medium businesses expanding online, growth-stage companies scaling their platforms, enterprises modernizing old systems, founders who need an MVP fast, and teams looking for a long-term tech partner.",
   ],
   serviceSectionTitle: "Our IT Services",
   serviceSectionDescription:
-    "Our IT services are designed to reduce friction in business operations and create long-term technology capability that grows with your organisation.",
+    "From product development to UI/UX design, our IT services are built to reduce friction and create long-term technology capability that grows with your organisation.",
   offerings: [
     {
-      title: "Custom Software Development",
+      title: "Product Development",
       description:
-        "We build business-critical software that supports internal operations, customer experience, and workflow automation.",
+        "We build products people actually use, on time and within budget. Whether you have a rough idea or a detailed spec, our product development team takes it from concept to a live working product. We work in short sprints so you always know what is happening and you see real progress every two weeks, not after six months.",
       iconKey: "development",
       items: [
-        "Custom web application development",
-        "Enterprise software and workflow platforms",
-        "API development and third-party integrations",
-        "SaaS product development",
-        "Legacy system modernisation",
+        "Discovery session to understand your goals and users",
+        "Right tech stack planned for your budget and timeline",
+        "Development in two-week sprints with demos at the end of each",
+        "Every feature tested before release",
+        "Cloud setup, deployment, and go-live support included",
+        "Post-launch fixes and improvements",
       ],
     },
     {
-      title: "Web Design and Development",
+      title: "Website Design and Development",
       description:
-        "Our web teams deliver high-performance websites built for credibility, conversion, and long-term manageability.",
+        "Fast, good-looking websites that are built to convert visitors into customers. Your website is your most important sales tool. Our web development services team builds websites that look professional, load quickly, and are designed to get results. Every decision we make has a reason behind it.",
       iconKey: "web",
       items: [
-        "Responsive website design and development",
-        "E-commerce builds on Shopify, WooCommerce, and similar platforms",
-        "CMS development on WordPress and headless stacks",
-        "Landing pages designed for conversion",
-        "Website audit, redesign, and optimisation",
+        "Mobile-first responsive design",
+        "Basic SEO setup",
+        "Page speed optimization",
+        "SSL and daily backups",
+        "CMS so you can edit your own content",
+        "Analytics and conversion tracking",
+        "Contact forms and CTAs",
+        "30 days of support after launch",
       ],
     },
     {
-      title: "IT Staffing and Tech Talent Acquisition",
+      title: "Mobile App Development",
       description:
-        "We help businesses secure high-value technical talent for permanent, contract, remote, and leadership requirements.",
-      iconKey: "talent",
+        "iOS, Android, and cross-platform apps that people enjoy using. We build apps that are fast, stable, and intuitive. Our mobile app development practice handles consumer apps, internal tools, and marketplaces, covering the full process from the first conversation through to submission on the App Store or Play Store.",
+      iconKey: "mobile",
       items: [
-        "IT contract staffing",
-        "Permanent IT staffing",
-        "Dedicated development teams",
-        "Remote IT talent acquisition",
-        "C-suite and GCC technology hiring",
+        "Define core features, user flows, and monetization before writing any code",
+        "Design and prototype the experience to catch problems early",
+        "React Native or Flutter for most projects, saving around 80 percent of cost vs two native apps",
+        "Native Swift or Kotlin when performance demands it",
+        "Test on 30 or more real devices before submission",
+        "Handle OS updates, security patches, and new features after launch",
       ],
     },
     {
-      title: "Cloud Solutions and Managed IT Services",
+      title: "UI/UX Design",
       description:
-        "We support migration, infrastructure management, compliance, and operational continuity across modern cloud estates.",
-      iconKey: "cloud",
+        "Design that is research-backed, easy to use, and built to convert. Good design is not just about how something looks. It is about making your product easy to use, keeping people from leaving, and building trust. Our UI UX design services combine user research with strong visual craft to create experiences that work for your users and your business.",
+      iconKey: "design",
       items: [
-        "Cloud migration consulting for AWS, Azure, and Google Cloud",
-        "Managed IT infrastructure services",
-        "Cloud security and compliance services",
-        "DevOps and CI/CD setup",
-        "24x7 helpdesk and remote support services",
-      ],
-    },
-    {
-      title: "IT Consulting and Digital Transformation",
-      description:
-        "Our consultants help identify technology gaps, prioritise investments, and build a practical roadmap for transformation.",
-      iconKey: "strategy",
-      items: [
-        "IT strategy and roadmap consulting",
-        "Digital transformation advisory",
-        "Technology vendor evaluation and selection",
-        "Process automation and workflow digitisation",
-        "IT governance and risk management",
-      ],
-    },
-    {
-      title: "Cybersecurity Services",
-      description:
-        "We help protect digital assets through assessments, controls, compliance readiness, and response planning.",
-      iconKey: "security",
-      items: [
-        "Vulnerability assessment and penetration testing",
-        "Security audits for ISO 27001 and SOC 2 readiness",
-        "Endpoint security and threat monitoring",
-        "Data privacy consulting",
-        "Incident response and business continuity planning",
+        "User research and interviews",
+        "Information architecture",
+        "Wireframes and low-fidelity prototypes",
+        "High-fidelity UI design with a full design system",
+        "Interactive clickable prototypes",
+        "Usability testing",
+        "Clean handoff files for developers with all specs and assets",
       ],
     },
   ],
   whyChooseTitle: "Why Businesses Choose Pixel Advant for IT Services",
   whyChooseDescription:
-    "Our technology engagements are built around business clarity, execution discipline, and measurable progress rather than isolated technical delivery.",
+    "We are a technology company that understands your product and your users. That makes our delivery more relevant and more effective than working with a vendor who only sees the technical side.",
   highlights: sharedHighlights,
   industriesTitle: "Industries We Support",
   industriesDescription:
-    "Our IT services are flexible enough to support platform modernisation, secure operations, and scalable delivery across multiple business environments.",
+    "Our IT services support SaaS and B2B software, e-commerce, healthcare, fintech, EdTech, real estate, logistics, and consumer apps.",
   industries: sharedIndustries,
   processTitle: "How We Work",
   processDescription:
@@ -266,29 +247,29 @@ export const itServicesPageData: GCCServicePageData = {
     {
       question: "What IT services does Pixel Advant provide?",
       answer:
-        "Pixel Advant provides custom software development, web design and development, cloud solutions, managed IT services, IT staffing, cybersecurity, and digital transformation consulting.",
+        "Pixel Advant provides product development, website design and development, mobile app development, and UI/UX design. We cover the full process from the first conversation through to launch and beyond.",
     },
     {
-      question: "Can Pixel Advant handle both IT staffing and technology delivery at the same time?",
+      question: "How do you manage project timelines?",
       answer:
-        "Yes. We can support technical hiring, dedicated teams, implementation, infrastructure, and advisory work under one coordinated engagement model.",
+        "We work in two-week sprints so you always know what is happening and you see real progress regularly, not after six months. Every sprint ends with a demo so you can review progress and give feedback.",
     },
     {
-      question: "What sets Pixel Advant apart from other IT service providers?",
+      question: "Do you work with early-stage startups?",
       answer:
-        "Our strength comes from combining GCC advisory, hiring expertise, and technology delivery, which helps us design systems and teams around commercial reality, not just technical output.",
+        "Yes. We work with founders who need an MVP fast, startups building their first product, and teams looking for a long-term tech partner. We tailor the engagement model to your stage and budget.",
     },
     {
-      question: "Do you offer customised IT service packages for startups?",
+      question: "What mobile platforms do you develop for?",
       answer:
-        "Yes. We tailor IT engagement models for startups and growth-stage businesses so they can prioritise outcomes while staying aligned to budget and stage.",
+        "We build for iOS, Android, and cross-platform. We use React Native or Flutter for most projects, saving around 80 percent of cost compared to two native apps. We use native Swift or Kotlin when performance demands it.",
     },
   ],
-  ctaTitle: "Ready to Build Stronger Technology Foundations?",
+  ctaTitle: "Ready to Build Something?",
   ctaDescription:
-    "Whether you need custom software, cloud support, cybersecurity, or a scalable engineering team, we can help you shape the right delivery plan.",
+    "Whether you are looking for a product development company you can build a long-term relationship with, or you need web or mobile development for a fast turnaround, tell us about your project and we will come back with a proposal within 48 hours. No commitment needed for the first call.",
   primaryCta: {
-    label: "Schedule a Strategy Call",
+    label: "Get in Touch",
     link: "/contact",
   },
   secondaryCta: {
@@ -302,119 +283,167 @@ export const digitalMarketingServicesPageData: GCCServicePageData = {
   pageTitle: "Digital Marketing Services",
   currentPage: "Digital Marketing Services",
   heroLabel: "Performance-Driven Marketing",
-  heroTitle: "Digital Marketing Services Built for Measurable Growth",
+  heroTitle: "Digital Marketing That Delivers Measurable Results",
   heroDescription:
-    "Pixel Advant helps businesses attract the right traffic, convert demand into qualified leads, and build sustainable digital visibility with channel strategies tied to outcomes.",
+    "From SEO and paid ads to content, social media, and email, our digital marketing services help businesses of all sizes grow online, reach the right people, and turn clicks into customers.",
   heroImage:
     "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80",
   bannerImage:
     "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80",
   trustPoints: [
-    "SEO and AI search visibility",
-    "Paid campaigns focused on qualified leads",
-    "Content and social strategies for brand growth",
-    "Automation and reporting for continuous improvement",
+    "SEO that keeps growing traffic over time",
+    "Paid campaigns focused on cost per acquisition",
+    "Content that builds trust and ranks in search",
+    "Email and automation for reliable revenue",
   ],
-  introTitle: "Performance Marketing with Business Context",
+  introTitle: "Marketing That Works as Hard as You Do",
   introParagraphs: [
-    "Digital growth works best when marketing strategy is aligned with business goals, buyer behaviour, and operational readiness. That is the approach we bring to every engagement.",
-    "From B2B lead generation to full-funnel visibility and brand reputation, Pixel Advant builds digital marketing programmes that support both immediate performance and long-term market presence.",
+    "From SEO and paid ads to content, social media, and email, our digital marketing services help businesses of all sizes grow online, reach the right people, and turn clicks into customers.",
+    "Most businesses build a great product and then struggle to get noticed. We make sure that does not happen. We work as part of your team, understand your market and goals, and build campaigns that generate real trackable growth.",
   ],
   serviceSectionTitle: "Our Digital Marketing Services",
   serviceSectionDescription:
-    "We focus on channels and content systems that improve discoverability, lead quality, and conversion efficiency across the customer journey.",
+    "We focus on channels and content systems that improve discoverability, lead quality, and conversion efficiency across the full customer journey.",
   offerings: [
     {
       title: "Search Engine Optimization",
       description:
-        "Our SEO services combine technical strength, content planning, and AI-search visibility to improve discoverability across search journeys.",
+        "Rank higher on Google and grow traffic that keeps growing over time. SEO gives the best long-term return on investment for most businesses. We work on the technical side, the content side, and on building your website's authority with Google.",
       iconKey: "seo",
       items: [
-        "Technical SEO audit and optimisation",
-        "On-page and off-page SEO services",
-        "Local SEO campaigns",
-        "Keyword research and content strategy",
-        "AI search optimisation for modern discovery platforms",
+        "SEO audit and competitor analysis",
+        "Keyword research mapped to your pages",
+        "Technical SEO covering site speed, Core Web Vitals, and schema markup",
+        "On-page work on titles, headings, and internal links",
+        "Content strategy and blog writing",
+        "Link building through outreach and PR",
+        "Local SEO and Google Business Profile optimization",
+        "Monthly ranking and traffic reports",
       ],
     },
     {
-      title: "Pay-Per-Click Advertising",
+      title: "Paid Advertising",
       description:
-        "We manage paid campaigns with a focus on spend efficiency, conversion quality, and channel-to-pipeline visibility.",
+        "Targeted ads that reach the right people at the right time. We manage paid campaigns on Google, YouTube, Meta, and LinkedIn. Everything is focused on cost per acquisition and return on ad spend. We audit existing accounts or set them up from scratch, produce all ad creatives, test continuously, and send a full report monthly.",
       iconKey: "paidMedia",
       items: [
-        "Google Ads management",
-        "Meta Ads and LinkedIn Ads",
-        "Retargeting and remarketing",
-        "Landing page optimisation for paid traffic",
-        "PPC audit and competitor analysis",
+        "Google Search Ads for high-intent buyers",
+        "Display and Remarketing campaigns",
+        "YouTube video ads",
+        "Meta campaigns using interest and lookalike audiences",
+        "LinkedIn campaigns targeting by job title and industry",
+        "Performance Max campaigns",
+      ],
+    },
+    {
+      title: "Content Marketing",
+      description:
+        "Content that builds trust, ranks in search, and brings in leads over time. We create content that works hard for your business. It ranks in search, speaks to your audience, and moves people toward buying.",
+      iconKey: "content",
+      items: [
+        "Content strategy and editorial calendar",
+        "Blog posts and thought leadership articles",
+        "Long-form guides and whitepapers",
+        "Case studies and customer stories",
+        "Website copy and landing pages",
+        "Email newsletters",
+        "Video scripts",
+        "Infographics",
       ],
     },
     {
       title: "Social Media Marketing",
       description:
-        "Our social strategies help businesses strengthen brand reputation, audience engagement, and thought leadership across the right platforms.",
+        "Build a real presence on social that drives actual business results. We manage your channels with strategy and consistency across LinkedIn, Instagram, Facebook, Twitter/X, YouTube, and others where they make sense for your business. It is not just about posting — it is about building a following that trusts you.",
       iconKey: "social",
       items: [
-        "Social media strategy and content calendar",
-        "Content creation services",
-        "Community management and engagement",
-        "Influencer and collaboration support",
-        "LinkedIn thought leadership for B2B teams",
-      ],
-    },
-    {
-      title: "Content Marketing and Strategy",
-      description:
-        "We create content systems that educate audiences, improve search visibility, and support conversion across campaigns and sales journeys.",
-      iconKey: "content",
-      items: [
-        "SEO blog and article writing",
-        "Website copy and landing page content",
-        "Email marketing copy and newsletters",
-        "Case studies and whitepapers",
-        "Video scripting and content audits",
+        "Social audit and competitor review",
+        "Monthly content calendar",
+        "Original posts, graphics, and short videos for each platform",
+        "Community management with responses within 24 hours",
+        "Hashtag and discoverability strategy",
+        "Monthly report on reach, engagement, and follower growth",
       ],
     },
     {
       title: "Email Marketing and Automation",
       description:
-        "We design lifecycle campaigns and automation workflows that keep leads engaged and improve conversion over time.",
+        "Make your email list your most reliable revenue channel. Email delivers the best ROI of any marketing channel when done properly. We build and manage programs that nurture leads, onboard new customers, and bring back people who have gone quiet.",
       iconKey: "email",
       items: [
-        "Email campaign strategy and execution",
-        "Drip campaigns and workflow automation",
-        "CRM integration with HubSpot, Zoho, and Salesforce",
-        "A/B testing and performance optimisation",
-        "Deliverability and subscriber growth support",
+        "Email strategy and list segmentation",
+        "Welcome and onboarding sequences",
+        "Lead nurturing drip campaigns",
+        "Promotional campaigns for launches and events",
+        "Regular newsletters",
+        "Marketing automation setup on HubSpot, Mailchimp, ActiveCampaign, or Klaviyo",
+        "Subject line testing and deliverability work",
       ],
     },
     {
-      title: "Online Reputation Management",
+      title: "Employer Branding and GCC Brand Building",
       description:
-        "We help businesses monitor brand perception, strengthen review profiles, and improve what prospects see when they research you online.",
+        "Attract the best talent in India by building a brand people want to work for. For GCC companies hiring in India, how you are perceived as an employer is your greatest advantage in a competitive talent market. We bring together GCC expertise and digital marketing to help you stand out where the right candidates are looking.",
       iconKey: "reputation",
       items: [
-        "Brand monitoring and sentiment analysis",
-        "Negative content suppression guidance",
-        "Review generation and management",
-        "Crisis communication and PR support",
-        "Personal branding for founders and executives",
+        "Employee Value Proposition development",
+        "LinkedIn employer branding campaigns",
+        "Glassdoor and Indeed profile management",
+        "Careers page design and copy",
+        "Employee advocacy programs",
+        "Targeted recruitment marketing across Bangalore, Hyderabad, Pune, and NCR",
       ],
     },
   ],
-  whyChooseTitle: "Why Businesses Choose Pixel Advant for Digital Marketing",
+  whyChooseTitle: "Why Pixel Advant for Marketing?",
   whyChooseDescription:
-    "We focus on marketing systems that are transparent, measurable, and closely connected to sales, brand, and growth goals.",
+    "We are not a generic agency. We are a technology company that also handles marketing, which means we understand your product and your users in ways most digital marketing agencies do not. That makes our campaigns more relevant and more effective. No long-term contracts. You own all your accounts and data. You get a dedicated account manager, not a support queue. Reports are written in plain language without vanity metrics. We always start with strategy before we touch execution.",
   highlights: sharedHighlights,
   industriesTitle: "Industries We Serve",
   industriesDescription:
     "Our digital marketing services are built to support both B2B and B2C growth models, especially where trust, expertise, and lead quality matter.",
   industries: sharedIndustries,
-  processTitle: "How We Execute Growth Programmes",
+  processTitle: "How Do We Work with You?",
   processDescription:
-    "Our marketing process keeps strategy, launch, optimisation, and reporting tightly connected so improvements compound over time.",
-  processSteps: sharedProcessSteps,
+    "We offer three engagement tiers so you can start at the right level and scale as your results grow.",
+  processSteps: [
+    {
+      step: "01",
+      title: "Starter",
+      description:
+        "For businesses getting started. One channel focus — either SEO, paid ads, or social media. A monthly content calendar with 8 posts per month. Monthly performance report. Dedicated account manager. Best for startups and small businesses.",
+    },
+    {
+      step: "02",
+      title: "Growth",
+      description:
+        "For businesses ready to scale. Two or three channels covered — typically SEO, paid ads, social, and content. Full content production including blogs, social, and email. Calls every two weeks. Conversion rate optimization included. Best for SMEs, GCCs, and growth-stage companies.",
+    },
+    {
+      step: "03",
+      title: "Enterprise",
+      description:
+        "For complex multi-channel needs. All channels covered including the employer branding GCC India program. Dedicated team with a strategist, content writer, designer, and analyst. Weekly reporting and executive dashboards. Custom service agreement. Best for large enterprises and GCCs.",
+    },
+    {
+      step: "04",
+      title: "Free Marketing Audit",
+      description:
+        "Start with a free marketing audit. We will look at your website, social channels, SEO, and ad accounts, and tell you exactly where the biggest opportunities are. No charge and no commitment.",
+    },
+    {
+      step: "05",
+      title: "Strategy and Execution",
+      description:
+        "Once aligned on priorities, we build the strategy, set up the channels, produce all content and creatives, and begin execution — all within one coordinated team.",
+    },
+    {
+      step: "06",
+      title: "Report and Optimize",
+      description:
+        "Regular performance reports in plain language without vanity metrics. We review results together and optimize continuously so campaigns compound over time.",
+    },
+  ],
   faqs: [
     {
       question: "Does Pixel Advant offer digital marketing services for B2B companies?",
@@ -429,19 +458,19 @@ export const digitalMarketingServicesPageData: GCCServicePageData = {
     {
       question: "What makes Pixel Advant different from other digital marketing agencies?",
       answer:
-        "We combine market understanding, business context, technology capability, and transparent reporting so strategy is tied to outcomes rather than vanity metrics.",
+        "We are a technology company that also handles marketing, which means we understand your product and your users in ways most agencies do not. No long-term contracts, you own all your accounts and data, and reports are written in plain language without vanity metrics.",
     },
     {
       question: "Do you offer customised digital marketing packages for startups?",
       answer:
-        "Yes. We tailor channel mix, content cadence, and reporting depth to match startup budgets, stage, and growth priorities.",
+        "Yes. We tailor channel mix, content cadence, and reporting depth to match startup budgets, stage, and growth priorities. The Starter tier is the best place to begin.",
     },
   ],
-  ctaTitle: "Ready to Grow Your Digital Presence?",
+  ctaTitle: "Let Us Grow Your Digital Presence Together",
   ctaDescription:
-    "Whether you need SEO, paid demand generation, content systems, or marketing automation, we can help build a focused strategy around your growth targets.",
+    "Start with a free marketing audit. We will look at your website, social channels, SEO, and ad accounts, and tell you exactly where the biggest opportunities are. No charge and no commitment.",
   primaryCta: {
-    label: "Get a Marketing Strategy Call",
+    label: "Get a Free Marketing Audit",
     link: "/contact",
   },
   secondaryCta: {

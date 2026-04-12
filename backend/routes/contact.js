@@ -1,6 +1,7 @@
 const express = require('express')
 const pool = require('../config/db')
 const { authMiddleware, requireRole } = require('../middleware/auth')
+const { sendContactNotification, sendContactConfirmation } = require('../config/mailer')
 const router = express.Router()
 
 // POST /api/contact  – public form submission
@@ -15,6 +16,16 @@ router.post('/', async (req, res) => {
              VALUES (?,?,?,?,?,?)`,
             [name, email, phone, company, subject, message]
         )
+
+        // Fire-and-forget emails – same pattern as pixel_advant_be views.py:
+        //   1. Notify admin with full submission details (sender CC'd)
+        //   2. Send confirmation to the submitter
+        sendContactNotification({ name, email, phone, company, subject, message })
+            .catch(err => console.error('[mailer] admin notification failed:', err))
+
+        sendContactConfirmation({ name, email })
+            .catch(err => console.error('[mailer] confirmation email failed:', err))
+
         res.status(201).json({ message: 'Message received. We will get back to you soon.' })
     } catch {
         res.status(500).json({ message: 'Server error' })

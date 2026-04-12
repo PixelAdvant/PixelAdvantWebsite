@@ -23,8 +23,8 @@ Pixel Advant serves clients across Fintech/BFSI, Healthcare, Technology/SaaS, Ma
 - Homepage: https://www.pixeladvant.com/
 - About Us: https://www.pixeladvant.com/about
 - GCC Solutions: https://www.pixeladvant.com/gcc-solutions
-- IT Services: https://www.pixeladvant.com/gcc-solutions/it-services
-- Digital Marketing Services: https://www.pixeladvant.com/gcc-solutions/digital-marketing-services
+- IT Services: https://www.pixeladvant.com/digital-engineering/it-services
+- Digital Marketing Services: https://www.pixeladvant.com/digital-engineering/digital-marketing-services
 - Recruitment: https://www.pixeladvant.com/recruitment
 - Digital Engineering: https://www.pixeladvant.com/digital-engineering
 - Products: https://www.pixeladvant.com/products

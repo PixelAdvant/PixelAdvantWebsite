@@ -38,7 +38,7 @@ const slidesData: SlideType[] = [
     title: 'SCALABLE IT SERVICES',
     heading: 'Build Secure, Modern Technology<br /> Systems That Grow With You',
     description: 'From custom software and managed cloud operations to cybersecurity and digital transformation, we help businesses create stronger IT foundations.',
-    link: '/gcc-solutions/it-services',
+    link: '/digital-engineering/it-services',
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const slidesData: SlideType[] = [
     title: 'PERFORMANCE DIGITAL MARKETING',
     heading: 'Turn Visibility Into Qualified<br /> Demand and Measurable Growth',
     description: 'Our SEO, paid media, content, automation, and reputation programmes are designed to generate better traffic, stronger leads, and sustainable growth.',
-    link: '/gcc-solutions/digital-marketing-services',
+    link: '/digital-engineering/digital-marketing-services',
   },
 ];
 

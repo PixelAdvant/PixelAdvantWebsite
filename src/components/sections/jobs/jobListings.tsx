@@ -105,7 +105,7 @@ interface JobListingsProps {
 const JobListings = ({ selectedJobId, onSelectJob }: JobListingsProps) => {
     return (
         <div className="job-listings">
-            <h2>Open Positions</h2>
+            <h2 style={{ marginBottom: '24px' }}>Open Positions</h2>
             <div className="listings-container" style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
                 {jobListingsData.map((job) => (
                     <div

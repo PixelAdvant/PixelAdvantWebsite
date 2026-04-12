@@ -178,6 +178,14 @@ export const router = createRouter([
                 path:'/digital-engineering/product-development',
                 element:<ServiceDetails solutionKey="productDevelopment" />
             },
+            {
+                path:'/digital-engineering/it-services',
+                element:<GCCITServices/>
+            },
+            {
+                path:'/digital-engineering/digital-marketing-services',
+                element:<GCCDigitalMarketing/>
+            },
             // ── GCC Solutions ─────────────────────────────
             {
                 path:'/gcc-solutions',

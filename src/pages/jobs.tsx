@@ -14,27 +14,29 @@ const Jobs = () => {
             <PageTitle currentPage="Jobs" title="Job Openings" />
             <section className="jobs-section fix section-padding">
                 <div className="container">
-                    <div className="row g-4">
-                        <div className="col-lg-6">
+                    <div style={{ display: 'flex', gap: '24px', alignItems: 'flex-start' }}>
+                        <div style={{ flex: '1 1 50%', minWidth: 0 }}>
                             <JobListings 
                                 selectedJobId={selectedJob}
                                 onSelectJob={setSelectedJob}
                             />
                         </div>
-                        <div className="col-lg-6">
-                            {selectedJob ? (
-                                <JobApplicationForm jobId={selectedJob} />
-                            ) : (
-                                <div style={{ 
-                                    padding: '40px', 
-                                    backgroundColor: '#f8f9fa', 
-                                    borderRadius: '8px',
-                                    textAlign: 'center'
-                                }}>
-                                    <h3>Select a position to apply</h3>
-                                    <p>Choose a job opening from the list to get started with your application.</p>
-                                </div>
-                            )}
+                        <div style={{ flex: '1 1 50%', minWidth: 0, position: 'sticky', top: '100px' }}>
+                            <div style={{ maxHeight: 'calc(100vh - 140px)', overflowY: 'auto', paddingRight: '4px' }}>
+                                {selectedJob ? (
+                                    <JobApplicationForm jobId={selectedJob} />
+                                ) : (
+                                    <div style={{ 
+                                        padding: '40px', 
+                                        backgroundColor: '#f8f9fa', 
+                                        borderRadius: '8px',
+                                        textAlign: 'center'
+                                    }}>
+                                        <h3>Select a position to apply</h3>
+                                        <p>Choose a job opening from the list to get started with your application.</p>
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>

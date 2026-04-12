@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { sendClientRequestEmail } from '@/lib/emailConfig';
+import { api } from '@/lib/api';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -24,18 +24,18 @@ const ContactForm = () => {
         setStatus('idle');
 
         try {
-            await sendClientRequestEmail({
+            await api.post('/contact', {
                 ...formData,
                 subject: 'New Client Request - ' + formData.name,
             });
             setStatus('success');
             setFormData({ name: '', email: '', phone: '', company: '', message: '' });
-            setTimeout(() => setStatus('idle'), 3000);
+            setTimeout(() => setStatus('idle'), 5000);
         } catch (error) {
             console.error('Form submission error:', error);
             setStatus('error');
-            setErrorMessage('Failed to send message. Please try again.');
-            setTimeout(() => setStatus('idle'), 3000);
+            setErrorMessage(error instanceof Error ? error.message : 'Failed to send message. Please try again.');
+            setTimeout(() => setStatus('idle'), 5000);
         } finally {
             setLoading(false);
         }
