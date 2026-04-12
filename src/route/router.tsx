@@ -146,6 +146,10 @@ export const router = createRouter([
                 element:<Click100Platform/>
             },
             {
+                path:'/click100',
+                element:<Click100Redirect/>
+            },
+            {
                 path:'/recruitment/advisory-consultancy',
                 element:<ServiceDetails solutionKey="consultingAdvisory" />
             },
