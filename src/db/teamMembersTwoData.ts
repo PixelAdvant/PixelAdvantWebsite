@@ -5,7 +5,7 @@ export const teamMembersTwoData: TeamMemberDataType[] = [
         id: 1,
         name: 'Sarah Johnson',
         role: 'Chief Executive Officer',
-        image: 'https://randomuser.me/api/portraits/women/44.jpg',
+        image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&auto=format',
         delay: '.3',
         socialLinks: [
             { icon: 'fab fa-linkedin-in', link: '' },
@@ -17,7 +17,7 @@ export const teamMembersTwoData: TeamMemberDataType[] = [
         id: 2,
         name: 'Michael Chen',
         role: 'Chief Technology Officer',
-        image: 'https://randomuser.me/api/portraits/men/32.jpg',
+        image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&auto=format',
         delay: '.5',
         socialLinks: [
             { icon: 'fab fa-linkedin-in', link: '' },
@@ -29,7 +29,7 @@ export const teamMembersTwoData: TeamMemberDataType[] = [
         id: 3,
         name: 'Emily Rodriguez',
         role: 'Chief Operating Officer',
-        image: 'https://randomuser.me/api/portraits/women/55.jpg',
+        image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&auto=format',
         delay: '.7',
         socialLinks: [
             { icon: 'fab fa-linkedin-in', link: '' },
@@ -41,7 +41,7 @@ export const teamMembersTwoData: TeamMemberDataType[] = [
         id: 4,
         name: 'James Wilson',
         role: 'VP of Sales & Business Development',
-        image: 'https://randomuser.me/api/portraits/men/55.jpg',
+        image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&auto=format',
         delay: '.3',
         socialLinks: [
             { icon: 'fab fa-linkedin-in', link: '' },
@@ -53,7 +53,7 @@ export const teamMembersTwoData: TeamMemberDataType[] = [
         id: 5,
         name: 'Lisa Anderson',
         role: 'VP of Product Management',
-        image: 'https://randomuser.me/api/portraits/women/62.jpg',
+        image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&auto=format',
         delay: '.5',
         socialLinks: [
             { icon: 'fab fa-linkedin-in', link: '' },
@@ -65,7 +65,7 @@ export const teamMembersTwoData: TeamMemberDataType[] = [
         id: 6,
         name: 'David Kumar',
         role: 'VP of Engineering',
-        image: 'https://randomuser.me/api/portraits/men/41.jpg',
+        image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&auto=format',
         delay: '.7',
         socialLinks: [
             { icon: 'fab fa-linkedin-in', link: '' },

@@ -2,7 +2,7 @@
 // Seeds the database with 3 initial users and sample jobs
 require('dotenv').config()
 const bcrypt = require('bcryptjs')
-const mysql = require('mysql2/promise')
+const { Client } = require('pg')
 const fs = require('fs')
 const path = require('path')
 
@@ -10,22 +10,53 @@ async function setup() {
     let conn
     try {
         // Connect without DB first to create it
-        conn = await mysql.createConnection({
+        conn = new Client({
             host: process.env.DB_HOST,
             port: process.env.DB_PORT,
             user: process.env.DB_USER,
             password: process.env.DB_PASSWORD,
-            multipleStatements: true
+            database: 'postgres'  // Connect to default postgres database
         })
 
-        console.log('✓ Connected to MySQL')
+        await conn.connect()
+        console.log('✓ Connected to PostgreSQL')
 
-        // Run schema
+        // Create database if it doesn't exist
+        try {
+            await conn.query(`CREATE DATABASE ${process.env.DB_NAME};`)
+            console.log(`✓ Database ${process.env.DB_NAME} created`)
+        } catch (err) {
+            if (err.code !== 'DUPLICATE_DATABASE') {
+                console.log(`✓ Database ${process.env.DB_NAME} already exists`)
+            }
+        }
+
+        // Close connection to default db and connect to actual db
+        await conn.end()
+        conn = new Client({
+            host: process.env.DB_HOST,
+            port: process.env.DB_PORT,
+            user: process.env.DB_USER,
+            password: process.env.DB_PASSWORD,
+            database: process.env.DB_NAME
+        })
+        await conn.connect()
+
+        // Run schema - PostgreSQL format
         const schema = fs.readFileSync(path.join(__dirname, 'schema.sql'), 'utf8')
-        await conn.query(schema)
+        // Split schema by semicolons and execute each statement
+        const statements = schema.split(';').filter(s => s.trim().length > 0)
+        for (const statement of statements) {
+            try {
+                await conn.query(statement)
+            } catch (err) {
+                // Ignore duplicate table errors
+                if (!err.message.includes('already exists')) {
+                    console.error('Schema error:', err.message)
+                }
+            }
+        }
         console.log('✓ Schema applied')
-
-        await conn.query(`USE ${process.env.DB_NAME}`)
 
         // Seed users
         const salt = await bcrypt.genSalt(12)
@@ -54,10 +85,18 @@ async function setup() {
         ]
 
         for (const u of users) {
-            await conn.query(
-                `INSERT IGNORE INTO users (username, email, password, name, role) VALUES (?,?,?,?,?)`,
-                [u.username, u.email, u.password, u.name, u.role]
-            )
+            try {
+                await conn.query(
+                    `INSERT INTO users (username, email, password, name, role) VALUES ($1, $2, $3, $4, $5)
+                     ON CONFLICT (username) DO NOTHING`,
+                    [u.username, u.email, u.password, u.name, u.role]
+                )
+            } catch (err) {
+                // Ignore unique constraint errors
+                if (!err.message.includes('unique')) {
+                    console.error('User seed error:', err.message)
+                }
+            }
         }
         console.log('✓ Users seeded')
 
@@ -68,10 +107,17 @@ async function setup() {
             ['AI Recruitment Analyst', 'Technology', 'Remote', 'Full-time', '2-4 years', 'Build and optimize AI-powered recruitment pipelines and analytics.', '₹15-22 LPA'],
         ]
         for (const [title, dept, loc, type, exp, desc, salary] of jobs) {
-            await conn.query(
-                `INSERT IGNORE INTO jobs (title, department, location, type, experience, description, salary_range, created_by) VALUES (?,?,?,?,?,?,?,1)`,
-                [title, dept, loc, type, exp, desc, salary]
-            )
+            try {
+                await conn.query(
+                    `INSERT INTO jobs (title, department, location, type, experience, description, salary_range, created_by) 
+                     VALUES ($1, $2, $3, $4, $5, $6, $7, 1)
+                     ON CONFLICT DO NOTHING`,
+                    [title, dept, loc, type, exp, desc, salary]
+                )
+            } catch (err) {
+                // Ignore errors
+                console.log('Job seed skipped:', title)
+            }
         }
         console.log('✓ Sample jobs seeded')
 

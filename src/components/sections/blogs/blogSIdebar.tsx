@@ -12,17 +12,17 @@ const categories = [
 
 const recentPosts = [
     {
-        imgSrc: "/img/blogs/pp3.jpg",
+        imgSrc: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=128&h=96&fit=crop&auto=format",
         date: "18 Dec, 2025",
         title: "How GCC Advisory Improves Launch Readiness",
     },
     {
-        imgSrc: "/img/blogs/pp4.jpg",
+        imgSrc: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=128&h=96&fit=crop&auto=format",
         date: "18 Dec, 2025",
         title: "AI-Led Hiring Models for Faster Team Buildout",
     },
     {
-        imgSrc: "/img/blogs/pp5.jpg",
+        imgSrc: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=128&h=96&fit=crop&auto=format",
         date: "18 Dec, 2025",
         title: "Managed Services for Scalable GCC Operations",
     },

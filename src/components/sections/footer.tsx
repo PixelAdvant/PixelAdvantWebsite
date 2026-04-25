@@ -39,13 +39,13 @@ const services = [
 
 const recentPosts = [
     {
-        image: "/img/blogs/pp1.jpg",
+        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=160&h=120&fit=crop&auto=format",
         date: "20 Feb, 2025",
         title: "Global Capability Centers - Future of Work",
         link: "/blog-details",
     },
     {
-        image: "/img/blogs/pp2.jpg",
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=160&h=120&fit=crop&auto=format",
         date: "15 Dec, 2025",
         title: "AI-Led Talent Acquisition Excellence",
         link: "/blog-details",

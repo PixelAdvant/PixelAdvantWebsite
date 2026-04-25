@@ -15,6 +15,19 @@ export const api = {
         return data
     },
 
+    async put(path: string, body: object, token?: string) {
+        const headers: Record<string, string> = { 'Content-Type': 'application/json' }
+        if (token) headers['Authorization'] = `Bearer ${token}`
+        const res = await fetch(`${API_BASE_URL}${path}`, {
+            method: 'PUT',
+            headers,
+            body: JSON.stringify(body)
+        })
+        const data = await res.json()
+        if (!res.ok) throw new Error(data.message || 'Request failed')
+        return data
+    },
+
     async get(path: string, token?: string) {
         const headers: Record<string, string> = {}
         if (token) headers['Authorization'] = `Bearer ${token}`

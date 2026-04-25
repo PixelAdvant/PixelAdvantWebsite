@@ -1,25 +1,21 @@
-const mysql = require('mysql2/promise')
+const { Pool } = require('pg')
 
-const pool = mysql.createPool({
+const pool = new Pool({
     host:     process.env.DB_HOST     || 'localhost',
-    port:     parseInt(process.env.DB_PORT || '3306'),
-    user:     process.env.DB_USER,
+    port:     parseInt(process.env.DB_PORT || '5432'),
+    user:     process.env.DB_USER     || 'postgres',
     password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
-    waitForConnections: true,
-    connectionLimit:    10,
-    queueLimit:         0,
-    timezone: '+00:00'
+    database: process.env.DB_NAME     || 'pixeladvant_db'
 })
 
 // Test connection on startup
-pool.getConnection()
+pool.connect()
     .then(conn => {
-        console.log('✓ MySQL connected:', process.env.DB_NAME)
+        console.log('✓ PostgreSQL connected:', process.env.DB_NAME)
         conn.release()
     })
     .catch(err => {
-        console.error('✗ MySQL connection failed:', err.message)
+        console.error('✗ PostgreSQL connection failed:', err.message)
         process.exit(1)
     })
 

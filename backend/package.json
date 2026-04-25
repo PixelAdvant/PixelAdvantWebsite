@@ -1,7 +1,7 @@
 {
   "name": "pixeladvant-backend",
   "version": "1.0.0",
-  "description": "PixelAdvant backend API - Node.js + Express + MySQL",
+  "description": "PixelAdvant backend API - Node.js + Express + PostgreSQL",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -15,7 +15,7 @@
     "express": "^4.18.2",
     "express-rate-limit": "^7.2.0",
     "jsonwebtoken": "^9.0.2",
-    "mysql2": "^3.9.2",
+    "pg": "^8.11.3",
     "nodemailer": "^8.0.5"
   },
   "devDependencies": {
