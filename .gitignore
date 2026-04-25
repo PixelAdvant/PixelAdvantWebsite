@@ -1,5 +1,12 @@
-# Logs
-logs
+# ── DEPENDENCIES & BUILD ──────────────────────────────────
+node_modules/
+dist/
+dist-ssr/
+.venv/
+*.local
+
+# ── LOGS & DEBUG ───────────────────────────────────────────
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +14,45 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# ── ENVIRONMENT VARIABLES ──────────────────────────────────
+.env
+.env.local
+.env.*.local
+!.env.example
 
-# Editor directories and files
+# ── DOCUMENTATION (keep only README.md) ────────────────────
+*.md
+!README.md
+
+# ── EDITOR & IDE ───────────────────────────────────────────
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# ── CI/CD & WORKFLOWS ──────────────────────────────────────
+.github/
+
+# ── LOCK FILES ─────────────────────────────────────────────
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ── TEMPORARY & OFFICE FILES ──────────────────────────────
+*.xlsx
+*.xls
+~$*
+*.tmp
+*.temp
+
+# ── SYSTEM FILES ───────────────────────────────────────────
+Thumbs.db
+.AppleDouble
+.LSOverride
+*.bak
+*.swp
