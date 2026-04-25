@@ -35,7 +35,7 @@ const BlogManagementDashboard = () => {
         content: '',
         image_url: '',
         category: 'Technology',
-        status: 'draft' as const
+        status: 'draft' as 'draft' | 'published'
     })
 
     // Fetch blogs
@@ -46,7 +46,7 @@ const BlogManagementDashboard = () => {
     const fetchBlogs = async () => {
         try {
             setLoading(true)
-            const data = await api.get('/blogs/all', token)
+            const data = await api.get('/blogs/all', token ?? undefined)
             setBlogs(data)
             setError('')
         } catch (err: any) {
@@ -91,7 +91,7 @@ const BlogManagementDashboard = () => {
                 return
             }
 
-            await api.post('/blogs', formData, token)
+            await api.post('/blogs', formData, token ?? undefined)
             setSuccess('Blog created successfully!')
             setTimeout(() => setSuccess(''), 3000)
             setFormData({
@@ -122,7 +122,7 @@ const BlogManagementDashboard = () => {
                 return
             }
 
-            await api.put(`/blogs/${editingId}`, formData, token)
+            await api.put(`/blogs/${editingId}`, formData, token ?? undefined)
             setSuccess('Blog updated successfully!')
             setTimeout(() => setSuccess(''), 3000)
             fetchBlogs()
@@ -153,7 +153,7 @@ const BlogManagementDashboard = () => {
 
         try {
             setError('')
-            await api.del(`/blogs/${id}`, token)
+            await api.del(`/blogs/${id}`, token!)
             setSuccess('Blog deleted successfully!')
             setTimeout(() => setSuccess(''), 3000)
             fetchBlogs()
@@ -173,7 +173,7 @@ const BlogManagementDashboard = () => {
             await api.put(`/blogs/${id}`, {
                 ...blog,
                 status: newStatus
-            }, token)
+            }, token ?? undefined)
             setSuccess(`Blog ${newStatus}!`)
             setTimeout(() => setSuccess(''), 3000)
             fetchBlogs()

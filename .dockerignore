@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.git/
+.github/
+.venv/
+.claude/
+deploy-package/
+*.log
+.env
+.env.local
+.env.*.local
+*.xlsx
+*.xls
+~$*
+Thumbs.db
