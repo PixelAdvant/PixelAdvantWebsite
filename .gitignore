@@ -39,7 +39,6 @@ lerna-debug.log*
 .github/
 
 # ── LOCK FILES ─────────────────────────────────────────────
-package-lock.json
 yarn.lock
 pnpm-lock.yaml
 
