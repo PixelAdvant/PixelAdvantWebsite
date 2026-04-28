@@ -1,4 +1,4 @@
-import PageTitle from "@/components/sections/pageTitle"
+﻿import PageTitle from "@/components/sections/pageTitle"
 import { Link } from "react-router-dom"
 import SEO from '@/components/SEO'
 import { pageSEOConfig } from '@/lib/seoConfig'
@@ -64,7 +64,7 @@ const Resources = () => {
                   gap: "16px",
                   transition: "box-shadow .2s"
                 }}>
-                  <i className={`fa-solid ${item.icon}`} style={{ fontSize: "40px", color: "#5b47e0" }} />
+                  <i className={`fa-solid ${item.icon}`} style={{ fontSize: "40px", color: "#0ea5e9" }} />
                   <h5 style={{ color: "#0f172a", margin: 0 }}>{item.title}</h5>
                   <p style={{ color: "#64748b", flex: 1, margin: 0 }}>{item.description}</p>
                   <Link to={item.link} className="theme-btn" style={{ alignSelf: "flex-start", padding: "12px 22px", fontSize: "14px" }}>

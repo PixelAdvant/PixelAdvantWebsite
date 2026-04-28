@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import ContactVideoPopup from "./contactVideoPopup"
 
 const ContactAddress = () => {
     return (
@@ -52,7 +51,9 @@ const ContactAddress = () => {
                     </div>
                 </div>
             </div>
-            <ContactVideoPopup/>
+            <div className="video-image">
+                <img src="/img/video.png" alt="Contact Pixel Advant" />
+            </div>
         </div>
     )
 }

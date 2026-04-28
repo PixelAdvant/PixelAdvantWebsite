@@ -38,7 +38,6 @@ export const menuData: MenuItemDataType[] = [
     link: '/about',
     submenu: [
       { title: 'Leadership Team', link: '/about/leadership-team' },
-      { title: 'Careers', link: '/careers' },
       { title: 'Contact Us', link: '/contact' },
     ],
   },
@@ -83,5 +82,9 @@ export const menuData: MenuItemDataType[] = [
       { title: 'Case Studies', link: '/resources/case-studies' },
       { title: 'Brochure', link: '/resources/brochure' },
     ],
+  },
+  {
+    title: 'Job Openings',
+    link: '/jobs',
   },
 ];

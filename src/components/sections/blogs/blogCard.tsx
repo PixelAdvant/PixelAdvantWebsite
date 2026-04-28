@@ -1,4 +1,4 @@
-import { BlogPostDataType } from "@/db/blogPostsThreeData"
+﻿import { BlogPostDataType } from "@/db/blogPostsThreeData"
 import { Link } from "react-router-dom"
 
 const BlogCard = ({ news }: { news: BlogPostDataType, className?: string }) => {
@@ -43,7 +43,7 @@ const BlogCard = ({ news }: { news: BlogPostDataType, className?: string }) => {
                 <span style={{
                     display: 'inline-block',
                     backgroundColor: '#f0eefb',
-                    color: '#5b47e0',
+                    color: '#0ea5e9',
                     fontSize: '11px',
                     fontWeight: '600',
                     letterSpacing: '0.05em',

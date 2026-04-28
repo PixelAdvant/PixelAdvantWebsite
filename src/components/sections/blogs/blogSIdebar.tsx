@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { Link } from "react-router-dom";
 import BlogSubscription from "./blogSubscription";
 
@@ -107,7 +107,7 @@ const BlogSidebar = () => {
                                 to="/blog"
                                 style={{
                                     fontSize: "14px",
-                                    color: cat.active ? "#5b47e0" : "#374151",
+                                    color: cat.active ? "#0ea5e9" : "#374151",
                                     fontWeight: cat.active ? "600" : "400",
                                     textDecoration: "none",
                                 }}
@@ -198,9 +198,9 @@ const BlogSidebar = () => {
                                 transition: "all 0.2s",
                             }}
                             onMouseEnter={(e) => {
-                                e.currentTarget.style.backgroundColor = "#5b47e0";
+                                e.currentTarget.style.backgroundColor = "#0ea5e9";
                                 e.currentTarget.style.color = "#fff";
-                                e.currentTarget.style.borderColor = "#5b47e0";
+                                e.currentTarget.style.borderColor = "#0ea5e9";
                             }}
                             onMouseLeave={(e) => {
                                 e.currentTarget.style.backgroundColor = "transparent";

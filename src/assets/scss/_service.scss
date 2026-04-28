@@ -187,7 +187,7 @@
             @include before;
             background-repeat: no-repeat;
             background-size: cover;
-            background: #77B80F;
+            background: $theme-color;
         }
 
         &.active {
@@ -231,6 +231,8 @@
         box-shadow: $shadow;
         border-radius: 10px !important;
         background-color: $white;
+        border: 1px solid transparent;
+        transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
 
         &::before {
             border-radius: 10px;
@@ -244,6 +246,10 @@
             &::before {
                 background-image: url(/img/service/shape-2.png);
             }
+
+            .service-lucide-icon {
+                stroke: $theme-color;
+            }
         }
 
         .theme-btn-2 {
@@ -253,54 +259,75 @@
             line-height: 1;
             margin-top: 30px;
             color: $header-color;
+            transition: border-color 0.2s ease, color 0.2s ease;
 
             &:hover {
                 background-color: $white;
-                color: $header-color;
+                color: $theme-color;
+                border-color: $theme-color;
             }
         }
 
         &:hover {
+            border-color: rgba(14, 165, 233, 0.30);
+            box-shadow: 0 12px 40px rgba(14, 165, 233, 0.12);
+            transform: translateY(-4px);
+
+            &::before {
+                transform: scale(0, 0) !important;
+                transform-origin: bottom center !important;
+            }
+
             .icon {
                 &::before {
-                    background-image: url(/img/service/shape.png);
+                    background-image: url(/img/service/shape-2.png);
+                    filter: none;
+                }
+
+                .service-lucide-icon {
+                    stroke: $theme-color !important;
+                }
+            }
+
+            .content {
+                h4 a { color: $header-color !important; }
+                p { color: $text-color !important; }
+
+                .theme-btn-2 {
+                    color: $theme-color !important;
+                    border-color: $theme-color !important;
                 }
             }
         }
 
         &.active {
+            border-color: rgba(14, 165, 233, 0.30);
+            box-shadow: 0 12px 40px rgba(14, 165, 233, 0.12);
+
             &::before {
-                transform: scale(1, 1);
-                transform-origin: top center;
-           }
-    
-           &::after {
-                top: 0;
-                visibility: visible;
-                opacity: 1;
+                transform: scale(0, 0) !important;
+                transform-origin: bottom center !important;
             }
 
             .icon {
                 &::before {
-                    background-image: url(/img/service/shape.png);
+                    background-image: url(/img/service/shape-2.png);
+                }
+
+                .service-lucide-icon {
+                    stroke: $theme-color !important;
                 }
             }
 
             .theme-btn-2 {
                 background-color: $white;
-                color: $header-color;
+                color: $theme-color;
+                border-color: $theme-color;
             }
 
             .content {
-                h4 {
-                    a {
-                        color: $white;
-                    }
-                }
-    
-                p {
-                    color: $white;
-                }
+                h4 a { color: $header-color; }
+                p { color: $text-color; }
             }
         }
     }
@@ -634,7 +661,7 @@
 
         &::before {
             @include before;
-            background: linear-gradient(180deg, #77B80F 0%, rgba(0, 6, 12, 0) 100%);
+            background: linear-gradient(180deg, rgba(14, 165, 233, 0.75) 0%, rgba(15, 23, 42, 0) 100%);
             opacity: .9;
         }
 

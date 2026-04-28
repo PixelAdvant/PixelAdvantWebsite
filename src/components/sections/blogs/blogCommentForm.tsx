@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 
 interface BlogCommentFormProps {
@@ -148,7 +148,7 @@ const BlogCommentForm = ({ blogTitle = 'Blog Post' }: BlogCommentFormProps) => {
                             disabled={loading}
                             style={{
                                 padding: '12px 28px',
-                                backgroundColor: loading ? '#a89ef4' : '#5b47e0',
+                                backgroundColor: loading ? '#7dd3fc' : '#0ea5e9',
                                 color: 'white',
                                 border: 'none',
                                 borderRadius: '8px',

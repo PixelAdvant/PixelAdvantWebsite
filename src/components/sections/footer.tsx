@@ -91,7 +91,7 @@ const Footer = () => {
                             <div className="single-footer-widget">
                                 <div className="widget-head">
                                     <Link to="/">
-                                        <img src="/img/logo/logo.png" alt="logo-img" style={{ height: "90px", width: "auto", objectFit: "cover" }} />
+                                        <img src="/img/logo/logo.png" alt="logo-img" style={{ height: "126px", width: "auto", objectFit: "contain" }} />
                                         {/* <img src="/img/logo/white-logo.svg" alt="logo-img" /> */}
                                     </Link>
                                 </div>
@@ -197,7 +197,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="footer-wrapper d-flex align-items-center justify-content-between">
                         <p className="wow slideLeft color-2" data-delay=".3">
-                            © All Copyright 2025 by <Link to="index">PixelAdvant</Link> {" "}
+                            © All Copyright {new Date().getFullYear()} by <Link to="index">PixelAdvant</Link> {" "}
                              • A brand of <Link to="https://pixeladvant.com" target="_blank">Maticube Innovation LLP</Link>
                         </p>
                         <ul className="footer-menu wow slideRight" data-delay=".5">

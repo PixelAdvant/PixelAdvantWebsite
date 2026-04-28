@@ -11,7 +11,7 @@ const PageTitle = ({
 }) => {
   return (
     <div
-      className="breadcrumb-wrapper bg-cover"
+      className="breadcrumb-wrapper"
       style={{ backgroundImage: `url("${backgroundImage || "/img/hero/gcchero2.jpeg"}")` }}
     >
       <div className="border-shape">

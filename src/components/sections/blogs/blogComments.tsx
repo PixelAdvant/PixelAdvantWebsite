@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 
 interface Comment {
     id: number;
@@ -84,7 +84,7 @@ const BlogComments = () => {
                             <span style={{
                                 marginLeft: '8px',
                                 fontSize: '11px',
-                                color: '#5b47e0',
+                                color: '#0ea5e9',
                                 backgroundColor: '#f0eefb',
                                 padding: '2px 7px',
                                 borderRadius: '10px',
@@ -102,7 +102,7 @@ const BlogComments = () => {
                         style={{
                             background: 'none',
                             border: 'none',
-                            color: '#5b47e0',
+                            color: '#0ea5e9',
                             cursor: 'pointer',
                             fontSize: '13px',
                             fontWeight: '600',
@@ -193,7 +193,7 @@ const BlogComments = () => {
                                     onClick={() => handleReplySubmit(comment.id)}
                                     style={{
                                         padding: '8px 20px',
-                                        backgroundColor: '#5b47e0',
+                                        backgroundColor: '#0ea5e9',
                                         color: 'white',
                                         border: 'none',
                                         borderRadius: '6px',

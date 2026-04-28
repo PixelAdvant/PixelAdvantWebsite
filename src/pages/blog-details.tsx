@@ -1,4 +1,4 @@
-import BlogCommentForm from "@/components/sections/blogs/blogCommentForm";
+﻿import BlogCommentForm from "@/components/sections/blogs/blogCommentForm";
 import BlogComments from "@/components/sections/blogs/blogComments";
 import BlogSidebar from "@/components/sections/blogs/blogSIdebar";
 import BlogInteractions from "@/components/sections/blogs/blogInteractions";
@@ -41,7 +41,7 @@ const BlogDetails = () => {
                                     style={{
                                         display: "inline-block",
                                         backgroundColor: "#f0eefb",
-                                        color: "#5b47e0",
+                                        color: "#0ea5e9",
                                         fontSize: "11px",
                                         fontWeight: "700",
                                         letterSpacing: "0.06em",
@@ -100,7 +100,7 @@ const BlogDetails = () => {
 
                                 <blockquote
                                     style={{
-                                        borderLeft: "4px solid #5b47e0",
+                                        borderLeft: "4px solid #0ea5e9",
                                         backgroundColor: "#f8faff",
                                         padding: "24px 28px",
                                         borderRadius: "0 10px 10px 0",

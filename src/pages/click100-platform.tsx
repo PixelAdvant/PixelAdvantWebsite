@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+﻿import { Link } from "react-router-dom"
 import { motion } from "motion/react"
 import SEO from "@/components/SEO"
 import PageTitle from "@/components/sections/pageTitle"
@@ -115,12 +115,12 @@ const Click100Platform = () => {
                   width: '56px', 
                   height: '56px', 
                   borderRadius: '14px', 
-                  background: 'linear-gradient(135deg, rgba(91, 71, 224, 0.1), rgba(91, 71, 224, 0.05))',
+                  background: 'linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(14, 165, 233, 0.05))',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center'
                 }}>
-                  <i className="fas fa-bolt" style={{ color: '#5b47e0', fontSize: '22px' }} />
+                  <i className="fas fa-bolt" style={{ color: '#0ea5e9', fontSize: '22px' }} />
                 </div>
                 <h4 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '8px' }}>Fast Hiring</h4>
                 <p className="text-muted mb-0" style={{ fontSize: '14px' }}>
@@ -142,12 +142,12 @@ const Click100Platform = () => {
                   width: '56px', 
                   height: '56px', 
                   borderRadius: '14px', 
-                  background: 'linear-gradient(135deg, rgba(91, 71, 224, 0.1), rgba(91, 71, 224, 0.05))',
+                  background: 'linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(14, 165, 233, 0.05))',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center'
                 }}>
-                  <i className="fas fa-brain" style={{ color: '#5b47e0', fontSize: '22px' }} />
+                  <i className="fas fa-brain" style={{ color: '#0ea5e9', fontSize: '22px' }} />
                 </div>
                 <h4 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '8px' }}>Smart Matching</h4>
                 <p className="text-muted mb-0" style={{ fontSize: '14px' }}>
@@ -169,12 +169,12 @@ const Click100Platform = () => {
                   width: '56px', 
                   height: '56px', 
                   borderRadius: '14px', 
-                  background: 'linear-gradient(135deg, rgba(91, 71, 224, 0.1), rgba(91, 71, 224, 0.05))',
+                  background: 'linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(14, 165, 233, 0.05))',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center'
                 }}>
-                  <i className="fas fa-globe" style={{ color: '#5b47e0', fontSize: '22px' }} />
+                  <i className="fas fa-globe" style={{ color: '#0ea5e9', fontSize: '22px' }} />
                 </div>
                 <h4 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '8px' }}>Global Access</h4>
                 <p className="text-muted mb-0" style={{ fontSize: '14px' }}>
@@ -196,12 +196,12 @@ const Click100Platform = () => {
                   width: '56px', 
                   height: '56px', 
                   borderRadius: '14px', 
-                  background: 'linear-gradient(135deg, rgba(91, 71, 224, 0.1), rgba(91, 71, 224, 0.05))',
+                  background: 'linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(14, 165, 233, 0.05))',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center'
                 }}>
-                  <i className="fas fa-chart-line" style={{ color: '#5b47e0', fontSize: '22px' }} />
+                  <i className="fas fa-chart-line" style={{ color: '#0ea5e9', fontSize: '22px' }} />
                 </div>
                 <h4 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '8px' }}>Data Insights</h4>
                 <p className="text-muted mb-0" style={{ fontSize: '14px' }}>
@@ -214,7 +214,7 @@ const Click100Platform = () => {
       </section>
 
       {/* CTA Section - Matching site CTA style */}
-      <section className="cta-section cta-1 section-padding" style={{ background: 'linear-gradient(135deg, #5b47e0 0%, #7c6fec 100%)' }}>
+      <section className="cta-section cta-1 section-padding" style={{ background: 'linear-gradient(135deg, #0ea5e9 0%, #38bdf8 100%)' }}>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8 text-center">

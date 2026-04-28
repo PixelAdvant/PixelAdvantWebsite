@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 
 const BlogSubscription = () => {
@@ -68,7 +68,7 @@ const BlogSubscription = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 margin: '0 auto 16px',
-                color: '#5b47e0',
+                color: '#0ea5e9',
                 fontSize: '20px'
             }}>
                 <i className="fa-solid fa-bell" />
@@ -120,7 +120,7 @@ const BlogSubscription = () => {
                         disabled={loading}
                         style={{
                             padding: '11px 22px',
-                            backgroundColor: '#5b47e0',
+                            backgroundColor: '#0ea5e9',
                             color: 'white',
                             border: 'none',
                             borderRadius: '8px',

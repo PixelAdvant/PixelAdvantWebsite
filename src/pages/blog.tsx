@@ -1,4 +1,4 @@
-import { useState } from "react"
+﻿import { useState } from "react"
 import BlogCard from "@/components/sections/blogs/blogCard"
 import BlogSubscription from "@/components/sections/blogs/blogSubscription"
 import PageTitle from "@/components/sections/pageTitle"
@@ -61,7 +61,7 @@ const Blog = () => {
                                 <span style={{
                                     display: 'inline-block',
                                     backgroundColor: '#f0eefb',
-                                    color: '#5b47e0',
+                                    color: '#0ea5e9',
                                     fontSize: '11px',
                                     fontWeight: '700',
                                     letterSpacing: '0.06em',
@@ -124,8 +124,8 @@ const Blog = () => {
                                 style={{
                                     padding: '7px 18px',
                                     borderRadius: '20px',
-                                    border: activeCategory === cat ? '1.5px solid #5b47e0' : '1.5px solid #e5e7eb',
-                                    backgroundColor: activeCategory === cat ? '#5b47e0' : '#fff',
+                                    border: activeCategory === cat ? '1.5px solid #0ea5e9' : '1.5px solid #e5e7eb',
+                                    backgroundColor: activeCategory === cat ? '#0ea5e9' : '#fff',
                                     color: activeCategory === cat ? '#fff' : '#374151',
                                     fontSize: '13px',
                                     fontWeight: '600',

@@ -7,7 +7,7 @@ const PartnersOne = ({ className }: { className?: string }) => {
         <div className={`brand-section fix section-padding ${className}`}>
             <div className="container">
                 <div className="brand-wrapper">
-                    <h6 className="text-center wow slideUp" data-delay=".3">1k + Brands Trust Us</h6>
+                    <h6 className="text-center wow slideUp" data-delay=".3">Brands Trust Us</h6>
                     <Swiper
                         breakpoints={{
                             1199: {
@@ -37,11 +37,11 @@ const PartnersOne = ({ className }: { className?: string }) => {
                         modules={[Autoplay]}
                     >
                         {
-                            partnetsOneData.map(({ id, img }) => {
+                            partnetsOneData.map(({ id, img, alt }) => {
                                 return (
                                     <SwiperSlide key={id}>
                                         <div className="brand-image">
-                                            <img src={img} alt="brand-img" loading="lazy" decoding="async" />
+                                            <img src={img} alt={alt} loading="lazy" decoding="async" />
                                         </div>
                                     </SwiperSlide>
                                 )

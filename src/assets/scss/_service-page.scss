@@ -2,11 +2,11 @@
 @use "_mixins" as *;
 
 .gcc-service-page {
-    background: linear-gradient(180deg, #f8faff 0%, #ffffff 100%);
+    background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
 
     &__hero {
         background: $white;
-        border: 1px solid rgba(91, 71, 224, 0.12);
+        border: 1px solid rgba(14, 165, 233, 0.12);
         border-radius: 28px;
         padding: 44px;
         box-shadow: 0 28px 80px rgba(15, 23, 42, 0.08);
@@ -40,9 +40,9 @@
     }
 
     &__eyebrow {
-        color: #5b47e0;
-        background: rgba(91, 71, 224, 0.08);
-        border: 1px solid rgba(91, 71, 224, 0.18);
+        color: #0ea5e9;
+        background: rgba(14, 165, 233, 0.08);
+        border: 1px solid rgba(14, 165, 233, 0.18);
         padding: 7px 18px;
         border-radius: 999px;
         line-height: 1;
@@ -67,14 +67,15 @@
             gap: 8px;
             padding: 18px 28px;
             border-radius: 999px;
-            border: 1px solid rgba(91, 71, 224, 0.25);
-            color: #5b47e0;
+            border: 1px solid rgba(14, 165, 233, 0.25);
+            color: #0ea5e9;
             font-weight: 600;
             line-height: 1;
             background: transparent;
+            transition: all 0.25s ease;
 
             &:hover {
-                background: #5b47e0;
+                background: #0ea5e9;
                 color: $white;
             }
         }
@@ -100,7 +101,7 @@
             font-weight: 500;
 
             i {
-                color: #5b47e0;
+                color: #0ea5e9;
                 margin-top: 4px;
             }
         }
@@ -111,8 +112,8 @@
         border-radius: 24px;
         overflow: hidden;
         min-height: 100%;
-        border: 1px solid rgba(91, 71, 224, 0.12);
-        box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
+        border: 1px solid rgba(14, 165, 233, 0.10);
+        box-shadow: 0 16px 36px rgba(15, 23, 42, 0.10);
 
         img {
             width: 100%;
@@ -138,7 +139,7 @@
         background: $white;
         border-radius: 28px;
         padding: 40px;
-        border: 1px solid rgba(91, 71, 224, 0.1);
+        border: 1px solid rgba(14, 165, 233, 0.08);
 
         @include breakpoint(max-md) {
             padding: 28px;
@@ -178,7 +179,7 @@
 
     &__card {
         border-radius: 22px !important;
-        border: 1px solid rgba(91, 71, 224, 0.1);
+        border: 1px solid rgba(14, 165, 233, 0.10);
         padding-top: 26px;
 
         &::before {
@@ -211,7 +212,7 @@
             color: #475569;
 
             i {
-                color: #5b47e0;
+                color: #0ea5e9;
                 font-size: 12px;
                 margin-top: 7px;
             }
@@ -222,7 +223,7 @@
     &__process-card {
         background: $white;
         border-radius: 22px;
-        border: 1px solid rgba(91, 71, 224, 0.1);
+        border: 1px solid rgba(14, 165, 233, 0.10);
         padding: 30px;
         box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
 
@@ -245,8 +246,8 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        background: rgba(91, 71, 224, 0.1);
-        color: #5b47e0;
+        background: rgba(14, 165, 233, 0.10);
+        color: #0ea5e9;
         font-size: 16px;
         font-weight: 700;
         margin-bottom: 18px;
@@ -263,8 +264,8 @@
             list-style: none;
             padding: 14px 18px;
             border-radius: 18px;
-            border: 1px solid rgba(91, 71, 224, 0.14);
-            background: rgba(91, 71, 224, 0.04);
+            border: 1px solid rgba(14, 165, 233, 0.14);
+            background: rgba(14, 165, 233, 0.04);
             color: $header-color;
             font-weight: 600;
         }
@@ -274,9 +275,9 @@
         margin-top: 100px;
         padding: 42px;
         border-radius: 28px;
-        background: linear-gradient(135deg, #312e81 0%, #5b47e0 55%, #0ea5e9 100%);
+        background: linear-gradient(135deg, #0c4a6e 0%, #0284c7 55%, #0ea5e9 100%);
         color: $white;
-        box-shadow: 0 30px 70px rgba(49, 46, 129, 0.22);
+        box-shadow: 0 30px 70px rgba(2, 132, 199, 0.25);
 
         @include breakpoint(max-md) {
             margin-top: 80px;
@@ -302,7 +303,7 @@
 
         .theme-btn {
             background: $white;
-            color: #312e81;
+            color: #0284c7;
 
             &:hover {
                 color: $white;
@@ -316,7 +317,7 @@
             &:hover {
                 border-color: $white;
                 background: $white;
-                color: #312e81;
+                color: #0284c7;
             }
         }
     }

@@ -1,4 +1,4 @@
-import PageTitle from "@/components/sections/pageTitle"
+﻿import PageTitle from "@/components/sections/pageTitle"
 import SEO from '@/components/SEO'
 import { pageSEOConfig } from '@/lib/seoConfig'
 
@@ -21,7 +21,7 @@ const CaseStudies = () => {
           <div className="row justify-content-center">
             <div className="col-lg-8 text-center wow slideUp" data-delay=".3">
               <div style={{ padding: "60px 40px", background: "#f8f7ff", borderRadius: "16px", border: "1px solid #e9e6ff" }}>
-                <i className="fa-solid fa-chart-bar" style={{ fontSize: "64px", color: "#5b47e0", marginBottom: "20px", display: "block" }} />
+                <i className="fa-solid fa-chart-bar" style={{ fontSize: "64px", color: "#0ea5e9", marginBottom: "20px", display: "block" }} />
                 <h4 style={{ color: "#0f172a", marginBottom: "12px" }}>Case Studies Coming Soon</h4>
                 <p style={{ color: "#64748b", maxWidth: "480px", margin: "0 auto" }}>
                   We are documenting detailed case studies from our client engagements. These will be published here shortly.

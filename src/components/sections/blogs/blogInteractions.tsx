@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+﻿import React, { useState } from 'react'
 
 interface BlogInteractionsProps {
     blogTitle?: string
@@ -77,8 +77,8 @@ const BlogInteractions = ({ blogTitle = 'Blog Post', blogUrl = 'https://pixeladv
                     gap: '8px',
                     padding: '8px 20px',
                     backgroundColor: isLiked ? '#f0eefb' : '#f9fafb',
-                    color: isLiked ? '#5b47e0' : '#374151',
-                    border: isLiked ? '1.5px solid #5b47e0' : '1.5px solid #e5e7eb',
+                    color: isLiked ? '#0ea5e9' : '#374151',
+                    border: isLiked ? '1.5px solid #0ea5e9' : '1.5px solid #e5e7eb',
                     borderRadius: '20px',
                     cursor: 'pointer',
                     fontSize: '14px',
@@ -86,7 +86,7 @@ const BlogInteractions = ({ blogTitle = 'Blog Post', blogUrl = 'https://pixeladv
                     transition: 'all 0.2s'
                 }}
             >
-                <i className={`fa-${isLiked ? 'solid' : 'regular'} fa-heart`} style={{ color: isLiked ? '#5b47e0' : '#9ca3af' }} />
+                <i className={`fa-${isLiked ? 'solid' : 'regular'} fa-heart`} style={{ color: isLiked ? '#0ea5e9' : '#9ca3af' }} />
                 {likes > 0 ? `${likes} ${likes === 1 ? 'Like' : 'Likes'}` : 'Like this article'}
             </button>
 
