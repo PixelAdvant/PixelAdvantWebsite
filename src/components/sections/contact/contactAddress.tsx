@@ -16,6 +16,7 @@ const ContactAddress = () => {
                         <p>Call Us 24/7</p>
                         <h3>
                             <Link to="tel:+918904957029">+91 8904957029</Link><br/>
+                            <Link to="tel:+919035170817">+91 90351 70817</Link><br/>
                             <Link to="tel:+19738656682">+1 973 865 6682</Link>
                         </h3>
                     </div>
@@ -32,7 +33,7 @@ const ContactAddress = () => {
                         <p>Email Us</p>
                         <h3>
                             <Link to="mailto:info@pixeladvant.com">info@pixeladvant.com</Link><br/>
-                            <Link to="mailto:sales@pixeladvant.com">sales@pixeladvant.com</Link>
+                            {/* <Link to="mailto:sales@pixeladvant.com">sales@pixeladvant.com</Link> */}
                         </h3>
                     </div>
                 </div>
