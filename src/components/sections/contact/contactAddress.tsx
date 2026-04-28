@@ -32,7 +32,7 @@ const ContactAddress = () => {
                         <p>Email Us</p>
                         <h3>
                             <Link to="mailto:info@pixeladvant.com">info@pixeladvant.com</Link><br/>
-                            <Link to="mailto:sales@pixeladvant.com">sales@pixeladvant.com</Link>
+                            {/* <Link to="mailto:sales@pixeladvant.com">sales@pixeladvant.com</Link> */}
                         </h3>
                     </div>
                 </div>
