@@ -11,7 +11,7 @@ export const teamMembersTwoData: TeamMemberDataType[] = [
             { icon: 'fab fa-linkedin-in', link: '' },
             { icon: 'fa-brands fa-twitter', link: '' },
         ],
-        description: 'Kumar Sachidanand founded Pixel Advant with the intention of empowering GCC clients through innovative technology. His vision, leadership and passion continue to drive the company forward. Over the years, Kumar has held several technology, business and operational leadership positions and is widely recognized in the industry for his strategic thinking and impeccable execution. His leadership has resulted in innovative, user-friendly and scalable GCC software products for global clients of all sizes.'
+        description: 'Kumar Sachidanand is the visionary founder of our company, bringing over two decades of experience in the technology industry. With a strong background in software development and product management, Kumar has successfully led teams to deliver innovative solutions across various domains. His passion for technology and commitment to excellence drive our company mission to empower businesses with cutting-edge software products.'
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ export const teamMembersTwoData: TeamMemberDataType[] = [
             { icon: 'fab fa-linkedin-in', link: '' },
             { icon: 'fa-brands fa-twitter', link: '' },
         ],
-        description: 'Vasanth has over two decades of experience in planning and delivering software product solutions across healthcare, finance, and enterprise technology. He has deep expertise in designing complex enterprise and telecom solutions. With a strong background in systems programming, big data, and AI/ML platforms, he has led solutions for companies like Deloitte, UBS, and ConnectiveRX. His vision focuses on building scalable platforms that empower organizations to make smarter and faster decisions.'
+        description: 'Vasanth has been instrumental in shaping our technology strategy and driving innovation. With a strong background in software architecture and development, Vasanth leads our engineering teams to deliver high-quality products that meet the evolving needs of our clients. His expertise in emerging technologies and commitment to technical excellence ensure we stay at the forefront of the industry.'
     },
     {
         id: 3,
@@ -39,28 +39,28 @@ export const teamMembersTwoData: TeamMemberDataType[] = [
     },
     {
         id: 4,
-        name: 'Animesh Dixit',
-        role: 'General Counsel',
+        name: 'Pankaj Pundir',
+        role: 'Digital Marketing & Growth Leader',
         image: '/img/team/image1.jpg',
         delay: '.3',
         socialLinks: [
             { icon: 'fab fa-linkedin-in', link: '' },
             { icon: 'fa-brands fa-twitter', link: '' },
         ],
-        description: 'Animesh Dixit provides legal guidance and support for our operations. With a strong background in corporate law and compliance, he ensures we navigate the legal landscape effectively and mitigate risks.'
-    },
-    {
-        id: 5,
-        name: 'Pankaj Pundir',
-        role: 'Digital Marketing & Growth Leader',
-        image: '/img/team/image1.jpg',
-        delay: '.5',
-        socialLinks: [
-            { icon: 'fab fa-linkedin-in', link: '' },
-            { icon: 'fa-brands fa-twitter', link: '' },
-        ],
         description: 'Pankaj Pundir leads our digital marketing and growth initiatives. With a strong background in digital strategy and growth hacking, he drives our marketing efforts and ensures sustainable business growth.'
     },
+    // {
+    //     id: 5,
+    //     name: 'Pankaj Pundir',
+    //     role: 'Digital Marketing & Growth Leader',
+    //     image: '/img/team/image1.jpg',
+    //     delay: '.5',
+    //     socialLinks: [
+    //         { icon: 'fab fa-linkedin-in', link: '' },
+    //         { icon: 'fa-brands fa-twitter', link: '' },
+    //     ],
+    //     description: 'Pankaj Pundir leads our digital marketing and growth initiatives. With a strong background in digital strategy and growth hacking, he drives our marketing efforts and ensures sustainable business growth.'
+    // },
     // {
     //     id: 6,
     //     name: 'David Kumar',
